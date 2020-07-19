@@ -150,7 +150,7 @@ a span:hover{
 }
 
 .socialMedia{
-	text-align: right;
+	text-align: left;
 }
 
 .footerIcon{
@@ -633,9 +633,21 @@ video {
 }
 
 
-.serviceIcons{
+#serviceIcon1{
 	margin-bottom: 20px;
 	width: 100px;
+	height: auto;
+}
+
+#serviceIcon2{
+	margin-bottom: 10px;
+	width: 110px;
+	height: auto;
+}
+
+#serviceIcon3{
+	margin-top: 10px;
+	width: 115px;
 	height: auto;
 }
 

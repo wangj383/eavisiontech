@@ -103,10 +103,12 @@ a span:hover{
 
 #logoimg{
 	vertical-align: bottom;
-	width: 110px;
-	height:38px;
+	width: 120px;
+	height:42px;
 	position:relative;
-	bottom: 3spx;
+	/* bottom: 3px; */
+	margin-left: 10px;
+    margin-right: 42px;
 }
 
 .bodyOverlay.menu-open:after{
@@ -155,7 +157,9 @@ a span:hover{
 .footerIcon{
 	width:45px;
 	margin-top: 48px;
+	margin-left:3px;
 	line-height: 30px;
+	/* border-radius:30px 30px 30px 30px; */
 }
 
 .row .copyright{
@@ -621,8 +625,8 @@ video {
 }
 
 #techImg{
-	width: 30vw;
-	height: 200px;
+	width: 40vw;
+	height: 25vw;
 	margin: 10px auto;
 }
 
@@ -767,6 +771,7 @@ ul.thumbnails-carousel li {
 }
 
 .recentNews .card-body h3, .pressCardArea h3{
+	font-size:20px;
 	margin-bottom: 24px;
 	line-height: 1.25;
 }

@@ -378,11 +378,13 @@ video {
 #productContext h2{
 	margin-top: 64px;
 	margin-bottom: 0px;
+	color: white;
 }
 
 #productContext p{
 	margin-top: 24px;
 	margin-bottom: 24px;
+	color: white;
 }
 
 #productContext .blue-button{
@@ -431,11 +433,13 @@ video {
 #solutionDescription h2{
 	margin-top: 64px;
 	margin-bottom: 64px;
+	color: white;
 }
 
 #solutionDescription p{
 	margin-top: 16px;
 	margin-bottom: 48px;
+	color: white;
 }
 
 #solutionDescription .solutionIcons p{
@@ -519,6 +523,9 @@ video {
 
 #serviceDescription{
 	text-align: center;
+	/* background-image: url("../img/Hexagon-dotted-connect-line-background.jpg");
+	background-size: cover;
+	background-position: center; */
 	background-color: #ececec ;
 }
 
@@ -534,7 +541,7 @@ video {
 	/* color:#289CEB; */
 }
 #serviceDescription h2{
-	margin-top: 60px;
+	margin-top: 40px;
 	margin-bottom: 32px;
 }
 #serviceDescription h3{
@@ -546,6 +553,7 @@ video {
 
 #serviceDescription .stepsContainer{
 	justify-content: center;
+	margin-top:15px;
 }
 
 #serviceDescription .serviceStep{
@@ -561,16 +569,24 @@ video {
 
 #serviceDescription .serviceStep img{
 	position:relative;
-	width: 80%;
-	height: auto;
+	
+	height: 250px;
+	width: auto;
+	/* margin: 0 auto;
 	margin-top: 35px;
-	margin-bottom: 45px;
+	margin-bottom: 45px; */
 }
 
 #serviceDescription .serviceStep p{
 	font-size: 90%;
 	color: rgb(125, 126, 126);
 }
+#serviceDescription .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+  }
 
 #serviceDescription .col-1 .arrowicon{
 	position: relative;
@@ -614,6 +630,10 @@ video {
 #serviceDescription .w-100{
 	width: 450px !important;
 	height:268px;
+}
+
+#serviceDescription .thumbnails-carousel img{
+	width: 110px;
 }
 
 .serviceSection{

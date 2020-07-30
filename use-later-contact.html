@@ -47,6 +47,38 @@
     </nav>
       <!-- mobile navbar -->
       <!-- navbar -->
-    
+    				<!-- <form action="mailto:info@eavision.com" method=”POST” enctype=”multipart/form-data”
+						name=”ContactForm”> -->
+            <form method="post" action="contact.php" name=”ContactForm”>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <!-- <label for="inputName">First Name</label> -->
+                  <input type="text" class="form-control" name="sender" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <!-- <label for="inputPhone">Phone Number</label> -->
+                  <input type="tel" class="form-control" name="senderPhone" placeholder="Phone Number">
+                </div>
+                <div class="form-group col-md-4">
+                  <!-- <label for="inputEmail">Email</label> -->
+                  <input type="email" class="form-control" name="senderEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group col-md-8">
+                <!-- <label for="inputMessage">Inquiry</label> -->
+                <input type="text" class="form-control" name="senderMessage" placeholder="Inquiry">
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                  Subscribe to xxxxxx
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" name="submit">Send</button>
+              </form>
 </body>
 </html>

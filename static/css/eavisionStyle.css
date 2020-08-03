@@ -147,7 +147,12 @@ a span:hover{
 }
 
 .footer a{
-	color: #FFFFFF;
+	color: #f1f1f1c0;
+}
+.footer a:hover{
+	color: white;
+	text-decoration:none;
+	
 }
 
 .socialMedia{
@@ -233,9 +238,136 @@ a span:hover{
 	border: 3px solid #FFFFFF;
 }
 
+
+/* Animation */
+.animate {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+  }
+
+/*=== Delay options, change values here  ===*/
+.one {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.two {
+	-webkit-animation-delay: 1.7s;
+	-moz-animation-delay: 1.7s;
+	animation-delay: 1.7s;
+	}
+
+.three {
+	-webkit-animation-delay: 2.3s;
+	-moz-animation-delay: 2.3s;
+	animation-delay: 2.3s;
+}
+
+.four {
+	-webkit-animation-delay: 3.3s;
+	-moz-animation-delay: 3.3s;
+	animation-delay: 3.3s;
+}
+	
+/*=== Animations start here  ===*/
+/*=== FADE IN  ===*/
+@-webkit-keyframes fadeIn {
+	from {
+	opacity: 0;
+	}
+
+	to {
+	opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+	opacity: 0;
+	}
+
+	to {
+	opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+
+/*=== FADE IN DOWN ===*/
+@-webkit-keyframes fadeInDown {
+	from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+	}
+}
+@keyframes fadeInDown {
+	from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+	from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+	}
+}
+@keyframes fadeInUp {
+	from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
 /* Homepage */
 #homeBanner{
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(162, 199, 224, 0.185);
 	/*background-image: url("../img/homeHeader.jpg");
 	background-color: #FAFAFA;
 	background-size: cover;
@@ -276,6 +408,10 @@ a span:hover{
 #homeBanner .carousel-caption h1{
 	font-size: 40px;
 	padding: 0 0;
+}
+#homeBanner .carousal-caption h1:hover{
+	color: #1897f2;
+	text-decoration: none;
 }
 
 video {
@@ -726,6 +862,8 @@ video {
 
 #serviceContact .card-header h2{
 	color: white;
+	margin-top:20px;
+	margin-bottom:15px;
 }
 #serviceContact .card{
 	background-color:white;
@@ -822,6 +960,7 @@ ul.thumbnails-carousel li {
 	padding: 20px 25px 10px 25px;
 	color: #353535; 
 }
+
 
 #carouselArea{
 	padding-bottom: 64px;

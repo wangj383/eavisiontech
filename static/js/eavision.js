@@ -1,3 +1,7 @@
+// initiate aos
+AOS.init();
+
+
 //bodyOverlay
 $(function() {
     $('.navbar-toggler').on('click', function() {

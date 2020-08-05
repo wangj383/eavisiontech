@@ -703,13 +703,13 @@ video {
 }
 #serviceDescription .container-fluid{
 	justify-content: center;
-	padding-bottom: 70px
+	padding-bottom: 55px;
 }
 
 #serviceDescription .stepsContainer{
 	justify-content: center;
-	margin-top:15px;
 	position:relative;
+	margin: 25px 50px;
 }
 #serviceDescription .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -745,10 +745,14 @@ video {
 }
 
 #serviceDescription .serviceStep{
-	padding: 0px 20px;
-	margin: 0 10px;
+	padding: 0px 10px;
+	margin: 0 0px;
 	/* background-color:white; */
 	border-radius: 10px 10px 10px 10px;
+}
+#serviceDescription .serviceStep .card{
+	margin:0 10px;
+	/* margin-left:10px; */
 }
 
 #serviceDescription .col-1{
@@ -757,9 +761,8 @@ video {
 
 #serviceDescription .serviceStep img{
 	position:relative;
-	
-	height: 270px;
 	width: auto;
+	height: 270px;
 	/* margin: 0 auto;
 	margin-top: 35px;
 	margin-bottom: 45px; */

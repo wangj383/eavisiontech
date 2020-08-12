@@ -70,6 +70,16 @@ nav{
 	background-color: #FFFFFF;
 	box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
 }
+.nav-item .dropdown{
+	position:absolute;
+	z-index:20;
+}
+.nav-item .dropdown li{
+	background-color: #b4e4fa;
+	padding: 0px 20px;
+	list-style: none;
+}
+
 
 .navigation .navbar-collapse{
 	background-color: #FAFAFA;
@@ -100,6 +110,12 @@ nav{
 a span:hover{
 	color: rgb(128, 124, 124);
 }
+
+.dropdown{
+	list-style:none;
+
+}
+
 
 #logoimg{
 	vertical-align: bottom;
@@ -377,13 +393,14 @@ a span:hover{
 	margin-top: 64px;
 }
 
-#homeBanner h1{
+/* #homeBanner .carousel-caption h1{
 	padding-top: 64px;
 	padding-bottom: 64px;
 	line-height: 60px;
 	margin-top: auto;
 	margin-bottom: auto;
-}
+	font-size: 45px;
+} */
 
 #homeBanner .w-100{
 	width: 100% !important;
@@ -406,12 +423,26 @@ a span:hover{
 }
 
 #homeBanner .carousel-caption h1{
-	font-size: 40px;
+	font-size: 35px;
 	padding: 0 0;
 }
 #homeBanner .carousal-caption h1:hover{
 	color: #1897f2;
 	text-decoration: none;
+}
+
+#homeBanner .carousel-control-next-icon, .carousel-control-prev-icon{
+	width:35px;
+	height:45px;
+}
+
+#homeBanner .carousel-indicators li{
+	width:35px;
+	height: 8px;
+}
+
+#homeBanner .carousel-indicators .active{
+	background-color: #64beff;
 }
 
 video {
@@ -711,11 +742,21 @@ video {
 	position:relative;
 	margin: 25px 50px;
 }
-#serviceDescription .card {
+
+#serviceDescription .serviceStep{
+	padding: 0px 10px;
+	margin: 0 0px;
+	/* background-color:white; */
+	border-radius: 10px 10px 10px 10px;
+}
+
+#serviceDescription .serviceStep .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	/* padding: 16px; */
 	text-align: center;
 	background-color: #f1f1f1;
+	height: 420px;
+	margin:0 10px;
 }
 
 .stepsContainer .inner-triangle{
@@ -744,16 +785,8 @@ video {
 	font-size: 35px;
 }
 
-#serviceDescription .serviceStep{
-	padding: 0px 10px;
-	margin: 0 0px;
-	/* background-color:white; */
-	border-radius: 10px 10px 10px 10px;
-}
-#serviceDescription .serviceStep .card{
-	margin:0 10px;
-	/* margin-left:10px; */
-}
+
+
 
 #serviceDescription .col-1{
 	padding: 5px;
@@ -871,6 +904,9 @@ video {
 #serviceContact .card{
 	background-color:white;
 	padding: auto 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+
 }
 #serviceContact .card label{
 	text-align: left;

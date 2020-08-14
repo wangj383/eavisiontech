@@ -68,3 +68,33 @@ $(function() {
 })(window, jQuery);
 
 $('.thumbnails-carousel').thumbnailsCarousel();
+
+
+// contact form
+
+get_id = function (id){ 
+	return document.getElementById(id); 
+}
+function submitForm(){
+	get_id("submit").disabled = true;
+	get_id("submit").value = 'Sending...';
+	var formdata = new FormData();
+	formdata.append( "name", get_id("name").value );
+	formdata.append( "email", get_id("email").value );
+	formdata.append( "phone", get_id("phone").value );
+	formdata.append( "subject", get_id("subject").value );
+	formdata.append( "message", get_id("message").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "mail.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				get_id("contact_form").innerHTML = '<h2>Thanks '+get_id("n").value+', your message has been sent.</h2>';
+			} else {
+				get_id("status").innerHTML = ajax.responseText;
+				get_id("mybtn").disabled = false;
+			}
+		}
+	}
+	ajax.send( formdata );
+}

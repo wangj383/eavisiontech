@@ -88,16 +88,34 @@ function submitForm() {
   ajax.open('POST', 'http://39.105.110.190:8686/contact/add')
   ajax.onreadystatechange = function () {
     if (ajax.readyState == 4 && ajax.status == 200) {
-      if (ajax.responseText == 'success') {
-        get_id('contact_form').innerHTML =
-          '<h2>Thanks ' +
-          get_id('n').value +
-          ', your message has been sent.</h2>'
+		if (ajax.responseText == 'ok') {
+        get_id('status').innerHTML =
+		"<h3>Thank you for getting in touch!</h3>" + 
+		"<p> We appreciate you contacting us about " + subject.value+ ". One of our colleagues will get back to you shortly." 
+		+"<br/> Have a great day!</p>"
+
+		get_id('name').value = ""
+		get_id('email').value = ""
+		get_id('phone').value = ""
+		get_id('subject').value = ""
+		get_id('message').value=""
+		get_id('submit').value = 'Send'
+		get_id('submit').disabled = false
       } else {
         get_id('status').innerHTML = ajax.responseText
         get_id('submit').disabled = false
-        get_id('submit').value = 'Send'
+
       }
+    //   if (ajax.responseText == 'success') {
+    //     get_id('contact_form').innerHTML =
+    //       '<h2>Thanks ' +
+    //       get_id('name').value +
+    //       ', your message has been sent.</h2>'
+    //   } else {
+    //     get_id('status').innerHTML = ajax.responseText
+    //     get_id('submit').disabled = false
+    //     get_id('submit').value = 'Send'
+    //   }
     }
   }
   ajax.send(formdata)

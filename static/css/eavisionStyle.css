@@ -895,12 +895,12 @@ video {
 	font-size:10px;
 	margin:10px 12% 20px 12%;
 }
+/* #serviceContact{
+	background-image:url("../img/cornfield-withhouse-free.jpg");
+	background-size: cover;
+	
+} */
 
-#serviceContact .card-header h2{
-	color: white;
-	margin-top:20px;
-	margin-bottom:15px;
-}
 #serviceContact .card{
 	background-color:white;
 	padding: auto 50px;
@@ -908,15 +908,27 @@ video {
 	text-align: center;
 
 }
+
+#serviceContact .card-header h2{
+	color: white;
+	margin-top:20px;
+	margin-bottom:15px;
+}
+
+#status{
+	font-size: 20px;
+}
+
 #serviceContact .card label{
 	text-align: left;
 }
 
-
-.contactIcon{
-	width:50px;
+#serviceContact .contactIcon{
+	width:40px;
 	height:auto;
+	
 }
+
 
 .inline{
 	display: inline-block;

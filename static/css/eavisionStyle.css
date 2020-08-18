@@ -293,6 +293,15 @@ a span:hover{
 	border: 3px solid #FFFFFF;
 }
 
+/* background-color */
+.bgLightGrey{
+	background-color: #f1f1f1;
+}
+
+.bgWhite{
+	background-color: #FFFFFF;
+}
+
 
 /* Animation */
 .animate {
@@ -612,9 +621,7 @@ video {
 	margin-bottom: 64px;
 }
 
-.bgWhite{
-	background-color: #FFFFFF;
-}
+
 
 /* Solutions */
 #solutionBanner{
@@ -704,6 +711,55 @@ video {
 	margin-bottom: 24px;
 }
 
+
+/* E-A2020 */
+
+#productBanner{
+	background-image: url('../img/uav-bg.jpg'); 
+	background-position: bottom;
+	background-size: cover;
+	background-color: #e5e5e5;
+	text-align: center;
+	height: 720px;
+}
+#productBanner .container-fluid{
+	background-color: rgba(177, 206, 236, 0.2);
+	justify-content: center;
+	align-content: bottom;
+	width:auto;
+	height:720px;
+}
+
+#productBanner h1{
+	margin-top:190px;
+}
+#productBanner h3{
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#productBanner p{
+	margin-top: 0px;
+	margin-bottom: 48px;
+}
+
+#productBanner button{
+	margin:40px 20px;
+	justify-content: center;
+}
+
+.productSection{
+	padding: 0 0;
+}
+.productSection .row{
+	justify-content: center;
+	align-items: center;
+	margin:15px auto;
+}
+
+.productSection .sideImg{
+	height:300px;
+}
 
 /* Service */
 
@@ -969,13 +1025,7 @@ video {
 }
 
 
-.inline{
-	display: inline-block;
-}
 
-.bgLightGrey{
-	background-color: #f1f1f1;
-}
 
 
 /* Vision */

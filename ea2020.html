@@ -17,10 +17,10 @@
 		<div class="container">
 			<a href="index.html"><img id="logoimg" src="static/img/logo.png"></a>
 			<ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="solution.html"><span>Products</span></a>
-					<ul class="dropdown">
+				<li class="nav-item"  id="nav-products" ><a class="nav-link" href="solution.html"><span>Products</span></a>
+					<ul class="dropdown nav-product-list">
 						<li><a class="nav-link" href="solution.html"><span>Drone</span></a>
-							<ul class="drowdown">
+							<ul class="nav-product-items">
 								<li><a class="nav-link" href="ea2020.html"><span>E-A2020</span></a></li>
 								<li><a class="nav-link" href="ea10.html"><span>E-A10</span></a></li>
 								<li><a class="nav-link" href="eavag1.html"><span>EAV-AG1</span></a></li>
@@ -29,7 +29,7 @@
 						<li><a class="nav-link" href="spraysystem.html"><span>Mist Spray System</span></a></li>
 						<li><a class="nav-link" href="automachine.html"><span>Autonomous Crop Protection Vehicle</span></a></li>
 					</ul>
-                </li>
+				</li>
 				<li class="nav-item"><a class="nav-link" href="service.html"><span>Service</span></a></li>
 				<li class="nav-item"><a class="nav-link" href="vision.html"><span>Vision</span></a></li>
 				<li class="nav-item"><a class="nav-link" href="about.html"><span>About</span></a></li>
@@ -47,18 +47,18 @@
 	  <a href="index.html"><img src="static/img/logo.png"></a>
 	  <div class="collapse navbar-collapse" id="navbarToggler">
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="solution.html"><span>Products</span></a>
-                <ul class="dropdown">
-                    <li><a class="nav-link" href="solution.html"><span>Drone</span></a>
-                        <ul class="drowdown">
-                            <li><a class="nav-link" href="ea2020.html"><span>E-A2020</span></a></li>
-                            <li><a class="nav-link" href="ea10.html"><span>E-A10</span></a></li>
-                            <li><a class="nav-link" href="eavag1.html"><span>EAV-AG1</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link" href="spraysystem.html"><span>Mist Spray System</span></a></li>
-                    <li><a class="nav-link" href="automachine.html"><span>Autonomous Crop Protection Vehicle</span></a></li>
-                </ul>
+			<li class="nav-item"  id="nav-products" ><a class="nav-link" href="solution.html"><span>Products</span></a>
+				<ul class="dropdown nav-product-list">
+					<li><a class="nav-link" href="solution.html"><span>Drone</span></a>
+						<ul class="nav-product-items">
+							<li><a class="nav-link" href="ea2020.html"><span>E-A2020</span></a></li>
+							<li><a class="nav-link" href="ea10.html"><span>E-A10</span></a></li>
+							<li><a class="nav-link" href="eavag1.html"><span>EAV-AG1</span></a></li>
+						</ul>
+					</li>
+					<li><a class="nav-link" href="spraysystem.html"><span>Mist Spray System</span></a></li>
+					<li><a class="nav-link" href="automachine.html"><span>Autonomous Crop Protection Vehicle</span></a></li>
+				</ul>
 			</li>
 			<li class="nav-item"><a class="nav-link" href="service.html"><span>Service</span></a></li>
 			<li class="nav-item"><a class="nav-link" href="vision.html"><span>Vision</span></a></li>
@@ -70,7 +70,84 @@
 	</nav>
 	<!-- mobile navbar -->
 	<div class="bodyOverlay">
-		
+		<div id="productBanner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<h1>E-A2020</h1>					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 mx-auto">
+						<h3>True intelligence, true protection</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 mx-auto">
+						<p>
+							The E-A2020 is a leading plant protection drone with world-leading stereo vision perception technology. 
+							With sensitive perception and autonomous obstacle avoidance, E-A2020 ensures safe and precise flying 
+							without the need to survey plots in complex environments.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="productSection">
+			<div class="row">
+				<div class="col-6">
+					<img class="sideImg col" src="static/img/tech1.jpg">
+				</div>
+				<div class="col-6">
+					<h2>Autonomous obstacle avoidance</h2>
+					<p>
+						The E-A2020 avoids fixed and moving obstacles in high speed ensuring personal and flight safety. 
+						Using 3D map representation technology and online calibration, the E-A2020 guarantees high efficiency. 
+						Reduce preparation time by no longer needing to survey plots or mark obstacles.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="productSection bgLightGrey">
+			<div class="row">
+				<div class="col-6 center">
+					<img class="sideImg col" src="static/img/tech1.jpg">
+				</div>
+				<div class="col-6">
+					<h2>Precise positioning with no fear of signal loss</h2>
+					<p>
+						Equipped with a network RTK and mobile RTK base station. 
+						Even when the signal is weak or lost, the E-A2020 can continue to fly safely and accurately for 2 minutes.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="productSection center">
+			<div class="row">
+				<h2>World pioneering mist spray system</h2>
+			</div>
+			<div class="row">
+				<p>
+					CCMS Ambient Temperature Mist Spray System supports adjustable droplet sizes ranging from 
+					20 to 250 microns to meet the needs of different crops. The droplet size has a bimodal 
+					distribution especially suited for thick canopy crops.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<h3>Precise Spray Flow Rate Control</h3>
+					<p>Real-time flow  rate matching with independent control of droplet size and flow rate.</p>
+				</div>
+				<div class="col-4">
+					<h3>Variety of Nozzles</h3>
+					<p>Suitable for quick and easy change to centrifugal, mist, and pressure nozzles. </p>
+				</div>
+				<div class="col-4">
+					<h3>Customized Operation & Management APP</h3>
+					<p>Includes access to customer management system and survey APP.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- Footer -->
 	<div class="footer">

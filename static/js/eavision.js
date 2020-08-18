@@ -71,46 +71,6 @@ $(function () {
 $('.thumbnails-carousel').thumbnailsCarousel()
 
 
-// nav-product
-
-// $('#nav-product').hover(function(e){
-// 	$(".nav-popup").css({
-// 		backgroundColor:'blue'
-// 	})
-// })
-
-
-// var navProductShow = !1
-//   , navProductListLength = $(".nav-product-list li").length
-//   , navProductListRatio = Math.ceil(navProductListLength / 5);
-// $("#nav-product").hover(function(e) {
-//     $(".nav-container").addClass("active-border"),
-//     $(".nav-popup").css({
-//         color: 'red'
-//     }),
-//     navProductShow = !1
-// }, function(e) {
-//     $(".nav-popup").css({
-//         height: "0"
-//     }),
-//     navProductShow = !0,
-//     setTimeout(function() {
-//         navProductShow && $(".nav-container").removeClass("active-border")
-//     }, 400)
-// }),
-// $(".nav-product-list li").hover(function() {
-//     $(".nav-product-list .nav-product-name").removeClass("product-name-active"),
-//     $(this).find(".nav-product-name").addClass("product-name-active");
-//     var e = $(this).attr("data-vid");
-//     $(".product-active-line").css({
-//         top: 110 * e + "px"
-//     }),
-//     $(".product-item-list").removeClass("product-item-active"),
-//     $(".product-item-list").eq(e).addClass("product-item-active")
-// });
-
-
-
 // contact form
 
 get_id = function (id) {

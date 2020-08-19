@@ -73,6 +73,7 @@ nav{
 .nav-item{
 	border-bottom: transparent 2px solid;
 }
+
 .nav-item .dropdown{
 	list-style:none;
 	position:absolute;
@@ -90,34 +91,50 @@ nav{
 	
 }
 
-.nav-item .nav-product-list li{
-	background-color: white;
-	list-style: none;
-	position:relative;
-
-	float: left;
-    width: auto;
-    height: 220px;
-    text-align: center;
-    padding-top: 20px;
-    /* margin-left: 10px; */
-    margin-bottom: 0;
-}
-
-
 .nav-product-list{
+	text-align: center;
 	position: absolute;
     top: 62px;
     left: 0;
 	width: 100vw;
 	background-color: white;
+
 }
+
+.nav-item .nav-product-list li{
+	background-color: white;
+	list-style: none;
+	position:relative;
+	display: inline-block;
+    width: auto;
+    height: 220px;
+    text-align: left;
+    padding-top: 20px;
+    /* margin-left: 10px; */
+    margin-bottom: 0;
+}
+
+.nav-item .nav-product-list .line-between:not(:last-child)::after{
+	content:""; 
+	border:1px solid #EAEAEA;
+	border-width: 1px 1px 0 0;
+	position:absolute; 
+	right:-3px; 
+	top:20px; 
+	height:70%;
+  }
+
 
 .nav-product-items{
 	float: left;
 	text-align: center;
 	padding:0 0;
-    margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+.nav-product-items li{
+	display:block !important;	
+	height:50px !important;
 }
 
 .navigation .navbar-collapse{
@@ -154,6 +171,9 @@ a span:hover{
 	color: rgb(128, 124, 124);
 }
 
+.nav-product-list img{
+	width:200px;
+}
 
 #logoimg{
 	vertical-align: bottom;

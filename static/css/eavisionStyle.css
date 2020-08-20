@@ -97,31 +97,36 @@ nav {
 }
 
 .nav-item:hover .dropdown {
-  max-height: 500px;
+  max-height: 200px;
   transition: max-height 0.5s ease-in;
 
 }
 
 .nav-product-list {
-  text-align: center;
-  position: absolute;
-  top: 62px;
-  left: 0;
-  width: 100vw;
-  background-color: white;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	top: 62px;
+	left: 0;
+	width: 100vw;
+	background-color: white;
+
 
 }
 
-.nav-item .nav-product-list li {
+.nav-product-type{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+/* .nav-item .nav-product-list li {
   background-color: white;
   list-style: none;
   position: relative;
-  display: inline-block;
   width: auto;
-  height: 220px;
   text-align: left;
   padding-top: 20px;
-  /* margin-left: 10px; */
   margin-bottom: 0;
 }
 
@@ -135,11 +140,19 @@ nav {
 	height: 82%;
   
 }
-/* .nav-product-list .img-between{
-	vertical-align: middle;
-} */
+ */
+ .nav-product-list .inline{
+	display: inline-flex;
+}
 
-.nav-product-items {
+.nav-product-list .notinline{
+	display: flex;
+}
+
+.nav-product-list .subtitle{
+	font-size:12px;
+}
+/* .nav-product-items {
   float: left;
   text-align: center;
   padding: 0 0;
@@ -149,7 +162,7 @@ nav {
 .nav-product-items li {
   display: block !important;
   height: 50px !important;
-}
+} */
 
 .navigation .navbar-collapse {
   background-color: #FAFAFA;
@@ -161,7 +174,7 @@ nav {
 .navigation a {
   color: black;
   font-size: 16px;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
 }
 
 .nav-link {
@@ -190,15 +203,21 @@ a span:hover {
 
 #ea2020img{
 	position:relative;
-	bottom:20px;
+	top:-3px;
+	padding: 0 0;
+	margin: 0 auto;
 }
 #mistsprayimg{
 	width:120px;	
+	position:relative;
+	top:15px;
+	right:10px;
+	z-index: -1;
 }
 
 #agvehicleimg{
 	position:relative;
-	bottom:5px;
+	top:5px;
 	width: 150px;
 }
 
@@ -763,8 +782,8 @@ video {
 
 /* E-A2020 */
 
-#productBanner {
-  background-image: url('../img/uav-bg.jpg');
+#ea2020Banner {
+  background-image: url('../img/ea2020-banner.png');
   background-position: bottom;
   background-size: cover;
   background-color: #e5e5e5;
@@ -772,7 +791,7 @@ video {
   height: 720px;
 }
 
-#productBanner .container-fluid {
+#ea2020Banner .container-fluid {
   background-color: rgba(177, 206, 236, 0.2);
   justify-content: center;
   align-content: bottom;
@@ -780,37 +799,52 @@ video {
   height: 720px;
 }
 
-#productBanner h1 {
-  margin-top: 190px;
+#ea2020Banner h1 {
+  margin-top: 120px;
 }
 
-#productBanner h3 {
-  margin-top: 20px;
-  margin-bottom: 25px;
+#ea2020Banner h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-#productBanner p {
+#ea2020Banner p {
   margin-top: 0px;
   margin-bottom: 48px;
 }
 
-#productBanner button {
+#ea2020Banner button {
   margin: 40px 20px;
   justify-content: center;
 }
 
-.productSection {
+.ea2020Section {
   padding: 0 0;
 }
 
-.productSection .row {
+.ea2020Section .row {
   justify-content: center;
   align-items: center;
   margin: 15px auto;
 }
+.ea2020Section .p-right{
+	padding-right:30px;
+}
+.center{
+	text-align:center;
+}
 
-.productSection .sideImg {
-  height: 300px;
+.ea2020Section .sideImg {
+	width: 45vw;
+	height: auto;
+}
+
+.ea2020Section .sideImg2 {
+	width: 400px;
+	height: auto;
+}
+.ea2020textSection h2{
+	margin:auto;
 }
 
 /* Service */

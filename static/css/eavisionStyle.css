@@ -357,10 +357,6 @@ nav {
 	display: inline-flex;
 }
 
-.nav-product-list .notinline{
-	display: flex;
-}
-
 .nav-product-list .subtitle{
 	font-size:12px;
 }
@@ -448,6 +444,47 @@ a span:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
+/* Contact Form */
+.contact .card {
+  background-color: white;
+  padding: auto 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.contact .card-header h2 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#status {
+  font-size: 20px;
+}
+
+
+.contact .card-header{
+	background-color:#289CEB;
+}
+.contactSubtitle{
+	color:#2a95dce9;
+	font-size:20px;
+}
+
+.contact .contactIcon {
+	position:relative;
+	top:-2px;
+  width: 23px;
+  height: auto;
+}
+
+.contact .note{
+	text-align: right;
+	margin: 3px 0;
+    font-size: 13px;
+
+}
+
 /* Footer */
 .footer {
   background-color: #353535;
@@ -522,7 +559,6 @@ a span:hover {
 	background-size: cover;
 	background-position: center; */
   color: #FFFFFF;
-  height: 45vw;
   margin-top: 64px;
 }
 
@@ -1176,54 +1212,6 @@ video {
   color: grey;
   font-size: 10px;
   margin: 10px 12% 20px 12%;
-}
-
-/* #serviceContact{
-	background-image:url("../img/cornfield-withhouse-free.jpg");
-	background-size: cover;
-	
-} */
-
-
-/* Contact Form */
-.contact .card {
-  background-color: white;
-  padding: auto 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.contact .card-header h2 {
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-#status {
-  font-size: 20px;
-}
-
-
-.contact .card-header{
-	background-color:#289CEB;
-}
-.contactSubtitle{
-	color:#2a95dce9;
-	font-size:20px;
-}
-
-.contact .contactIcon {
-	position:relative;
-	top:-2px;
-  width: 23px;
-  height: auto;
-}
-
-.contact .note{
-	text-align: right;
-	margin: 3px 0;
-    font-size: 13px;
-
 }
 
 

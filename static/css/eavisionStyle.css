@@ -134,6 +134,11 @@ p {
 	justify-content: center;
 }
 
+.right{
+	text-align:right;
+	justify-content: right;
+}
+
 .inline{
 	display: inline;
 }
@@ -975,7 +980,6 @@ video {
 }
 
 
-
 /* Service */
 
 #serviceBanner {
@@ -1366,104 +1370,81 @@ ul.thumbnails-carousel li {
 }
 
 /* About */
+
 #aboutBanner {
-  background-image: url("../img/.png");
-  background-color: #e5e5e5;
+  background-image: url("../img/about/banner.png");
+  background-position: top;
   background-size: cover;
-  background-position: center;
-  color: #FFFFFF;
-  height: 550px;
-  margin-top: 64px;
+  text-align: center;
+  height: 720px;
+}
+
+#aboutBanner .container-fluid {
+  background-color: rgba(177, 206, 236, 0.2);
+  justify-content: center;
+  align-content: bottom;
+  width: auto;
+  height: 720px;
 }
 
 #aboutBanner h1 {
-  padding-top: 64px;
-  padding-bottom: 40px;
-  line-height: 60px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 120px;
 }
 
 #aboutBanner h3 {
-  font-weight: normal;
+  margin-top: 17vw;
+  margin-bottom: 15px;
 }
 
-#aboutLeadership h2,
-#aboutPartnership h2,
-#aboutPositions h2,
-#aboutContact h2,
-#aboutPositions p {
-  text-align: center;
+#aboutBanner p {
+  margin-top: 0px;
+  margin-bottom: 48px;
 }
 
-#aboutLeadership h2,
-#aboutPartnership h2,
-#aboutContact h2 {
-  margin-top: 64px;
-  margin-bottom: 64px;
+.aboutSection .row {
+  justify-content: center;
+  align-items: center;
+  padding: 15px auto;
 }
 
-#aboutPositions h2 {
-  margin-top: 64px;
-  margin-bottom: 24px;
+
+.aboutSection .sideImg {
+	width: 40vw;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
-#aboutPositions p {
-  margin-bottom: 40px;
+.aboutSection h2{
+  margin-bottom:2rem;
 }
 
-#aboutPositions .table {
-  border-color: #EAEAEA;
+.aboutSection h3{
+  margin:0 auto;
 }
 
-#aboutPositions .table th {
-  border-top: none;
-  border-bottom: none;
+.leaders{
+  font-size: 20px;
+  font-weight:600;
+  color: #289CEB;
+  text-decoration: none;
 }
 
-#aboutPositions td {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.leaders:hover{
+  color: #42baff;
+  text-decoration:none;
 }
 
-#aboutPositions a {
-  font-weight: bold;
+.leaders-title{
+  font-size: 18px;
+  font-weight:600;
 }
 
-#aboutLeadership .card img {
-  height: 125px;
-  width: 125px;
-  border-radius: 50%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+.leaders-description{
+  font-size:16px;
+  line-height: 1.25;
 }
-
-#aboutLeadership .card h3,
-#aboutLeadership .card h4,
-#aboutLeadership .card a {
-  color: #353535;
-  text-align: center;
-}
-
-#aboutLeadership .card h4 {
-  margin-bottom: 20px;
-}
-
-#aboutLeadership p {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-#aboutPartnership {
-  margin-bottom: 64px;
-}
-
-#aboutPositions {
-  background-color: #FFFFFF;
-  padding-bottom: 64px;
+.abouttextSection h2 {
+	margin:auto;
 }
 
 #aboutContact {

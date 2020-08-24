@@ -4,7 +4,7 @@ body {
   font-family: lato, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   background-color: #FAFAFA !important;
   color: #353535;
   letter-spacing: 0.8px;
@@ -20,7 +20,7 @@ h1 {
   font-family: lato, sans-serif;
   font-style: normal;
   /* font-weight: 700; */
-  font-size: 60px;
+  font-size: 45px;
   letter-spacing: 4px;
   line-height: 64px;
   color: #353535;
@@ -30,7 +30,7 @@ h2 {
   font-family: lato, sans-serif;
   font-style: normal;
   /* font-weight: 700; */
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 2.33px;
   color: #353535;
 }
@@ -39,7 +39,7 @@ h3 {
   font-family: lato, sans-serif;
   font-style: normal;
   /* font-weight: 700; */
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1.5px;
   color: #353535;
 }
@@ -62,7 +62,7 @@ p {
 	font-family: lato, sans-serif;
 	font-style: normal;
 	/* font-weight: 550; */
-	font-size: 18px;
+	font-size: 14px;
 	padding: 8px 32px;
 	border: none;
 	border-radius: 0px;
@@ -74,7 +74,8 @@ p {
 	color: #FFFFFF;
 	/* background-color: #289CEB; */
 	border-radius: 4px;
-	font-weight: 600;
+  font-weight: 600;
+  font-size:14px !important;
 	background-image: linear-gradient(-180deg, #42b7ff, #1897f2);
 	transition-duration: 4s;
 	/* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
@@ -91,7 +92,7 @@ p {
 }
 
 .blue-button:active {
-	ckground-image: linear-gradient(-180deg, #18a2f2, #42baff) !important;
+	background-image: linear-gradient(-180deg, #18a2f2, #42baff) !important;
 }
 
 .blue-border-button {
@@ -281,21 +282,31 @@ nav {
 }
 
 .navigation {
-  height: 64px !important;
+  height: 48px !important;
   z-index: 25;
   background-color: #FFFFFF;
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
 }
 
+.navigation .container{
+  height: 48px;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+
+
 #logoimg {
 	vertical-align: bottom;
-	width: 120px;
-	height: 42px;
+	width: 105px;
+	height: 36px;
 	position: relative;
-	/* bottom: 3px; */
 	margin-left: 10px;
 	margin-right: 42px;
-	margin-bottom: 10px;
+	margin-bottom: 0.8rem;
 }
 .nav-item {
   border-bottom: transparent 2px solid;
@@ -307,7 +318,6 @@ nav {
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
   z-index: 20;
   margin-top: 2px;
-
   max-height: 0;
   transition: max-height 0.5s ease-out;
   overflow: hidden;
@@ -324,7 +334,6 @@ nav {
 	justify-content: center;
 	text-align: center;
 	position: absolute;
-	top: 62px;
 	left: 0;
 	width: 100vw;
 	background-color: white;
@@ -363,7 +372,7 @@ nav {
 }
 
 .nav-product-list .subtitle{
-	font-size:12px;
+	font-size:10px;
 }
 /* .nav-product-items {
   float: left;
@@ -386,14 +395,15 @@ nav {
 
 .navigation a {
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   /* letter-spacing: 1.5px; */
 }
 
 .nav-link {
   margin-left: 12px;
   margin-right: 12px;
-  padding-bottom: 1rem;
+  padding-top:0.1rem;
+  padding-bottom: 0.5rem;
 }
 
 /* .active a span{
@@ -449,6 +459,11 @@ a span:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
+#navButton {
+  padding: 0.5rem 0rem 1.5rem 0rem;
+  
+}
+
 /* Contact Form */
 .contact .card {
   background-color: white;
@@ -464,7 +479,7 @@ a span:hover {
 }
 
 #status {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -473,7 +488,7 @@ a span:hover {
 }
 .contactSubtitle{
 	color:#2a95dce9;
-	font-size:20px;
+	font-size:18px;
 }
 
 .contact .contactIcon {
@@ -486,7 +501,7 @@ a span:hover {
 .contact .note{
 	text-align: right;
 	margin: 3px 0;
-    font-size: 13px;
+  font-size: 12px;
 
 }
 
@@ -506,11 +521,10 @@ a span:hover {
 .footer p {
   line-height: 30px;
   margin-bottom: 0;
-  color: #FFFFFF;
+  color: #f1f1f1c0;
 }
 
 .footer p:last-child {
-  padding-bottom: 48px;
   color: #FFFFFF;
 }
 
@@ -521,7 +535,6 @@ a span:hover {
 .footer a:hover {
   color: white;
   text-decoration: none;
-
 }
 
 .socialMedia {
@@ -537,7 +550,7 @@ a span:hover {
 }
 
 .row .copyright {
-  font-size: 12px;
+  font-size: 10px;
   padding-bottom: 24px !important;
   margin-left: 0px;
 }
@@ -564,7 +577,7 @@ a span:hover {
 	background-size: cover;
 	background-position: center; */
   color: #FFFFFF;
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 /* #homeBanner .carousel-caption h1{
@@ -573,7 +586,7 @@ a span:hover {
 	line-height: 60px;
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 45px;
+	font-size: 43px;
 } */
 
 #homeBanner .w-100 {
@@ -597,7 +610,7 @@ a span:hover {
 }
 
 #homeBanner .carousel-caption h1 {
-  font-size: 35px;
+  font-size: 30px;
   padding: 0 0;
 }
 
@@ -952,7 +965,7 @@ video {
 	font-weight:600;
 }
 .ea2020tableSection .table{
-	font-size:16px;
+	font-size:14px;
 }
 
 .ea2020tableSection .table th{
@@ -972,11 +985,11 @@ video {
 }
 
 .sixbox h3{
-	font-size:20px;
+	font-size:18px;
 }
 
 .sixbox p{
-	font-size:15px;
+	font-size:14px;
 }
 
 
@@ -1092,7 +1105,7 @@ video {
 
 .stepsContainer .outer-triangle {
   border-left: 24px solid transparent;
-  border-right: 40px solid transparent;
+  border-right: 38px solid transparent;
   border-bottom: 100px solid transparent;
   height: 0;
   width: 0;
@@ -1101,7 +1114,7 @@ video {
   /* bottom:0px; */
   z-index: 2;
   text-align: center;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 
@@ -1121,7 +1134,7 @@ video {
 }
 
 #serviceDescription .serviceStep p {
-  font-size: 90%;
+  font-size: 92%;
   color: rgb(125, 126, 126);
 }
 
@@ -1332,7 +1345,7 @@ ul.thumbnails-carousel li {
 
 .recentNews .card-body h3,
 .pressCardArea h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 24px;
   line-height: 1.25;
 }
@@ -1423,7 +1436,7 @@ ul.thumbnails-carousel li {
 }
 
 .leaders{
-  font-size: 20px;
+  font-size: 18px;
   font-weight:600;
   color: #289CEB;
   text-decoration: none;
@@ -1435,12 +1448,11 @@ ul.thumbnails-carousel li {
 }
 
 .leaders-title{
-  font-size: 18px;
+  font-size: 15px;
   font-weight:600;
 }
 
 .leaders-description{
-  font-size:16px;
   line-height: 1.25;
 }
 .abouttextSection h2 {

@@ -8,7 +8,32 @@ $(function () {
   })
   if ($('#serviceContact')) {
     $.get('../../contact.html', function (val) {
-      $('#serviceContact').html(val)
+      var from = $('#frompage').val()
+      if (from == 'service') {
+        $('#serviceContact').html(val)
+      } else {
+        $('#serviceContact').html(
+          val.replace(
+            'card-header bg-danger text-white',
+            'card-header text-white'
+          )
+        )
+      }
+    })
+  }
+  if ($('#navbar')) {
+    $.get('../../navbar.html', function (val) {
+      $('#navbar').html(val)
+    })
+  }
+  if ($('#mobile-navbar')) {
+    $.get('../../navbar-mobile.html', function (val) {
+      $('#mobile-navbar').html(val)
+    })
+  }
+  if ($('#footer')) {
+    $.get('../../footer.html', function (val) {
+      $('#footer').html(val)
     })
   }
 })

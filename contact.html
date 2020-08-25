@@ -2,31 +2,36 @@
   <div class="row justify-content-center">
     <div class="col-lg-8 mt-3">
       <div class="card border-light shadow">
-        <div class="card-header bg-danger text-white">
-          <h2>Get in Touch</h2>
+        <div class="card-header text-white">
+          <h2 class="mt-4 mb-3">Get in Touch</h2>
         </div>
         <div class="card-body px-6">
           <form id="contact_form" method="POST" onsubmit="submitForm(); return false;">
-            <div class="form-group">
-              <div class="inline">
-                <img class="contactIcon" src="/static/img/icons/checkmark.png">
-                <p class="inline">Free Consultation</p>
-              </div>
-              <div class="inline">
-                <img class="contactIcon" src="/static/img/icons/checkmark.png">
-                <p class="inline">Free Trial</p>
-              </div>
-              <div class="inline">
-                <img class="contactIcon" src="/static/img/icons/checkmark.png">
-                <p class="inline">Multi-language Support</p>
-              </div>
-              <div class="inline">
-                <img class="contactIcon" src="/static/img/icons/checkmark.png">
-                <p class="inline">Guarantee Customer Satification</p>
+            <div class="form-group pb-3" >
+              <div id="contactSubtitles">
+                <div class="row">
+                  <div class="inline mr-4">
+                    <img class="contactIcon" src="/static/img/icons/checkmark.png">
+                    <p class="contactSubtitle inline my-auto">Free Consultation</p>
+                  </div>
+                  <div class="inline">
+                    <img class="contactIcon" src="/static/img/icons/checkmark.png">
+                    <p class="contactSubtitle inline my-auto">Free Trial</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="inline mr-4">
+                    <img class="contactIcon" src="/static/img/icons/checkmark.png">
+                    <p class="contactSubtitle inline my-auto">Multi-language Support</p>
+                  </div>
+                  <div class="inline">
+                    <img class="contactIcon" src="/static/img/icons/checkmark.png">
+                    <p class="contactSubtitle inline my-auto">Guarantee Customer Satification</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-group">
-
               <p><span id="status"></span></p>
             </div>
 
@@ -50,11 +55,10 @@
               <!-- <label for="message">Message</label> -->
               <textarea name="message" id="message" rows="5" class="form-control" placeholder="Message*"
                 required></textarea>
-              <p style="text-align:left; margin:0;font-size:15px;">*Required</p>
+              <p class="note">*Required</p>
             </div>
             <div class="form-group">
-              <input type="submit" id="submit" name="submit" value="Send" class="btn btn-danger btn-block">
-
+              <input type="submit" id="submit" name="submit" value="Send" class="btn blue-button btn-block">
             </div>
           </form>
         </div>

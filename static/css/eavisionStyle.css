@@ -297,6 +297,44 @@ nav {
   padding-left: 2rem !important;
 }
 
+.navigation .navbar-collapse {
+  background-color: #FAFAFA;
+  width: 110%;
+  margin-top: -2px;
+  margin-left: -16px;
+}
+
+.navigation a {
+  color: black;
+  font-size: 14px;
+  /* letter-spacing: 1.5px; */
+}
+
+.navbar-expand-md .navbar-nav .line-between .nav-link{
+  padding-left:0;
+  padding-right:0;
+} 
+
+.nav-link {
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-top:0.1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* .active a span{
+	padding-bottom: 3px;
+	border-bottom: 1px solid #353535;
+} */
+
+.nav-item:hover {
+  border-bottom: 2px solid rgb(95, 95, 95);
+}
+
+a span:hover {
+  color: rgb(128, 124, 124);
+}
+
 
 
 #logoimg {
@@ -356,12 +394,25 @@ nav {
 .nav-product-list li{
   text-align: left;
 }
-.nav-product-list .center{
-  text-align: center;
+
+.nav-product-list .right{
+  text-align: right;
 }
+
 .nav-product-items li a{
   color: #6C6C6C;
 }
+
+.nav-product-list li a span:hover {
+  text-decoration:underline;
+  color: #353535;
+}
+
+.nav-product-items li a span:hover{
+  color: #6c6c6c;
+}
+
+
 
 .nav-item .nav-product-list .line-between:not(:last-child)::after {
 	content: "";
@@ -391,53 +442,18 @@ nav {
   display: block !important;
 }
 
-.navigation .navbar-collapse {
-  background-color: #FAFAFA;
-  width: 110%;
-  margin-top: -2px;
-  margin-left: -16px;
-}
-
-.navigation a {
-  color: black;
-  font-size: 14px;
-  /* letter-spacing: 1.5px; */
-}
-
-.navbar-expand-md .navbar-nav .line-between .nav-link{
-  padding-left:0;
-  padding-right:0;
-} 
-
-.nav-link {
-  margin-left: 12px;
-  margin-right: 12px;
-  padding-top:0.1rem;
-  padding-bottom: 0.5rem;
-}
-
-/* .active a span{
-	padding-bottom: 3px;
-	border-bottom: 1px solid #353535;
-} */
-
-.nav-item:hover {
-  border-bottom: 2px solid rgb(95, 95, 95);
-}
-
-a span:hover {
-  color: rgb(128, 124, 124);
-}
-
 .nav-product-list img {
   padding-left:20px;
+  text-align:right;
 }
 
 .ea2020img{
   width: 180px;
 }
 .mistsprayimg{
-  width:130px;
+  width:120px;
+  height:95px;
+  padding-top:5px;
 }
 
 .agvehicleimg{
@@ -474,8 +490,7 @@ a span:hover {
 
 .contact .card-header h2 {
   color: white;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  font-size:36px;
 }
 
 #status {
@@ -487,14 +502,14 @@ a span:hover {
 	background-color:#289CEB;
 }
 .contactSubtitle{
-	color:#2a95dce9;
+	color: #289CEB;
 	font-size:18px;
 }
 
 .contact .contactIcon {
 	position:relative;
 	top:-2px;
-  width: 23px;
+  width: 20px;
   height: auto;
 }
 
@@ -502,6 +517,7 @@ a span:hover {
 	text-align: right;
 	margin: 3px 0;
   font-size: 12px;
+  color: #6C6C6C;
 
 }
 
@@ -1031,7 +1047,8 @@ video {
 }
 
 #serviceBanner button {
-  margin: 40px 20px;
+  margin: 10px 20px;
+  width:150px;
   justify-content: center;
 }
 

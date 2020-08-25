@@ -12,12 +12,24 @@ $(function () {
       if (from == 'service') {
         $('#serviceContact').html(val)
       } else {
-        $('#serviceContact').html(
-          val.replace(
-            'card-header bg-danger text-white',
-            'card-header text-white'
-          )
+        $('#serviceContact').html(val)
+        $('#contactSubtitles').html(
+          "<div class='row'>"+
+            "<div class='inline mr-4'>" +
+              "<img class='contactIcon' src='/static/img/icons/checkmark.png'>"+
+              "<p class='contactSubtitle inline my-auto'> Free Consultation</p>"+
+            "</div>" +
+            "<div class='inline'>"+
+                "<img class='contactIcon' src='/static/img/icons/checkmark.png'>"+
+                "<p class='contactSubtitle inline my-auto'> Guarantee Customer Satification</p>" +
+            "</div>"+
+          "</div>"
         )
+          // val.replace(
+          //   'card-header bg-danger text-white',
+          //   'card-header text-white'
+          // )
+        
       }
     })
   }

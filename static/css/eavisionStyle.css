@@ -135,11 +135,6 @@ p {
 	justify-content: center;
 }
 
-.right{
-	text-align:right;
-	justify-content: right;
-}
-
 .inline{
 	display: inline;
 }
@@ -393,10 +388,6 @@ a span:hover {
 
 .nav-product-list li{
   text-align: left;
-}
-
-.nav-product-list .right{
-  text-align: right;
 }
 
 .nav-product-items li a{
@@ -1008,6 +999,105 @@ video {
 	font-size:14px;
 }
 
+
+/* Mist Spray System */
+#spraySystemBanner {
+  background-image: url('../img/mistSpraySystem/drone-sprayingmist.png');
+  background-position: top;
+  background-size: cover;
+  background-color: #e5e5e5;
+  text-align: center;
+  height: 720px;
+}
+
+#spraySystemBanner .container-fluid {
+  background-color: rgba(177, 206, 236, 0.2);
+  justify-content: center;
+  align-content: bottom;
+  width: auto;
+  height: 720px;
+}
+
+#spraySystemBanner h1 {
+  margin-top: 120px;
+}
+
+
+#spraySystemBanner h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#spraySystemBanner p {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+#spraySystemBanner .buttons {
+	position: relative;
+	top:150px;
+  justify-content: center;
+}
+
+.spraySystemSection .row {
+  justify-content: center;
+  align-items: center;
+  padding: 15px auto;
+}
+
+
+.spraySystemTextSection{
+  padding:3rem 4rem;
+  margin:0 auto;
+}
+
+.spraySystemTextSection .row {
+  padding: 1rem 0;
+}
+
+.spraySystemTextSection .col {
+  padding: 0 1rem;
+}
+.spraySystemTextSection h2{
+  margin: auto;
+}
+
+.spraySystemVideoSection {
+  padding:0 5rem;
+  background-color:black;
+}
+
+.spraySystemVideoSection h2, .spraySystemVideoSection p{
+  color:white;
+}
+
+.spraySystemVideoSection .spraySystemTextSection .row{
+  padding: 0.5rem 0;
+}
+#spraysystem-video {
+	background-image: url('../img/mistSpraySystem/ccmsvideo-photo.png');
+	background-position-y:-20px;
+	background-size: cover;
+	height:500px;
+  width:auto;
+  padding-top:2rem;
+	/* background-size: cover;
+	height:600px; */
+}
+
+.sprayLeafBackground{
+  background-image: url('../img/mistSpraySystem/spray-leaf.png');
+	background-size: cover;
+  height:50vw;
+}
+
+.sprayLeafBackground h2, .sprayLeafBackground p{
+  color:white;
+}
+
+.sprayLeafBackground p{
+  padding:0.3rem 0;
+}
 
 /* Service */
 

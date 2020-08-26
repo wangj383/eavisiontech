@@ -1047,7 +1047,7 @@ video {
 
 
 .spraySystemTextSection{
-  padding:3rem 4rem;
+  padding:3rem 6rem;
   margin:0 auto;
 }
 
@@ -1058,8 +1058,17 @@ video {
 .spraySystemTextSection .col {
   padding: 0 1rem;
 }
+
 .spraySystemTextSection h2{
   margin: auto;
+}
+
+.spraySystemTextSection ul{
+  margin-bottom:0;
+}
+
+.spraySystemTextSection li{
+  list-style: none;
 }
 
 .spraySystemVideoSection {
@@ -1098,6 +1107,19 @@ video {
 .sprayLeafBackground p{
   padding:0.3rem 0;
 }
+
+.sprayicon{
+  width:150px;
+  padding-top:2rem;
+}
+
+.bgDroneSpray{
+  background-image: url('../img/mistSpraySystem/drone-sprayingmist.png');
+  background-size: cover;
+  background-position-y: center;
+  height:45vw;
+}
+
 
 /* Service */
 

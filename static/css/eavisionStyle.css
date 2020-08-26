@@ -952,11 +952,13 @@ video {
 
 
 #ea2020video {
-	background-image: url('../img/spray-videocut.png');
+	/* background-image: url('../img/spray-videocut.png');
 	background-position-y:-20px;
-	background-size: cover;
-	height:500px;
-	width:auto;
+	background-size: cover; */
+  width:100vw;
+  height:500px;
+  padding-top:0.5rem;
+  padding-bottom:3rem;
 	/* background-size: cover;
 	height:600px; */
 }

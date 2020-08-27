@@ -956,11 +956,7 @@ video {
 	background-position-y:-20px;
 	background-size: cover; */
   width:100vw;
-  height:500px;
   padding-top:0.5rem;
-  padding-bottom:3rem;
-	/* background-size: cover;
-	height:600px; */
 }
 .cropped-ea2020 img {
 	object-fit: cover;

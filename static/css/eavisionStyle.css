@@ -1214,7 +1214,7 @@ video {
 #agvehicle-cartoon{
   -webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
-  width:47tvw;
+  width:47vw;
 }
 
 #mobileControlImg{
@@ -1238,6 +1238,10 @@ video {
 
 #agvehicle-sideview{
   width:40vw;
+}
+
+.agvehicleIcon{
+  width:100px;
 }
 
 /* Service */

@@ -1193,6 +1193,13 @@ video {
   list-style: none;
 }
 
+.agvehicleTextSection .iconSections{
+  padding:30px 10px 10px 10px;
+}
+
+.agvehicleTextSection .iconSections p{
+  padding: 15px 5px;
+}
 .agvehicleTextSection .citation{
   font-size:12px;
   color: grey;
@@ -1243,6 +1250,7 @@ video {
 .agvehicleIcon{
   width:100px;
 }
+
 
 /* Service */
 

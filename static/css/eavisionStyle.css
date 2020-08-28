@@ -1009,7 +1009,6 @@ video {
 }
 
 #spraySystemBanner .container-fluid {
-  background-color: rgba(177, 206, 236, 0.2);
   justify-content: center;
   align-content: bottom;
   width: auto;
@@ -1118,6 +1117,128 @@ video {
   height:45vw;
 }
 
+/* agvehicle */
+#agvehicleBanner {
+  background-image: url('../img/agvehicle/agvehicle-in-action.jpeg');
+  background-position: top;
+  background-size: cover;
+  background-color: #e5e5e5;
+  text-align: center;
+  height: 700px;
+}
+
+#agvehicleBanner .container-fluid {
+  justify-content: center;
+  align-content: bottom;
+  width: auto;
+  height: 720px;
+}
+
+#agvehicleBanner h1 {
+  margin-top: 120px;
+}
+
+
+#agvehicleBanner h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#agvehicleBanner p {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+#agvehicleBanner .buttons {
+	position: relative;
+	top:150px;
+  justify-content: center;
+}
+
+.agvehicleSection {
+  padding:3rem 6rem;
+}
+.agvehicleSection .row {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.agvehicleSection h2{
+  padding: 1rem 0;
+}
+
+.agvehicleTextSection{
+  padding:3rem 6rem;
+  margin:0 auto;
+}
+
+.agvehicleTextSection .row {
+  padding: 1rem 0;
+}
+
+.agvehicleTextSection .col {
+  padding: 0 1rem;
+}
+
+.agvehicleTextSection h2{
+  margin: auto;
+}
+
+.agvehicleTextSection ul{
+  margin-bottom:0;
+}
+
+.agvehicleTextSection li{
+  list-style: none;
+}
+
+.agvehicleTextSection .citation{
+  font-size:12px;
+  color: grey;
+  padding-bottom:2rem;
+}
+
+#agvehicle-in-water{
+  width:60vw;
+  height:90%;
+}
+
+#cropCoverageBackground{
+  background-image: url('../img/agvehicle/tree.png');
+  background-position: top;
+  background-size: cover;
+  height: 700px;
+}
+
+#agvehicle-cartoon{
+  -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+  width:47tvw;
+}
+
+#mobileControlImg{
+  width:40vw;
+}
+
+#agvehicleFieldBackground{
+  background-image: url('../img/agvehicle/field.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+
+  text-align: right;
+}
+
+#agvehicleFieldBackground h1{
+  position:relative;
+  top:10vw;
+  right:5vw;
+}
+
+#agvehicle-sideview{
+  width:40vw;
+}
 
 /* Service */
 

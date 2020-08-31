@@ -1677,7 +1677,6 @@ ul.thumbnails-carousel li {
 .aboutSection .row {
   justify-content: center;
   align-items: center;
-  padding: 15px auto;
 }
 
 
@@ -1719,8 +1718,12 @@ ul.thumbnails-carousel li {
 	margin:auto;
 }
 
+#aboutPositions {
+  background-color: #f1f1f1;
+}
 #aboutContact {
   padding-bottom: 64px;
+  background-color: #f1f1f1;
 }
 
 /*Responsive Settings*/

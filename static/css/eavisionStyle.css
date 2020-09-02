@@ -16,10 +16,8 @@ a {
 }
 
 h1 {
-  /*lato bold settings*/
   font-family: lato, sans-serif;
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 45px;
   letter-spacing: 4px;
   line-height: 64px;
@@ -29,7 +27,6 @@ h1 {
 h2 {
   font-family: lato, sans-serif;
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 30px;
   letter-spacing: 2.33px;
   color: #353535;
@@ -38,7 +35,6 @@ h2 {
 h3 {
   font-family: lato, sans-serif;
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 20px;
   letter-spacing: 1.5px;
   color: #353535;
@@ -47,7 +43,6 @@ h3 {
 h4 {
   font-family: lato, sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 18px;
   letter-spacing: 1.17px;
   color: #353535;
@@ -270,37 +265,39 @@ p {
   
 
 
-
 /* Header */
 nav {
   z-index: 5;
 }
 
 .navigation {
-  height: 48px !important;
+  height: 52px !important;
   z-index: 25;
   background-color: #FFFFFF;
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
 }
 
 .navigation .container{
-  height: 48px;
+  height: 52px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#353535;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 2rem !important;
-  padding-left: 2rem !important;
+  padding-right: 2vw !important;
+  padding-left: 2vw !important;
 }
 
 .navigation .navbar-collapse {
-  background-color: #FAFAFA;
   width: 110%;
   margin-top: -2px;
   margin-left: -16px;
 }
 
 .navigation a {
-  color: black;
+  color: #353535;
   font-size: 14px;
   /* letter-spacing: 1.5px; */
 }
@@ -313,8 +310,8 @@ nav {
 .nav-link {
   margin-left: 12px;
   margin-right: 12px;
-  padding-top:0.1rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.75rem;
 }
 
 /* .active a span{
@@ -339,7 +336,7 @@ a span:hover {
 	position: relative;
 	margin-left: 10px;
 	margin-right: 42px;
-	margin-bottom: 0.8rem;
+	margin-bottom: 0.9rem;
 }
 .nav-item {
   border-bottom: transparent 2px solid;
@@ -390,6 +387,9 @@ a span:hover {
   text-align: left;
 }
 
+.nav-product-list p{
+  margin-bottom:0;
+}
 .nav-product-items li a{
   color: #6C6C6C;
 }
@@ -415,7 +415,7 @@ a span:hover {
   
 }
 
- .nav-product-list .inline{
+.nav-product-list .inline{
 	display: inline-flex;
 }
 
@@ -870,7 +870,7 @@ video {
   background-size: cover;
   background-color: #e5e5e5;
   text-align: center;
-  height: 720px;
+  height: 768px;
 }
 
 #ea2020Banner .container-fluid {
@@ -878,7 +878,7 @@ video {
   justify-content: center;
   align-content: bottom;
   width: auto;
-  height: 720px;
+  height: 768px;
 }
 
 #ea2020Banner h1 {
@@ -898,7 +898,7 @@ video {
 
 #ea2020Banner .buttons {
 	position: relative;
-	top:150px;
+	top:190px;
   justify-content: center;
 }
 
@@ -1005,14 +1005,14 @@ video {
   background-size: cover;
   background-color: #e5e5e5;
   text-align: center;
-  height: 720px;
+  height: 768px;
 }
 
 #spraySystemBanner .container-fluid {
   justify-content: center;
   align-content: bottom;
   width: auto;
-  height: 720px;
+  height: 768px;
 }
 
 #spraySystemBanner h1 {
@@ -1124,18 +1124,19 @@ video {
   background-size: cover;
   background-color: #e5e5e5;
   text-align: center;
-  height: 700px;
+  height: 716px;
+  margin-top:52px;
 }
 
 #agvehicleBanner .container-fluid {
   justify-content: center;
   align-content: bottom;
   width: auto;
-  height: 720px;
+  height: 716px;
 }
 
 #agvehicleBanner h1 {
-  margin-top: 120px;
+  margin-top: 28px;
 }
 
 
@@ -1150,8 +1151,9 @@ video {
 }
 
 #agvehicleBanner .buttons {
-	position: relative;
-	top:150px;
+  position: relative;
+  /* bottom:40px; */
+  top:300px;
   justify-content: center;
 }
 
@@ -1260,7 +1262,7 @@ video {
   background-size: cover;
   background-color: #e5e5e5;
   text-align: center;
-  height: 720px;
+  height: 768px;
 }
 
 #serviceBanner .container-fluid {
@@ -1268,7 +1270,7 @@ video {
   justify-content: center;
   align-content: bottom;
   width: auto;
-  height: 720px;
+  height: 768px;
 }
 
 #serviceBanner h1 {
@@ -1649,7 +1651,7 @@ ul.thumbnails-carousel li {
   background-position: top;
   background-size: cover;
   text-align: center;
-  height: 720px;
+  height: 768px;
 }
 
 #aboutBanner .container-fluid {
@@ -1657,7 +1659,7 @@ ul.thumbnails-carousel li {
   justify-content: center;
   align-content: bottom;
   width: auto;
-  height: 720px;
+  height: 768px;
 }
 
 #aboutBanner h1 {
@@ -1726,6 +1728,7 @@ ul.thumbnails-carousel li {
   background-color: #f1f1f1;
 }
 
+
 /*Responsive Settings*/
 @media (max-width: 767px) {
 
@@ -1756,6 +1759,7 @@ ul.thumbnails-carousel li {
 
 
   /* Header */
+  
   .navbar-toggler-icon {
     background-image: url("../static/img/menu.png");
   }
@@ -1763,10 +1767,25 @@ ul.thumbnails-carousel li {
   .navigation .navbar-toggler {
     border: none;
   }
-
-  .navigation img {
-    margin-left: 18%;
+  .navbar-nav{
+    background-color:white;
   }
+
+  .navbar-nav>li{
+    border: 1px solid #d7d7d7;
+  }
+
+  .nav-products li{
+    list-style: none;
+    border: 1px solid #d7d7d7;
+  }
+
+/* 
+   #logoimg {
+    position: relative;
+    left:10px;
+    top:10px;
+  } */
 
   .nav-button-mobile {
     position: fixed;

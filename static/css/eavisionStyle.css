@@ -403,8 +403,6 @@ a span:hover {
   color: #6c6c6c;
 }
 
-
-
 .nav-item .nav-product-list .line-between:not(:last-child)::after {
 	content: "";
 	border:2px solid #e3e3e3;

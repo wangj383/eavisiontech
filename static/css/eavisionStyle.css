@@ -110,17 +110,26 @@ p {
 .bgLightGrey {
 	background-color: #f1f1f1;
 }
+
 .bgLightestGrey{
 	background-color: #f5f5f5;	
+}
+
+.bgBlack{
+  background-color:#000000;
 }
 
 .bgWhite {
 	background-color: #FFFFFF;
 }
 
-.whitetext {
+.whitetextshadow {
 	color:white;
 	text-shadow: 1px 1px 2px #242424b3;
+}
+
+.lightWhite{
+  color: rgb(222, 222, 222);
 }
 
 /* positioning */
@@ -334,8 +343,8 @@ a span:hover {
 	width: 105px;
 	height: 36px;
 	position: relative;
-	margin-left: 10px;
-	margin-right: 42px;
+	margin-left: 2px;
+	margin-right: 12px;
 	margin-bottom: 0.9rem;
 }
 .nav-item {
@@ -388,15 +397,12 @@ a span:hover {
 }
 
 .nav-product-list p{
+  color:#6c6c6c;
   margin-bottom:0;
-}
-.nav-product-items li a{
-  color: #6C6C6C;
 }
 
 .nav-product-list li a span:hover {
-  text-decoration:underline;
-  color: #353535;
+  text-decoration:underline; 
 }
 
 .nav-product-items li a span:hover{
@@ -639,134 +645,71 @@ a span:hover {
   background-color: #64beff;
 }
 
-video {
-  display: block;
-  overflow: hidden;
-  position: center;
+.homeTextSection {
+  padding:1rem 2rem;
 }
 
-.video-container {
-  margin-top: 64px;
-  width: 100%;
-  max-height: 600px ! important;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -100;
+.homeTextSection h2{
+  margin: 0 auto;
+  padding: 1rem
 }
 
-/*
-* { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}*/
-
-.productDescription img {
-  margin-bottom: 64px;
+.homeSection .row {
+  justify-content: center;
+  align-items: center;
+  padding: 15px 2rem;
 }
 
-.productDescription h2 {
-  margin-top: 64px;
-  margin-bottom: 80px;
+.homeCardSection {
+  padding: 4rem 4rem;
+}
+
+.homeCardSection>.row>h2{
+  margin: 0 2rem;
+}
+
+.homeCardSection .card {
+  margin: 3rem 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.round {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.homeCardSection .card-body{
   text-align: center;
+  padding: 3rem 1rem;
 }
 
-.productDescription .item {
-  margin-bottom: 32px;
+.homeNewsSection{
+  padding: 4rem 4rem;
+}
+.homeNewsSection h2{
+  margin:2rem 2rem;
 }
 
-.productDescription item:last-child {
-  margin-bottom: 0;
-}
-
-.productDescription #accordion p {
-  color: #6C6C6C;
-}
-
-.productDescription a {
-  text-decoration-color: #353535;
-}
-
-.productDescription h2 {
-  text-align: center;
-}
-
-.productDescription h3 {
-  padding-top: 24px;
-}
-
-.productDescription a h3 {
-  color: #353535;
-}
-
-.productDescription .panel-title>a:before {
-  float: left !important;
-  content: '\002b';
-  padding-right: 5px;
-}
-
-.productDescription .panel-title>a.collapsed:before {
-  float: left !important;
-  content: '\2212';
-}
-
-.panel-heading {
-  cursor: pointer;
-}
-
-.accordion-toggle:after {
-  /* symbol for "opening" panels */
-  content: '\2212';
-  float: left;
-  color: #289CEB;
-  padding-right: 5px;
-}
-
-.panel-heading.collapsed .accordion-toggle:after {
-  /* symbol for "collapsed" panels */
-  content: '\002b';
+.homeNewsSection .card{
+  margin:1rem 2rem;
 }
 
 
-#productContext {
-  background-image: url("../img/droneWork_filter.png");
-  background-color: #FAFAFA;
-  background-size: cover;
-  background-position: center;
-  color: #FFFFFF;
-}
-
-#productContext h2 {
-  margin-top: 64px;
-  margin-bottom: 0px;
-  color: white;
-}
-
-#productContext p {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  color: white;
-}
-
-#productContext .blue-button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  margin-top: 0px;
-  margin-bottom: 64px;
+.partner_logo{
+  width:150px;
+  margin: 1rem 2rem;
 }
 
 
@@ -896,7 +839,7 @@ video {
 
 #ea2020Banner .buttons {
 	position: relative;
-	top:190px;
+	top:220px;
   justify-content: center;
 }
 
@@ -927,6 +870,9 @@ video {
 	padding-top:30px;
 	padding-bottom:30px;
 }
+.ea2020textSection{
+  padding: 2rem 2rem;
+}
 
 .ea2020textSection h2 {
 	margin:auto;
@@ -935,7 +881,6 @@ video {
 .ea2020overlay {
 	background-image:url("../img/ea2020-spraying.png");
 	background-position:top;
-
 	background-size: cover;
 	height:650px;
 }
@@ -950,11 +895,9 @@ video {
 
 
 #ea2020video {
-	/* background-image: url('../img/spray-videocut.png');
-	background-position-y:-20px;
-	background-size: cover; */
+	background-image: url('../img/spray-videocut.png');
+	background-size: cover;
   width:100vw;
-  padding-top:0.5rem;
 }
 .cropped-ea2020 img {
 	object-fit: cover;
@@ -1405,22 +1348,7 @@ video {
   width: 40%;
 }
 
-.round {
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
 
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
 
 
 /* Slideshow */
@@ -1769,13 +1697,8 @@ ul.thumbnails-carousel li {
     background-color:white;
   }
 
-  .navbar-nav>li{
-    border: 1px solid #d7d7d7;
-  }
-
   .nav-products li{
     list-style: none;
-    border: 1px solid #d7d7d7;
   }
 
 /* 

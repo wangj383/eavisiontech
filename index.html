@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <input type="hidden" id="frompage" value="Home Page">
   <!-- navbar -->
   <nav id="navbar" class="navbar navigation navbar-expand-md d-none d-md-block fixed-top">
 
@@ -25,8 +26,6 @@
   <!-- mobile navbar -->
   <div class="bodyOverlay">
     <div id="homeBanner">
-      <!-- <div class="container"> -->
-      <!-- <div class ="content"> -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -65,176 +64,113 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <!-- </div>	 -->
-      <!-- </div> -->
     </div>
-    <div class="container">
-      <div class="productDescription" data-aos="fade-up" data-aos-duration="2000">
-        <div class="row">
-          <div class="col-md-10 col-xs-12 mx-auto">
-            <h2>We believe in pushing the boundary of what it<br /> means to be autonomous</h2>
+    <div class="homeTextSection bgBlack center">
+      <div class="row py-5">
+        <h2 class="lightWhite">We believe in pushing the boundary of what it means to be autonomous</h2>
+      </div>
+      <div class="row py-5">
+        <div class="col ml-4">
+          <h3 class="lightWhite">Machine Vision</h3>
+          <p class="lightWhite">State-of-the-art computer vision algorithm provides precise understanding of the 3-D world.</p>
+        </div>
+        <div class="col">
+          <h3 class="lightWhite">Obstacle Avoidance</h3>
+          <p class="lightWhite">Fast response and situation awareness allow our UAVs to avoid obstacles in their path.</p>
+        </div>
+        <div class="col mr-4">
+          <h3 class="lightWhite">Terrain Following</h3>
+          <p class="lightWhite">Multi-sensory data detects and adapts to terrain height independently even at lower heights.</p>
+        </div>
+        <div class="col mr-4">
+          <h3 class="lightWhite">Safety and Reliability</h3>
+          <p class="lightWhite">Extensive fault detection and management protects all moving systems and parts.</p>
+        </div>
+      </div>
+    </div>
+    <div class="homeCardSection">
+      <div class="row">
+        <h2>Explore EAVision Products</h2>
+      </div>
+      <div class="row">
+        <div class="col card round">
+          <div class="card-body">
+            <h2 class="card-title">E-A2020</h2>
+            <img>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-7">
-            <img class="img-fluid" src="/static/img/drone_shadow.png">
+        <div class="col card round">
+          <div class="card-body">
+            <h2 class="card-title">E-A10</h2>
+            <img>
           </div>
-          <div class="col-sm-12 col-md-5">
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-info">
-                <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
-                  data-target="#collapseOne">
-                  <h3 class="panel-title accordion-toggle">Machine Vision</h3>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>The state-of-the-art computer vision algorithm provides precise understanding of the 3-D world.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-info">
-                <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
-                  data-target="#collapseTwo">
-                  <h3 class="panel-title accordion-toggle">Obstacle Avoidance</h3>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>Fast response and situation awareness allow our UAVs to avoid obstacles in flight path.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-info">
-                <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
-                  data-target="#collapseThree">
-                  <h3 class="panel-title accordion-toggle">Terrain Following</h3>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>Sensor data fusion detects and adapts to terrain height autonomously with precision, especially
-                      at low heights.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-info">
-                <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
-                  data-target="#collapseFour">
-                  <h3 class="panel-title accordion-toggle">Multi-Drone Operation</h3>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>Our centralized ground control station can coordinate complex tasks like traffic control timing
-                      among multiple UAVs.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-info">
-              <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
-                data-target="#collapseFive">
-                <h3 class="panel-title accordion-toggle">Safety and Reliability</h3>
-              </div>
-              <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>Extensive fault detection and management protects drone systems. Drone-to-drone communication also
-                    ensures operation safety.</p>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="col card round">
+          <div class="card-body">
+            <h2 class="card-title">E-A10</h2>
+            <img>
           </div>
         </div>
       </div>
     </div>
-    <div id="productContext">
-      <div class="container" data-aos="fade-up" data-aos-duration="2000">
-        <div class="row">
-          <div class="col-md-8 col-sm-11">
-            <h2>Drones at Work: Agriculture</h2>
-            <p>We are modernizing the agriculture industry. Our industrial drones have the unique ability to navigate
-              autonomously, to avoid obstacles in their path, and to adapt to changing terrains. They are more precise
-              than humans and faster than traditional machines — the best of both worlds.</p>
-            <a href="solution.html"><button class="button blue-button">See how</button></a>
+    <div class="homeCardSection bgLightGrey">
+      <div class="row">
+        <h2>Explore EAVision Service</h2>
+      </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body">
+            <h2 class="card-title">Tassel Inspector</h2>
+            <img>
           </div>
         </div>
       </div>
     </div>
-    <div class="recentNews" data-aos="fade-up" data-aos-duration="2000">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Recent News</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="/static/img/news6.jpg">
-              <div class="card-body">
-                <h3><a
-                    href="https://eavisiontech.home.blog/2020/03/08/eavision-drone-helps-fight-against-covid-19-cctv/">EAVision
-                    Drone Helps Fight Against COVID-19 (CCTV)</a></h3>
-                <p>Mar 8, 2020</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="/static/img/news5.png">
-              <div class="card-body">
-                <h3><a
-                    href="https://eavisiontech.home.blog/2019/12/11/eavision-technologies-attends-the-1st-forum-on-china-africa-cooperation-in-agriculture/">EAVision
-                    Technologies attends the 1st Forum on China-Africa Cooperation in Agriculture</a></h3>
-                <p>Dec 11, 2019</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="/static/img/news4.png">
-              <div class="card-body">
-                <p>Nov 23, 2019</p>
-                <h3><a
-                    href="https://eavisiontech.home.blog/2019/11/23/eavision-attends-forum-2019-on-science-technology-for-agricultural-rural-development-in-china/">EAVision
-                    attends “Forum 2019 on Science & Technology for Agricultural & Rural Development in China”</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="row">
-					<div class="col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="/static/img/news3.png">
-							<div class="card-body">
-								<h3><a href="https://eavisiontech.home.blog/2018/12/15/eavision-releases-first-ambient-temperature-fogger-uav/">EAVision releases the first ambient temperature fogger UAV</a></h3>
-								<p>Dec 15, 2018</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="/static/img/news1.JPG">
-							<div class="card-body">
-								<h3><a href="https://eavisiontech.home.blog/2018/11/12/eavision-technologies-acquires-tens-of-millions-from-series-b-funding/">EAVision Technologies acquires tens of millions from Series B Funding</a></h3>
-								<p>Nov 12, 2018</p>
-							</div>
-						</div>
-					</div>	
-					<div class="col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="/static/img/news2.jpg">
-							<div class="card-body">
-								<h3><a href="https://eavisiontech.home.blog/2018/04/13/eavision-creates-world-first-machine-vision-obstacle-avoidance-technology/">EAVision creates the world's first machine vision obstacle avoidance technology</a></h3>
-								<p>April 13, 2018</p>
-							</div>
-						</div>
-					</div>	
-				</div> -->
+    <div class="homeNewsSection">
+      <div class="row center">
+        <h2>EAVision News</h2>
       </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body">
+            <h3 class="card-title">EAVision Drone Helps Fight Against COVID-19 (CCTV)</h3>
+            <img>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body">
+            <h3 class="card-title">EAVision Technologies attends the 1st Forum on China-Africa Cooperation in Agriculture</h3>
+            <img>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body">
+            <h3 class="card-title">EAVision attends “Forum 2019 on Science & Technology for Agricultural & Rural Development in China”</h3>
+            <img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="homeSection bgLightGrey py-5">
+      <div class="row">
+        <h2>Our Partners</h2>
+      </div>
+      <div class="row">
+        <img class="partner_logo" src="/static/img/partners/BASF_logo_blue.png">
+        <img class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png">
+        <img class="partner_logo" src="/static/img/partners/longping_logo.png">
+        <img class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
+      </div>
+    </div>
+    <div class="serviceSection contact" id="serviceContact">
     </div>
   </div>
   <!-- Footer -->
   <div class="footer" id="footer">
-    
   </div>
   <!-- Footer End -->
   <script src="/static/js/jquery.min.js">

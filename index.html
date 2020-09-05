@@ -34,23 +34,30 @@
         </ol>
         <div class="carousel-inner h-100">
           <div class="carousel-item active">
-            <img class="d-block w-100 animate" src="/static/img/EA2020-daylight-yellow.png" alt="First slide">
+            <img class="d-block w-100 animate" src="/static/img/homePage/homeBanner_drone.png" alt="First slide">
             <div class="carousel-caption"><a href="ea2020.html">
-                <h1>E-A2020</h1>
+                <h1></h1>
               </a>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/static/img/uav-3.jpg" alt="Second slide">
+            <img class="d-block w-100" src="/static/img/homePage/homeBanner_Spray.png" alt="Second slide">
             <div class="carousel-caption"><a href="spraysystem.html">
-                <h1>CCMS Spray Nozzle</h1>
+                <h1></h1>
               </a>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/static/img/tassel-inspector-web.png" alt="Third slide">
+            <img class="d-block w-100" src="/static/img/agvehicle/agvehicle-in-action.jpeg" alt="Third slide">
+            <div class="carousel-caption"><a href="agvehicle.html">
+                <h1></h1>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/img/homePage/homeBanner_tasselInspector.jpg" alt="Third slide">
             <div class="carousel-caption"><a href="service.html">
-                <h1>Tassel Inspector</h1>
+                <h1></h1>
               </a>
             </div>
           </div>
@@ -68,6 +75,9 @@
     <div class="homeTextSection bgBlack center">
       <div class="row py-5">
         <h2 class="lightWhite">We believe in pushing the boundary of what it means to be autonomous</h2>
+      </div>
+      <div class="row">
+        <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png">
       </div>
       <div class="row py-5">
         <div class="col ml-4">
@@ -88,7 +98,7 @@
         </div>
       </div>
     </div>
-    <div class="homeCardSection">
+    <div class="homeCardSection pt-3">
       <div class="row">
         <h2>Explore EAVision Products</h2>
       </div>
@@ -96,61 +106,46 @@
         <div class="col card round">
           <div class="card-body">
             <h2 class="card-title">E-A2020</h2>
-            <img>
+            <img id="homeEa2020" class="flip" src="/static/img/homePage/E-A2020.png">
           </div>
         </div>
         <div class="col card round">
           <div class="card-body">
             <h2 class="card-title">E-A10</h2>
-            <img>
+            <img id="homeEa10" src="/static/img/homePage/E-A10.png">
           </div>
         </div>
         <div class="col card round">
           <div class="card-body">
-            <h2 class="card-title">E-A10</h2>
-            <img>
+            <h2 class="card-title">EAV-AG1</h2>
+            <img id="homeEavag1" class="flip" src="/static/img/homePage/EAV-AG1.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col card round">
+          <div class="card-body">
+            <h2 class="card-title">Mist Spray System</h2>
+            <img id="homeSpray" src="/static/img/homePage/mistSpray.png">
+          </div>
+        </div>
+        <div class="col card round">
+          <div class="card-body">
+            <h2 class="card-title">Agricultural Crop Protection Vehicle</h2>
+            <img id="homeAgVehicle" src="/static/img/agvehicle/agvehicle.png">
           </div>
         </div>
       </div>
     </div>
-    <div class="homeCardSection bgLightGrey">
+    <div class="homeCardSection pb-5">
       <div class="row">
         <h2>Explore EAVision Service</h2>
       </div>
       <div class="row center">
         <div class="col card round">
           <div class="card-body">
-            <h2 class="card-title">Tassel Inspector</h2>
-            <img>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="homeNewsSection">
-      <div class="row center">
-        <h2>EAVision News</h2>
-      </div>
-      <div class="row center">
-        <div class="col card round">
-          <div class="card-body">
-            <h3 class="card-title">EAVision Drone Helps Fight Against COVID-19 (CCTV)</h3>
-            <img>
-          </div>
-        </div>
-      </div>
-      <div class="row center">
-        <div class="col card round">
-          <div class="card-body">
-            <h3 class="card-title">EAVision Technologies attends the 1st Forum on China-Africa Cooperation in Agriculture</h3>
-            <img>
-          </div>
-        </div>
-      </div>
-      <div class="row center">
-        <div class="col card round">
-          <div class="card-body">
-            <h3 class="card-title">EAVision attends “Forum 2019 on Science & Technology for Agricultural & Rural Development in China”</h3>
-            <img>
+            <h2 class="card-title pt-2">Tassel Inspector</h2>
+            <img id="homecornfield" src="/static/img/homePage/cornfield.jpg">
           </div>
         </div>
       </div>
@@ -166,7 +161,39 @@
         <img class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
       </div>
     </div>
-    <div class="serviceSection contact" id="serviceContact">
+    <div class="homeNewsSection bgWhite">
+      <div class="row center">
+        <h2>EAVision News</h2>
+      </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body row">
+            <img class="news-img-left round" src="/static/img/news6.jpg">
+            <h3 class="card-title">EAVision Drone Helps Fight Against COVID-19 (CCTV)</h3>
+            <img>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body row">
+            <img class="news-img-left round" src="/static/img/news5.png">
+            <h3 class="card-title">EAVision Technologies attends the 1st Forum on China-Africa Cooperation in Agriculture</h3>
+            <img>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col card round">
+          <div class="card-body row">
+            <img class="news-img-left round" src="/static/img/news4.png">
+            <h3 class="card-title">EAVision attends “Forum 2019 on Science & Technology for Agricultural & Rural Development in China”</h3>
+            <img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="serviceSection contact bgLightGrey" id="serviceContact">
     </div>
   </div>
   <!-- Footer -->

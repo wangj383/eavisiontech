@@ -646,30 +646,30 @@ a span:hover {
 }
 
 .homeTextSection {
-  padding:1rem 2rem;
+  padding:1rem 4rem;
 }
 
 .homeTextSection h2{
   margin: 0 auto;
-  padding: 1rem
+  padding: 1rem 1rem;
 }
 
 .homeSection .row {
   justify-content: center;
   align-items: center;
-  padding: 15px 2rem;
+  padding: 15px 4rem;
 }
 
 .homeCardSection {
-  padding: 4rem 4rem;
+  padding: 0rem 4rem;
 }
 
 .homeCardSection>.row>h2{
-  margin: 0 2rem;
+  margin: 4rem 2rem 1rem 2rem;
 }
 
 .homeCardSection .card {
-  margin: 3rem 2rem;
+  margin: 2rem 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -692,7 +692,7 @@ a span:hover {
 
 .homeCardSection .card-body{
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .homeNewsSection{
@@ -704,15 +704,56 @@ a span:hover {
 
 .homeNewsSection .card{
   margin:1rem 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .partner_logo{
   width:150px;
   margin: 1rem 2rem;
 }
 
+#homeEA2020bgBlack {
+  width:60vw;
+  height:auto;
+  margin: 0 auto;
+}
 
+#homeEa2020 {
+  width:250px;
+  margin:2rem auto;
+}
+
+#homeEa10 {
+  width:280px;
+  margin:3rem auto;
+}
+
+#homeEavag1 {
+  width:250px;
+  margin:2rem auto;
+}
+
+#homeSpray{
+  width:250px;
+  margin:2rem auto;
+}
+
+#homeAgVehicle {
+  width:230px;
+}
+
+#homecornfield{
+  object-fit: cover;
+  width:70vw;
+  height:400px;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+.news-img-left{
+  width:200px;
+  height:auto;
+}
 
 /* Solutions */
 #solutionBanner {

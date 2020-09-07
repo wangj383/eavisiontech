@@ -447,11 +447,12 @@ a span:hover {
   text-align:right;
 }
 
-.nav-service{
+#nav-service{
   background-color:white;
+  box-shadow:none;
 }
 
-.nav-service .nav-link{
+#nav-service .nav-link{
   padding-top:0.75rem;
 }
 

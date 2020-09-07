@@ -363,13 +363,13 @@ a span:hover {
   z-index: 20;
   margin-top: 2px;
   max-height: 0;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.2s ease-out;
   overflow: hidden;
 }
 
 .nav-item:hover .dropdown {
   max-height: 200px;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.3s ease-in;
 
 }
 
@@ -445,6 +445,14 @@ a span:hover {
 .nav-product-list img {
   padding-left:20px;
   text-align:right;
+}
+
+.nav-service{
+  background-color:white;
+}
+
+.nav-service .nav-link{
+  padding-top:0.75rem;
 }
 
 .ea2020img{

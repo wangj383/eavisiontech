@@ -107,13 +107,18 @@ p {
 }
 
 /* background-color & font-color*/
+.bgLightestGrey{
+	background-color: #f5f5f5;	
+}
+
 .bgLightGrey {
 	background-color: #f1f1f1;
 }
 
-.bgLightestGrey{
-	background-color: #f5f5f5;	
+.bgDarkGrey{
+  background-color: #787878;
 }
+
 
 .bgBlack{
   background-color:#000000;
@@ -583,49 +588,34 @@ a span:hover {
 /* Homepage */
 #homeBanner {
   background: rgba(162, 199, 224, 0.185);
-  /*background-image: url("../img/homeHeader.jpg");
-	background-color: #FAFAFA;
-	background-size: cover;
-	background-position: center; */
   color: #FFFFFF;
   margin-top: 48px;
 }
 
-/* #homeBanner .carousel-caption h1{
-	padding-top: 64px;
-	padding-bottom: 64px;
-	line-height: 60px;
-	margin-top: auto;
-	margin-bottom: auto;
-	font-size: 43px;
-} */
-
 #homeBanner .w-100 {
   width: 100% !important;
-  height: 45vw;
+  height: 720px;
 }
 
-#homeVideo {
+/* #homeVideo {
   position: relative;
   width: auto;
   min-width: 100%;
   height: auto;
   background-image: url("../img/homeHeader.jpg") no-repeat;
   background-size: cover;
-}
+} */
 
 #homeBanner .carousel-caption {
-  background-color: rgb(255, 255, 255, 0.5);
-  padding: 20px 20px;
-  margin: 30px 50px 30px 50px;
+  background-color: transparent;
+  text-align:center;
 }
 
-#homeBanner .carousel-caption h1 {
-  font-size: 30px;
-  padding: 0 0;
+#homeBanner .carousel-caption h1, #homeBanner .carousel-caption h3{
+  color: black;
 }
 
-#homeBanner .carousal-caption h1:hover {
+#homeBanner .carousel-caption h1:hover {
   color: #1897f2;
   text-decoration: none;
 }
@@ -661,7 +651,7 @@ a span:hover {
 }
 
 .homeCardSection {
-  padding: 0rem 4rem;
+  padding: 0rem 5rem;
 }
 
 .homeCardSection>.row>h2{
@@ -689,10 +679,16 @@ a span:hover {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
+.homeCardSection a:hover{
+  text-decoration:none;
+}
 .homeCardSection .card-body{
   text-align: center;
   padding: 2rem 1rem;
+}
+
+#homePartners .row{
+  justify-content: space-evenly;
 }
 
 .homeNewsSection{
@@ -704,7 +700,26 @@ a span:hover {
 
 .homeNewsSection .card{
   margin:1rem 2rem;
+  padding:0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:80vw;
+}
+
+.homeNewsSection .card .card-body{
+  display: flex;
+  flex: 1 1 auto;
+  padding:0;
+}
+
+.homeNewsSection .card-content{
+  margin: 20px 20px;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.homeNewsSection .card-subtitle{
+  color: #606060;
+  font-size:14px;
 }
 
 .partner_logo{
@@ -713,46 +728,45 @@ a span:hover {
 }
 
 #homeEA2020bgBlack {
-  width:60vw;
-  height:auto;
-  margin: 0 auto;
+  width:50vw;
+  height:25vw;
+  margin: 0 auto 10px auto;
 }
 
-#homeEa2020 {
+#homeEa2020img {
   width:250px;
   margin:2rem auto;
 }
 
-#homeEa10 {
+#homeEa10img {
   width:280px;
   margin:3rem auto;
 }
 
-#homeEavag1 {
+#homeEavag1img {
   width:250px;
   margin:2rem auto;
 }
 
-#homeSpray{
+#homeSprayimg{
   width:250px;
   margin:2rem auto;
 }
 
-#homeAgVehicle {
+#homeAgVehicleimg {
   width:230px;
 }
 
-#homecornfield{
+#homecornfieldimg{
   object-fit: cover;
-  width:70vw;
-  height:400px;
-  margin-top:2rem;
-  margin-bottom:2rem;
+  width:43vw;
+  height:11vw;
+  margin-top:1rem;
 }
 
 .news-img-left{
-  width:200px;
-  height:auto;
+  width: 300px;
+  height: 200px;
 }
 
 /* Solutions */

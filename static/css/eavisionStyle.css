@@ -615,11 +615,6 @@ a span:hover {
   color: black;
 }
 
-#homeBanner .carousel-caption h1:hover {
-  color: #1897f2;
-  text-decoration: none;
-}
-
 #homeBanner .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 35px;
@@ -634,6 +629,8 @@ a span:hover {
 #homeBanner .carousel-indicators .active {
   background-color: #64beff;
 }
+
+
 
 .homeTextSection {
   padding:1rem 4rem;

@@ -7,7 +7,7 @@ body {
   font-size: 15px;
   background-color: #fafafa !important;
   color: #353535;
-  letter-spacing: 0.8px;
+  letter-spacing: 0;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ h1 {
   font-family: lato, sans-serif;
   font-style: normal;
   font-size: 45px;
-  letter-spacing: 4px;
+  letter-spacing: 0;
   line-height: 64px;
   color: #353535;
 }
@@ -28,7 +28,7 @@ h2 {
   font-family: lato, sans-serif;
   font-style: normal;
   font-size: 30px;
-  letter-spacing: 2.33px;
+  letter-spacing: 0;
   color: #353535;
 }
 
@@ -36,7 +36,7 @@ h3 {
   font-family: lato, sans-serif;
   font-style: normal;
   font-size: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0;
   color: #353535;
 }
 
@@ -44,7 +44,7 @@ h4 {
   font-family: lato, sans-serif;
   font-style: normal;
   font-size: 18px;
-  letter-spacing: 1.17px;
+  letter-spacing: 0;
   color: #353535;
 }
 
@@ -61,7 +61,7 @@ p {
   padding: 8px 32px;
   border: none;
   border-radius: 0px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0;
   /* text-transform: uppercase; */
 }
 

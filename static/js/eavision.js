@@ -3,6 +3,8 @@ AOS.init()
 
 //bodyOverlay
 $(function () {
+  var height = $(window).height() - 52
+  $('.carousel-item > img').css('height', height)
   $('.navbar-toggler').on('click', function () {
     $('.bodyOverlay').toggleClass('menu-open')
   })
@@ -14,22 +16,21 @@ $(function () {
       } else {
         $('#serviceContact').html(val)
         $('#contactSubtitles').html(
-          "<div class='row'>"+
+          "<div class='row'>" +
             "<div class='inline mr-4'>" +
-              "<img class='contactIcon' src='/static/img/icons/checkmark.png'>"+
-              "<p class='contactSubtitle inline my-auto'> Free Consultation</p>"+
-            "</div>" +
-            "<div class='inline'>"+
-                "<img class='contactIcon' src='/static/img/icons/checkmark.png'>"+
-                "<p class='contactSubtitle inline my-auto'> Guarantee Customer Satification</p>" +
-            "</div>"+
-          "</div>"
+            "<img class='contactIcon' src='/static/img/icons/checkmark.png'>" +
+            "<p class='contactSubtitle inline my-auto'> Free Consultation</p>" +
+            '</div>' +
+            "<div class='inline'>" +
+            "<img class='contactIcon' src='/static/img/icons/checkmark.png'>" +
+            "<p class='contactSubtitle inline my-auto'> Guarantee Customer Satification</p>" +
+            '</div>' +
+            '</div>'
         )
-          // val.replace(
-          //   'card-header bg-danger text-white',
-          //   'card-header text-white'
-          // )
-        
+        // val.replace(
+        //   'card-header bg-danger text-white',
+        //   'card-header text-white'
+        // )
       }
     })
   }

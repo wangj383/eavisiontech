@@ -18,7 +18,7 @@ a {
 h1 {
   font-family: 'Lato', sans-serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: 40px;
   letter-spacing: 0;
   line-height: 64px;
   color: #353535;
@@ -347,13 +347,14 @@ a span:hover {
 
 #logoimg {
   vertical-align: bottom;
-  width: 105px;
-  height: 36px;
+  width: 125px;
+  /* height: 36px; */
   position: relative;
   margin-left: 2px;
   margin-right: 12px;
   margin-bottom: 0.9rem;
 }
+
 .nav-item {
   border-bottom: transparent 2px solid;
 }
@@ -390,7 +391,7 @@ a span:hover {
   padding-bottom: 40px;
 }
 
-.nav-product-list > li {
+.nav-product-list>li {
   background-color: white;
   list-style: none;
   position: relative;
@@ -432,6 +433,7 @@ a span:hover {
 .nav-product-list .subtitle {
   font-size: 10px;
 }
+
 .nav-product-items {
   float: left;
   text-align: center;
@@ -453,6 +455,7 @@ a span:hover {
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   border-top: none;
 }
+
 #nav-service-dropdown {
   background-color: white;
   box-shadow: none;
@@ -465,6 +468,7 @@ a span:hover {
 .ea2020img {
   width: 180px;
 }
+
 .mistsprayimg {
   width: 120px;
   height: 95px;
@@ -513,6 +517,7 @@ a span:hover {
 .contact .card-header {
   background-color: #289ceb;
 }
+
 .contactSubtitle {
   color: #289ceb;
   font-size: 18px;
@@ -625,6 +630,7 @@ a span:hover {
 #homeBanner .carousel-caption h3 {
   color: black;
 }
+
 .carousel-caption a {
   text-decoration: none !important;
 }
@@ -639,8 +645,8 @@ a span:hover {
   height: 45px;
 }
 
-#homeBanner .carousel-indicators{
-  bottom:40px;
+#homeBanner .carousel-indicators {
+  bottom: 40px;
 }
 
 #homeBanner .carousel-indicators li {
@@ -675,7 +681,7 @@ a span:hover {
   padding: 0rem 5rem;
 }
 
-.homeCardSection > .row > h2 {
+.homeCardSection>.row>h2 {
   margin: 4rem 2rem 1rem 2rem;
 }
 
@@ -700,9 +706,11 @@ a span:hover {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 .homeCardSection a:hover {
   text-decoration: none;
 }
+
 .homeCardSection .card-body {
   text-align: center;
   padding: 2rem 1rem;
@@ -715,6 +723,7 @@ a span:hover {
 .homeNewsSection {
   padding: 3rem 4rem;
 }
+
 .homeNewsSection h2 {
   margin: 2rem 2rem;
 }
@@ -744,7 +753,7 @@ a span:hover {
 }
 
 .partner_logo {
-  width: 150px;
+  width: 200px;
   margin: 1rem 2rem;
 }
 
@@ -943,6 +952,7 @@ a span:hover {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .ea2020textSection {
   padding: 2rem 2rem;
 }
@@ -957,6 +967,7 @@ a span:hover {
   background-size: cover;
   height: 650px;
 }
+
 .flip {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -971,6 +982,7 @@ a span:hover {
   background-size: cover;
   width: 100vw;
 }
+
 .cropped-ea2020 img {
   object-fit: cover;
   object-position: 50% 65%;
@@ -982,6 +994,7 @@ a span:hover {
   color: #289ceb;
   font-weight: 600;
 }
+
 .ea2020tableSection .table {
   font-size: 14px;
 }
@@ -994,6 +1007,7 @@ a span:hover {
 .ea2020tableSection .table th {
   padding: 8px;
 }
+
 .ea2020tableSection .table-shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1092,6 +1106,7 @@ a span:hover {
 .spraySystemVideoSection .spraySystemTextSection .row {
   padding: 0.5rem 0;
 }
+
 #spraysystem-video {
   background-image: url('../img/mistSpraySystem/ccmsvideo-photo.png');
   background-position-y: -20px;
@@ -1172,6 +1187,7 @@ a span:hover {
 .agvehicleSection {
   padding: 3rem 6rem;
 }
+
 .agvehicleSection .row {
   justify-content: center;
   align-items: center;
@@ -1214,6 +1230,7 @@ a span:hover {
 .agvehicleTextSection .iconSections p {
   padding: 15px 5px;
 }
+
 .agvehicleTextSection .citation {
   font-size: 12px;
   color: grey;
@@ -1541,7 +1558,7 @@ ul.thumbnails-carousel li {
 }
 
 .carousel-caption {
-  top: 7%;
+  top: 2%;
   /* left: 5%; */
   /* bottom: auto; */
   /* right: auto !important; */
@@ -1693,6 +1710,7 @@ ul.thumbnails-carousel li {
 .leaders-description {
   line-height: 1.25;
 }
+
 .abouttextSection h2 {
   margin: auto;
 }
@@ -1700,6 +1718,7 @@ ul.thumbnails-carousel li {
 #aboutPositions {
   background-color: #f1f1f1;
 }
+
 #aboutContact {
   padding-bottom: 64px;
   background-color: #f1f1f1;
@@ -1707,6 +1726,7 @@ ul.thumbnails-carousel li {
 
 /*Responsive Settings*/
 @media (max-width: 767px) {
+
   /* General Styles */
   body {
     font-size: 14px;
@@ -1741,6 +1761,7 @@ ul.thumbnails-carousel li {
   .navigation .navbar-toggler {
     border: none;
   }
+
   .navbar-nav {
     background-color: white;
   }

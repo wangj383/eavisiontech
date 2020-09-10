@@ -1,7 +1,7 @@
 /* General Styles */
 
 body {
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -16,7 +16,7 @@ a {
 }
 
 h1 {
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 45px;
   letter-spacing: 0;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 30px;
   letter-spacing: 0;
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 20px;
   letter-spacing: 0;
@@ -41,7 +41,7 @@ h3 {
 }
 
 h4 {
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 18px;
   letter-spacing: 0;
@@ -54,7 +54,7 @@ p {
 
 /* Buttons */
 .button {
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   /* font-weight: 550; */
   font-size: 14px;
@@ -637,6 +637,10 @@ a span:hover {
 .carousel-control-prev-icon {
   width: 35px;
   height: 45px;
+}
+
+#homeBanner .carousel-indicators{
+  bottom:40px;
 }
 
 #homeBanner .carousel-indicators li {
@@ -1710,22 +1714,22 @@ ul.thumbnails-carousel li {
 
   h1 {
     font-size: 24px;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
   }
 
   h2 {
     font-size: 18px;
-    letter-spacing: 2.33px;
+    letter-spacing: 0px;
   }
 
   h3 {
     font-size: 16px;
-    letter-spacing: 1.5px;
+    letter-spacing: 0px;
   }
 
   h4 {
     font-size: 14px;
-    letter-spacing: 1.17px;
+    letter-spacing: 0px;
   }
 
   /* Header */

@@ -193,54 +193,24 @@
         <img class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
       </div>
     </div>
-    <div class="homeNewsSection bgLightGrey">
+    <div class="homeNewsSection bgLightGrey" id="app">
       <div class="row center">
         <h2>EAVision News</h2>
       </div>
-      <div class="row center">
+      <div v-for="n in news" class="row center">
         <div class="card round">
           <div class="card-body">
-            <img class="news-img-left round" src="/static/img/news6.jpg">
+            <img class="news-img-left round" :src="n.osskey">
             <div class="card-content">
-              <h3 class="card-title">EAVision Drone Helps Fight Against COVID-19 (CCTV)</h3>
+              <h3 class="card-title">{{n.title}}</h3>
+              <p class="card-text card-subtitle">{{n.des}}... (Read More)</p>
               <p class="card-text news-date pt-5">March 8, 2020</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row center">
-        <div class="card round">
-          <div class="card-body">
-            <img class="news-img-left round" src="/static/img/news5.png">
-            <div class="card-content">
-              <h3 class="card-title">EAVision Technologies attends the 1st Forum on China-Africa Cooperation in
-                Agriculture</h3>
-              <p class="card-text card-subtitle">On the morning of December 9th 2019, the first Forum on China-Africa
-                Cooperation in Agriculture – co-sponsored
-                by the Ministry of Agriculture & Rural Affairs and the Hainan Provincial Government – was held the City
-                of Sanya.
-                The theme of the forum... (Read More)</p>
-              <p class="card-text news-date">December 11, 2019</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row center">
-        <div class="card round">
-          <div class="card-body">
-            <img class="news-img-left round" src="/static/img/news4.png">
-            <div class="card-content">
-              <h3 class="card-title">EAVision attends “Forum 2019 on Science & Technology for Agricultural & Rural
-                Development in China”</h3>
-              <p class="card-text card-subtitle">On November 20, the “Forum 2019 on Science & Technology for
-                Agricultural & Rural Development in China” was held at the Nanjing
-                International Expo Conference Center, and representatives from EAVision were invited to attend the
-                meeting.... (Read More)</p>
-              <p class="card-text news-date">November 23, 2019</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
       <div class="center pt-4"><button class="btn blue-border-button round">See All News ></button></div>
     </div>
     <div class="serviceSection bgWhite contact" id="serviceContact">
@@ -257,6 +227,27 @@
   <script type="text/javascript" src="/static/js/accordion.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="/static/js/eavision.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script>
+    var body = new Vue({
+      el: "#app",
+      data: {
+        news: []
+
+      },
+      mounted() {
+        this.getNews()
+      },
+      methods: {
+        getNews() {
+          var vu = this;
+          $.post('http://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
+            vu.news = ret.result;
+          })
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

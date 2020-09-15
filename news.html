@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EAVision Technologies</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/static/css/eavisionStyle.css">
+  <link rel="icon" href="/static/img/site_icon.png">
+</head>
+
+<body>
+  <input type="hidden" id="frompage" value="Home Page">
+  <!-- navbar -->
+  <nav id="navbar" class="navbar navigation navbar-expand-md d-none d-md-block fixed-top">
+
+  </nav>
+  <!-- navbar -->
+  <!-- mobile navbar -->
+  <nav id="mobile-navbar" class="navbar navbar-expand-sm navbar-light navigation d-block d-md-none fixed-top">
+  </nav>
+  <!-- mobile navbar -->
+  <div class="bodyOverlay">
+
+    <div class="homeNewsSection bgLightGrey" id="app">
+      <div class="row center">
+        <h2>EAVision News</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <div v-for="n in news" class="row center">
+            <div class="card round">
+              <div class="card-body">
+                <img class="news-img-left round" :src="n.osskey">
+                <div class="card-content">
+                  <h3 class="card-title">{{n.title}}</h3>
+                  <p class="card-text card-subtitle">{{n.des}}... (Read More)</p>
+                  <p class="card-text news-date pt-5">March 8, 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="center pt-4"><button class="btn blue-border-button round" @click="more">More</button></div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <h2 style="margin:20px 0 !important; ">CATEGORIES</h2>
+            <div>Company News ({{count}})</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- Footer -->
+  <div class="footer" id="footer">
+  </div>
+  <!-- Footer End -->
+  <script src="/static/js/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="/static/js/popper.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/js/accordion.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="/static/js/eavision.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script>
+    var body = new Vue({
+      el: "#app",
+      data: {
+        news: [],
+        index: 1,
+        count: 0
+
+      },
+      mounted() {
+        this.getNews()
+      },
+      methods: {
+        getNews() {
+          var vu = this;
+          $.post('http://www.eav.top/front/listSolution?pageNum=' + this.index + '&pageSize=5&stype=5', function (
+            ret) {
+            vu.news = ret.result;
+            vu.count = ret.resultNum;
+          })
+        },
+        more() {
+          var vu = this;
+          this.index++;
+          $.post('http://www.eav.top/front/listSolution?pageNum=' + this.index + '&pageSize=5&stype=5', function (
+            ret) {
+            vu.news.concat(ret.result);
+            vu.count = ret.resultNum;
+          })
+        }
+
+      }
+    });
+  </script>
+</body>
+
+</html>

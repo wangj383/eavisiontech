@@ -35,7 +35,7 @@
         <div class="col-md-10">
           <div v-for="n in news" class="row center">
             <div class="card round">
-              <div class="card-body">
+              <div class="card-body" @click="onDetail(n)">
                 <img class="news-img-left round" :src="n.osskey">
                 <div class="card-content">
                   <h3 class="card-title">{{n.title}}</h3>
@@ -52,9 +52,22 @@
         </div>
         <div class="col-md-2">
           <div>
-            <h2 style="margin:20px 0 !important; ">CATEGORIES</h2>
+            <h3 style="margin:20px 0 !important; font-size: 22px;">CATEGORIES</h3>
             <div>Company News ({{count}})</div>
           </div>
+
+          <div style="display: flex; flex-direction: column; margin-top: 40px;">
+            <h3 style="font-size: 22px; margin-bottom: 20px;">SOCIAL MEDIA</h3>
+            <a target="_blank" style="display: flex; align-items: center; margin-bottom: 15px;" href="https://www.linkedin.com/company/eavision-technologies/">
+              <img style="width: 44px; height: 44px;" src="/static/img/icons/linkedin.png">
+              <span style="font-size: 20px; margin-left: 10px; color: black;">LinkedIn</span>
+            </a>
+            <a target="_blank" style="align-items: center;" href="https://www.youtube.com/channel/UCL1683_IwdnG2kUso3qeQOg">
+              <img style="width: 44px; height: 44px;" src="/static/img/icons/youtube.png">
+              <span style="font-size: 20px; margin-left: 8px; color: black;">Youtube</span>
+            </a>
+          </div>
+
         </div>
       </div>
 
@@ -103,6 +116,9 @@
             vu.news.concat(ret.result);
             vu.count = ret.resultNum;
           })
+        },
+        onDetail(data) {
+          window.open('/newsDetail.html?id='+data.id, '_blank');
         }
 
       }

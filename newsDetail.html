@@ -40,7 +40,7 @@
             <div class="right-content col-md-2">
                 <div>
                     <h3 style="margin:20px 0 !important; font-size: 22px;">CATEGORIES</h3>
-                    <div>Company News (3)</div>
+                    <div id="companyNews" style="cursor: pointer">Company News (3)</div>
                 </div>
 
                 <div style="display: flex; flex-direction: column; margin-top: 40px;">
@@ -118,6 +118,9 @@
                 })                
             }
 
+            $("#companyNews").click(function() {
+                window.open('/news.html', '_blank');
+            })
 
             $(document).on('click', '.news-item span',function(res){
                 var id = res.target.dataset.id

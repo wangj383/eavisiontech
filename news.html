@@ -33,9 +33,14 @@
       </div>
       <div class="row">
         <div class="col-md-10">
-          <div v-for="n in news" class="row center">
-            <div class="card round">
-              <div class="card-body" style="max-height: 202px;" @click="onDetail(n)">
+          <div v-for="(n, index) in news" class="row center">
+            <div v-if="index == 0" class="first-new-item" @click="onDetail(n)">
+              <img :src="n.osskey" alt="bg" />
+              <div class="bottom-container">{{n.title}}</div>
+            </div>
+
+            <div v-else class="card round">
+              <div class="card-body" style="max-height: 230px;" @click="onDetail(n)">
                 <img class="news-img-left round" :src="n.osskey">
                 <div class="card-content">
                   <h3 class="card-title">{{n.title}}</h3>
@@ -45,11 +50,9 @@
               </div>
             </div>
           </div>
-
-
-
-          <div class="center pt-4"><button class="btn blue-border-button round" @click="more">More</button></div>
+          <div v-if="news.length < count" class="center pt-4"><button class="btn blue-border-button round" @click="more">More</button></div>
         </div>
+
         <div class="col-md-2">
           <div>
             <h3 style="margin:20px 0 !important; font-size: 22px;">CATEGORIES</h3>
@@ -109,9 +112,8 @@
             vu.news = ret.result;
             vu.count = ret.resultNum;
             $.each(vu.news, function (i, v) {
-              console.log(v)
               v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
+                "whjm-test.oss-accelerate.aliyuncs.com") + `?x-oss-process=image/resize,${i == 0 ? 'w_1114':'w_300'},limit_0`
             });
           })
         },

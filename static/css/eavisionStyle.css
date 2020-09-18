@@ -727,11 +727,35 @@ a span:hover {
   margin: 2rem 2rem;
 }
 
+.homeNewsSection .first-new-item {
+  position: relative;
+  width: 60vw;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.first-new-item img {
+  width: 100%;
+}
+
+.first-new-item .bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  color: white;
+  padding: 10px 0;
+  background: RGBA(45, 44, 43, 0.7);
+  text-align: left;
+  padding-left: 20px;
+}
+
 .homeNewsSection .card {
   margin: 1rem 2rem;
   padding: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 80vw;
+  width: 60vw;
 }
 
 .homeNewsSection .card .card-body {
@@ -739,6 +763,7 @@ a span:hover {
   flex: 1 1 auto;
   padding: 0;
 }
+
 
 .homeNewsSection .card-content {
   margin: 20px 20px;

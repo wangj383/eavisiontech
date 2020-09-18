@@ -196,7 +196,7 @@
         <h2>EAVision News</h2>
       </div>
       <div v-for="n in news" class="row center">
-        <div class="card round">
+        <div class="card round" style="width: 80vw;">
           <div class="card-body" style="max-height: 202px;" @click="onDetail(n)">
             <img class="news-img-left round" :src="n.osskey">
             <div class="card-content">
@@ -240,14 +240,10 @@
         getNews() {
           var vu = this;
           $.post('http://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
-
-
-
             vu.news = ret.result;
             $.each(vu.news, function (i, v) {
-              console.log(v)
               v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
+                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_300,limit_0'
             });
           })
         },

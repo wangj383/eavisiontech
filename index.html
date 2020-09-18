@@ -36,7 +36,7 @@
         </ol>
         <div class="carousel-inner h-100">
           <div class="carousel-item active">
-            <img class="d-block w-100 animate" src="/static/img/homePage/homeBanner_drone.png" alt="First slide">
+            <img class="d-block w-100 animate" src="./static/img/homePage/homeBanner_drone.png" alt="First slide">
             <div class="carousel-caption">
               <a href="ea2020.html">
                 <h1 class="cawhite">E-A2020</h1>
@@ -199,7 +199,7 @@
       </div>
       <div v-for="n in news" class="row center">
         <div class="card round">
-          <div class="card-body">
+          <div class="card-body" style="max-height: 202px;" @click="onDetail(n)">
             <img class="news-img-left round" :src="n.osskey">
             <div class="card-content">
               <h3 class="card-title">{{n.title}}</h3>
@@ -244,6 +244,9 @@
           $.post('http://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
             vu.news = ret.result;
           })
+        },
+        onDetail(data) {
+          window.open('/newsDetail.html?id='+data.id, '_blank');
         }
       }
     });

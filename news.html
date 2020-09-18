@@ -35,7 +35,7 @@
         <div class="col-md-10">
           <div v-for="n in news" class="row center">
             <div class="card round">
-              <div class="card-body" @click="onDetail(n)">
+              <div class="card-body" style="max-height: 202px;" @click="onDetail(n)">
                 <img class="news-img-left round" :src="n.osskey">
                 <div class="card-content">
                   <h3 class="card-title">{{n.title}}</h3>

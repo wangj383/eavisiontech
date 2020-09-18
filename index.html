@@ -247,7 +247,7 @@
             $.each(vu.news, function (i, v) {
               console.log(v)
               v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                "whjm-test.oss-accelerate.aliyuncs.com")
+                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
             });
           })
         }

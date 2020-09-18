@@ -95,7 +95,7 @@
           var result = res.result || []
           result.forEach((item) => {
             item.osskey = item.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-              "whjm-test.oss-accelerate.aliyuncs.com")
+              "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
             html += `<div style="width: 160px; margin-bottom: 24px" class="news-item">
                                 <img style="width: 100%; height: 101px; border-radius: 5px; margin-bottom: 10px" src="${item.osskey}"/>
                                 <span data-id=${item.id} style="color: #289ceb; font-size: 16px; cursor: pointer">${item.title}</span>
@@ -115,7 +115,7 @@
 
 
             result.content = result.content.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-              "whjm-test.oss-accelerate.aliyuncs.com")
+              "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
 
             $('.news-main').html(result.content)
           }

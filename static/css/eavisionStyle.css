@@ -347,8 +347,8 @@ a span:hover {
 
 #logoimg {
   vertical-align: bottom;
-  width: 125px;
-  /* height: 36px; */
+  width: 120px;
+  height: 42px;
   position: relative;
   margin-left: 2px;
   margin-right: 12px;
@@ -384,6 +384,7 @@ a span:hover {
   left: 0;
   width: 100vw;
   background-color: white;
+  padding: 0;
 }
 
 .nav-product-type {
@@ -399,14 +400,17 @@ a span:hover {
   margin-bottom: 0;
   padding: 30px 10px;
 }
-
+/* 
 .nav-product-list li {
   text-align: left;
-}
+} */
 
 .nav-product-list p {
   color: #6c6c6c;
   margin-bottom: 0;
+}
+.nav-product-list li a span{
+  font-size:16px;
 }
 
 .nav-product-list li a span:hover {
@@ -445,11 +449,6 @@ a span:hover {
   display: block !important;
 }
 
-.nav-product-list img {
-  padding-left: 20px;
-  text-align: right;
-}
-
 #nav-service:hover #nav-service-dropdown {
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
@@ -472,7 +471,7 @@ a span:hover {
 .mistsprayimg {
   width: 120px;
   height: 95px;
-  padding-top: 5px;
+  margin-top: 1rem;
 }
 
 .agvehicleimg {
@@ -753,8 +752,25 @@ a span:hover {
 }
 
 .partner_logo {
-  width: 200px;
   margin: 1rem 2rem;
+}
+
+#basf{
+  width:150px; 
+  padding-top:10px;
+}
+
+#fmc{
+  width: 180px;
+}
+
+#longping{
+  width:160px;
+}
+
+#syngenta{
+  width:180px;
+  padding-bottom:10px;
 }
 
 #homeEA2020bgBlack {
@@ -1271,7 +1287,7 @@ a span:hover {
 #agvehicleFieldBackground h1 {
   position: relative;
   top: 10vw;
-  right: 5vw;
+  right: 10vw;
 }
 
 #agvehicle-sideview {
@@ -1492,8 +1508,9 @@ a span:hover {
   justify-content: flex-end;
   color: grey;
   font-size: 10px;
-  margin: 10px 12% 20px 12%;
+  margin:auto 4.5rem;
 }
+
 
 /* Vision */
 #visionBanner {

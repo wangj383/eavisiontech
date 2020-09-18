@@ -54,7 +54,7 @@
                 <h1>Mist Spray System</h1>
               </a>
               <h3>Accurate, efficient, ambient temperature mist.</h3>
-              <a href="spraysystem.html"><button class="btn white-border-button round">Learn More ></button></a>
+              <a href="spraysystem.html"><button class="btn black-border-button round">Learn More ></button></a>
 
             </div>
           </div>
@@ -132,24 +132,6 @@
           </a>
         </div>
         <div class="col card round">
-          <a href="ea10.html">
-            <div class="card-body">
-              <h2 class="card-title">E-A10</h2>
-              <img id="homeEa10img" src="/static/img/homePage/E-A10.png">
-            </div>
-          </a>
-        </div>
-        <div class="col card round">
-          <a href="eavag1.html">
-            <div class="card-body">
-              <h2 class="card-title">EAV-AG1</h2>
-              <img id="homeEavag1img" class="flip" src="/static/img/homePage/EAV-AG1.png">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col card round">
           <a href="spraysystem.html">
             <div class="card-body">
               <h2 class="card-title">Mist Spray System</h2>
@@ -166,6 +148,22 @@
           </a>
         </div>
       </div>
+      <!-- <div class="col card round">
+        <a href="ea10.html">
+          <div class="card-body">
+            <h2 class="card-title">E-A10</h2>
+            <img id="homeEa10img" src="/static/img/homePage/E-A10.png">
+          </div>
+        </a>
+      </div>
+      <div class="col card round">
+        <a href="eavag1.html">
+          <div class="card-body">
+            <h2 class="card-title">EAV-AG1</h2>
+            <img id="homeEavag1img" class="flip" src="/static/img/homePage/EAV-AG1.png">
+          </div>
+        </a>
+      </div> -->
     </div>
     <div class="homeCardSection bgLightGrey pb-5">
       <div class="row">
@@ -187,10 +185,10 @@
         <h2>Our Partners</h2>
       </div>
       <div class="row">
-        <img class="partner_logo" src="/static/img/partners/BASF_logo_blue.png">
-        <img class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png">
-        <img class="partner_logo" src="/static/img/partners/longping_logo.png">
-        <img class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
+        <img id="basf" class="partner_logo" src="/static/img/partners/BASF_logo_bw.png">
+        <img id="fmc" class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png">
+        <img id="longping" class="partner_logo" src="/static/img/partners/longping_logo.png">
+        <img id="syngenta" class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
       </div>
     </div>
     <div class="homeNewsSection bgLightGrey" id="app">
@@ -242,7 +240,15 @@
         getNews() {
           var vu = this;
           $.post('http://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
+
+
+
             vu.news = ret.result;
+            $.each(vu.news, function (i, v) {
+              console.log(v)
+              v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
+                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
+            });
           })
         },
         onDetail(data) {

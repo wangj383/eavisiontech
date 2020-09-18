@@ -4,6 +4,9 @@ AOS.init()
 //bodyOverlay
 $(function () {
   var height = $(window).height() - 52
+  if (height < 800) {
+    height = 800
+  }
   $('.carousel-item > img').css('height', height)
   $('.navbar-toggler').on('click', function () {
     $('.bodyOverlay').toggleClass('menu-open')

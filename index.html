@@ -242,7 +242,15 @@
         getNews() {
           var vu = this;
           $.post('http://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
+
+
+
             vu.news = ret.result;
+            $.each(vu.news, function (i, v) {
+              console.log(v)
+              v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
+                "whjm-test.oss-accelerate.aliyuncs.com")
+            });
           })
         }
       }

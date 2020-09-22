@@ -44,7 +44,7 @@
               <h3 class="cawhite">True intelligence.
                 </br>
                 True protection.</h3>
-              <a href="ea2020.html"><button class="btn white-border-button round cawhite   ">Learn More ></button></a>
+              <a href="ea2020.html"><button class="btn white-border-button round">Learn More ></button></a>
             </div>
           </div>
           <div class="carousel-item">
@@ -72,10 +72,10 @@
             <img class="d-block w-100" src="/static/img/homePage/homeBanner_tasselInspector.jpg" alt="forth slide">
             <div class="carousel-caption">
               <a href="service.html">
-                <h1 class="cawhite">Tassel Inspector</h1>
+                <h1>Tassel Inspector</h1>
               </a>
-              <h3 class="cawhite">Drone and AI based solution to automate tassel inspection.</h3>
-              <a href="service.html"><button class="btn white-border-button round">Learn More ></button></a>
+              <h3>Drone and AI based solution to automate tassel inspection.</h3>
+              <a href="service.html"><button class="btn black-border-button round">Learn More ></button></a>
             </div>
           </div>
         </div>
@@ -97,12 +97,12 @@
         <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png">
       </div>
       <div class="row py-5">
-        <div class="col ml-4">
+        <div class="col mx-4">
           <h3 class="lightWhite">Machine Vision</h3>
           <p class="lightWhite">State-of-the-art computer vision algorithm provides precise understanding of the 3-D
             world.</p>
         </div>
-        <div class="col">
+        <div class="col mr-4">
           <h3 class="lightWhite">Obstacle Avoidance</h3>
           <p class="lightWhite">Fast response and situation awareness allow our UAVs to avoid obstacles in their path.
           </p>
@@ -135,7 +135,7 @@
           <a href="spraysystem.html">
             <div class="card-body">
               <h2 class="card-title">Mist Spray System</h2>
-              <img id="homeSprayimg" src="/static/img/homePage/mistSpray.png">
+              <img id="homeSprayimg" src="/static/img/homePage/mistspray.png">
             </div>
           </a>
         </div>
@@ -209,7 +209,7 @@
       </div>
 
 
-      <div class="center pt-4"><button class="btn blue-border-button round">See All News ></button></div>
+      <div class="center pt-4"><a href="news.html"><button class="btn blue-border-button round">See All News ></button></a></div>
     </div>
     <div class="serviceSection bgWhite contact" id="serviceContact">
     </div>
@@ -248,7 +248,7 @@
           })
         },
         onDetail(data) {
-          window.open('/newsDetail.html?id='+data.id, '_blank');
+          window.open('/newsDetail.html?id='+data.id, '_self');
         }
       }
     });

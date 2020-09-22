@@ -569,13 +569,13 @@ a span:hover {
 }
 
 .socialMedia {
-  text-align: center;
+  text-align: left;
 }
 
 .footerIcon {
   width: 45px;
   margin-top: 48px;
-  margin-left: 3px;
+  margin-left: 10px;
   line-height: 30px;
   /* border-radius:30px 30px 30px 30px; */
 }
@@ -623,6 +623,7 @@ a span:hover {
 #homeBanner .carousel-caption {
   background-color: transparent;
   text-align: center;
+  margin-top:20px;
 }
 
 #homeBanner .carousel-caption h1,
@@ -837,7 +838,7 @@ a span:hover {
 
 .news-img-left {
   width: 300px;
-  height: 100%;
+  height:100%;
 }
 
 /* Solutions */
@@ -1029,6 +1030,7 @@ a span:hover {
   object-position: 50% 65%;
   width: 900px;
   height: 250px;
+  margin-top:20px;
 }
 
 .ea2020Section h2 span {
@@ -1301,12 +1303,10 @@ a span:hover {
 }
 
 #agvehicleFieldBackground {
-  background-image: url('../img/agvehicle/field.jpg');
-  background-position: top;
+  background-image: url('../img/agvehicle/field3.png');
+  background-position: center;
   background-size: cover;
-  height: 400px;
-
-  text-align: right;
+  height: 600px;
 }
 
 #agvehicleFieldBackground h1 {
@@ -1343,7 +1343,7 @@ a span:hover {
 }
 
 #serviceBanner h1 {
-  margin-top: 190px;
+  margin-top: 120px;
 }
 
 #serviceBanner h3 {
@@ -1763,7 +1763,6 @@ ul.thumbnails-carousel li {
 
 #aboutContact {
   padding-bottom: 64px;
-  background-color: #f1f1f1;
 }
 
 /*Responsive Settings*/

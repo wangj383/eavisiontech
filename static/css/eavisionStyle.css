@@ -1486,6 +1486,11 @@ a span:hover {
   text-align: left;
 }
 
+#serviceDescription .slideshowText .citation p{
+  position: absolute;
+  bottom: 3rem;
+}
+
 #serviceDescription .w-100 {
   width: 450px !important;
   height: 268px;

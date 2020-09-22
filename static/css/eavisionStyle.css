@@ -974,6 +974,11 @@ a span:hover {
   padding: 15px auto;
 }
 
+
+.ea2020Section h2{
+  padding-bottom: 10px;
+}
+
 .ea2020Section .sideImg {
   width: 45vw;
   height: auto;
@@ -994,6 +999,12 @@ a span:hover {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.ea2020Section .sideImg4 {
+  width: 45vw;
+  height: auto;
+}
+
 
 .ea2020textSection {
   padding: 2rem 2rem;

@@ -40,12 +40,12 @@
             </div>
 
             <div v-else class="card round">
-              <div class="card-body" style="max-height: 230px;" @click="onDetail(n)">
-                <img class="news-img-left round" style="width:1000px" :src="n.osskey">
-                <div class="card-content">
+              <div class="card-body" style="height: 200px; max-height: 230px;" @click="onDetail(n)">
+                <img class="news-img-left round" :src="n.osskey">
+                <div class="card-content" style="padding: 0;">
                   <h3 class="card-title">{{n.title}}</h3>
                   <p class="card-text card-subtitle">{{n.des}}... (Read More)</p>
-                  <p class="card-text news-date pt-5">{{n.solutionDate.split(" ")[0]}}</p>
+                  <p class="card-text news-date pt-5" style="padding-top: 20px !important;">{{n.solutionDate.split(" ")[0]}}</p>
                 </div>
               </div>
             </div>

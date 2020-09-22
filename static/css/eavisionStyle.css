@@ -1280,9 +1280,10 @@ a span:hover {
   padding-bottom: 2rem;
 }
 
-#agvehicle-in-water {
-  width: 60vw;
-  height: 90%;
+#agvehicle-in-water{
+  width: 40vw;
+  height: auto；
+  
 }
 
 #cropCoverageBackground {

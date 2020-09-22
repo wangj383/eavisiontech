@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="/static/css/quill.bubble.css">
   <link rel="stylesheet" type="text/css" href="/static/css/quill.core.css">
   <link rel="stylesheet" type="text/css" href="/static/css/quill.snow.css">
-  <link rel="icon" href="/static/img/site_icon.png">
+  <!-- <link rel="icon" href="/static/img/site_icon.png"> -->
 </head>
 
 <body>
@@ -31,12 +31,12 @@
   </nav>
   <!-- mobile navbar -->
 
-  <div class="newsDetailContent">
-    <h1></h1>
+  <div class="newsDetailContent" style="margin-left:6rem;">
+    <h1 style="margin-right:3rem;"></h1>
     <div class="content">
-      <div class="newDeail">
-        <span class="publish-time"></span>
-        <div class="news-main">
+      <div class="newDetail">
+        <!-- <span class="publish-time"></span> -->
+        <div class="news-main mt-4 mr-5">
         </div>
       </div>
       <div class="right-content col-md-2">
@@ -56,13 +56,13 @@
           <h3 style="font-size: 22px; margin-bottom: 20px;">SOCIAL MEDIA</h3>
           <a target="_blank" style="display: flex; align-items: center; margin-bottom: 15px;"
             href="https://www.linkedin.com/company/eavision-technologies/">
-            <img style="width: 44px; height: 44px;" src="/static/img/icons/linkedin.png">
-            <span style="font-size: 20px; margin-left: 10px; color: black;">LinkedIn</span>
+            <img style="width: 30px; height: 30px;" src="/static/img/icons/linkedin.png">
+            <span style="font-size: 16px; margin-left: 10px; color: #353535;">LinkedIn</span>
           </a>
           <a target="_blank" style="align-items: center;"
             href="https://www.youtube.com/channel/UCL1683_IwdnG2kUso3qeQOg">
-            <img style="width: 44px; height: 44px;" src="/static/img/icons/youtube.png">
-            <span style="font-size: 20px; margin-left: 8px; color: black;">Youtube</span>
+            <img style="width: 30px; height: 30px;" src="/static/img/icons/youtube.png">
+            <span style="font-size: 16px; margin-left: 8px; color: #353535;">Youtube</span>
           </a>
         </div>
 
@@ -113,7 +113,6 @@
             $('.newsDetailContent h1').html(result.title)
             $('.publish-time').html(result.updateAt)
 
-
             result.content = result.content.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
               "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
 
@@ -123,7 +122,7 @@
       }
 
       $("#companyNews").click(function () {
-        window.open('/news.html', '_blank');
+        window.open('/news.html', '_self');
       })
 
       $(document).on('click', '.news-item span', function (res) {

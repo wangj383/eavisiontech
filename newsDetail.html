@@ -112,11 +112,6 @@
             var result = res.result || {}
             $('.newsDetailContent h1').html(result.title)
             $('.publish-time').html(result.updateAt)
-
-
-            result.content = result.content.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-              "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
-
             $('.news-main').html(result.content)
           }
         })

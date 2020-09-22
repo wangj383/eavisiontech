@@ -739,6 +739,7 @@ a span:hover {
   width: 100%;
 }
 
+<<<<<<< Updated upstream
 .first-new-item .bottom-container {
   position: absolute;
   bottom: 0;
@@ -770,7 +771,7 @@ a span:hover {
   margin: 20px 20px;
   padding: 10px 10px;
   text-align: left;
-}
+
 
 .homeNewsSection .card-subtitle {
   color: #606060;
@@ -781,6 +782,7 @@ a span:hover {
   margin: 1rem 2rem;
 }
 
+<<<<<<< Updated upstream
 #basf{
   width:150px; 
   padding-top:10px;
@@ -839,6 +841,12 @@ a span:hover {
 .news-img-left {
   width: 300px;
   height:100%;
+=======
+#homeEA2020bgBlack {
+  width:60vw;
+  height:auto;
+  margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 /* Solutions */
@@ -1280,9 +1288,10 @@ a span:hover {
   padding-bottom: 2rem;
 }
 
-#agvehicle-in-water {
-  width: 60vw;
-  height: 90%;
+#agvehicle-in-water{
+  width: 40vw;
+  height: auto；
+  
 }
 
 #cropCoverageBackground {

@@ -4,7 +4,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #fafafa !important;
   color: #353535;
   letter-spacing: 0;
@@ -57,7 +57,7 @@ p {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   /* font-weight: 550; */
-  font-size: 14px;
+  font-size: 16px;
   padding: 8px 32px;
   border: none;
   border-radius: 0px;
@@ -70,7 +70,7 @@ p {
   /* background-color: #289CEB; */
   border-radius: 4px;
   font-weight: 600;
-  font-size: 14px !important;
+  font-size: 16px !important;
   background-image: linear-gradient(-180deg, #42b7ff, #1897f2);
   transition-duration: 4s;
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
@@ -316,7 +316,7 @@ nav {
 
 .navigation a {
   color: #353535;
-  font-size: 14px;
+  font-size: 16px;
   /* letter-spacing: 1.5px; */
 }
 
@@ -581,7 +581,7 @@ a span:hover {
 }
 
 .row .copyright {
-  font-size: 10px;
+  font-size: 12px;
   padding-bottom: 24px !important;
   margin-left: 0px;
 }
@@ -774,7 +774,7 @@ a span:hover {
 
 .homeNewsSection .card-subtitle {
   color: #606060;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .partner_logo {
@@ -1050,7 +1050,7 @@ a span:hover {
 }
 
 .ea2020tableSection .table {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .ea2020tableSection .table th {
@@ -1076,7 +1076,7 @@ a span:hover {
 }
 
 .sixbox p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Mist Spray System */
@@ -1766,7 +1766,7 @@ ul.thumbnails-carousel li {
 }
 
 .leaders-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -1791,7 +1791,7 @@ ul.thumbnails-carousel li {
 
   /* General Styles */
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h1 {
@@ -1800,17 +1800,17 @@ ul.thumbnails-carousel li {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0px;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0px;
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0px;
   }
 

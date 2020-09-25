@@ -1832,13 +1832,6 @@ ul.thumbnails-carousel li {
     list-style: none;
   }
 
-  /* 
-   #logoimg {
-    position: relative;
-    left:10px;
-    top:10px;
-  } */
-
   .nav-button-mobile {
     position: fixed;
     top: 7px;

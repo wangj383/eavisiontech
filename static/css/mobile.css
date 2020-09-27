@@ -1,0 +1,165 @@
+@media (max-width: 767px){
+    html{
+        overflow-x: hidden;
+    }
+    #homeBanner .carousel-indicators{
+        bottom: 0px;
+    }
+    #homeBanner .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+    #homeBanner .w-100 {
+        height: 450px;
+    }
+    .homeTextSection{
+        padding: 1rem 2rem;
+    }
+    .homeTextSection .pt-5 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .homeTextSection .py-5{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .homeTextSection .py-5 .col{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        flex-basis:inherit !important;
+    }
+    .homeTextSection .py-5 .col h3{
+        margin-bottom: 0px;
+    }
+    #homeEA2020bgBlack{
+        width: 60vw;
+        height: auto;
+    }
+    p.lightWhite{
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
+    .homeCardSection{
+        padding: 0px 1rem;
+    }
+    .homeCardSection .row{
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    .homeCardSection .row .col{
+        width: 45%;
+        flex-grow: inherit;
+        margin: 20px 0px;
+        min-width:auto;
+        flex-basis:inherit;
+        padding: 0px;
+    }
+
+    .homeCardSection .row .col .card-body{
+        padding: 20px;
+    }
+    .homeCardSection .row .col .card-body .card-title{
+        min-height: 50px;
+        font-size: 16px;
+    }
+    .homeCardSection .row .col .card-body img{
+        width: 100% !important;
+        margin: 0px auto !important;
+    }
+
+    .homeCardSection>.row>h2{
+        margin: 0px;
+        margin-top: 2rem;
+    }
+
+    .homeCardSection.pb-5 .row .card{
+        margin: 20px 0px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .homeCardSection.pb-5 .row .card .card-title{
+        padding-top: 0px !important;
+    }
+    .homeCardSection.pb-5 .row .card img{
+        width: 80% !important;
+        height: auto !important;
+        margin: 0px !important;
+    }
+
+    #homePartners .row {
+        padding: 0px;
+    }
+    #homePartners .img-box{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: space-around;
+    }
+    #homePartners .img-box .partner_logo{
+        margin: 0px;
+    }
+    .homeNewsSection{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    .homeNewsSection .card .card-body{
+        max-height: auto !important;
+        flex-wrap: wrap;
+
+    }
+    .homeNewsSection .card .card-body .news-img-left{
+        width: 100%;
+        height: auto !important;
+    }
+    .homeNewsSection .card .card-body .card-content{
+        margin: 0px;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .serviceSection{
+        padding: 0px;
+    }
+    .aboutSection{
+        padding-bottom: 20px;
+    }
+    .aboutSection .row{
+        flex-wrap: wrap;
+    }
+    .aboutSection .row .col-6{
+        flex: auto;
+        max-width: 90%;
+    }
+    .aboutSection .row .col-5{
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    .aboutSection .row .col-5 .sideImg{
+        width: 100%;
+        padding: 0px;
+    }
+    .bgLightGrey{
+        padding:3rem 0px !important;
+    }
+    .bgLightGrey .col-9 h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .bgLightGrey .col-9 .leaders-title {
+        text-align: center;
+    }
+    .bgLightGrey .col-9{
+        flex: auto;
+        max-width: 90%;
+    }
+    #aboutContact{
+        padding: 0px !important;
+    }
+    #serviceContact{
+        padding: 0px !important;
+    }
+    .serviceSection .row{
+        margin-top: 0px;
+    }
+}

@@ -746,6 +746,8 @@ a span:hover {
     width: 60vw;
     margin-bottom: 40px;
     cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .first-new-item img {

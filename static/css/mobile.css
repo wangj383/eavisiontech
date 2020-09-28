@@ -140,7 +140,7 @@
         padding: 0px;
     }
     .bgLightGrey{
-        padding:3rem 0px !important;
+        padding:2rem 0px !important;
     }
     .bgLightGrey .col-9 h3 {
         text-align: center;
@@ -161,5 +161,234 @@
     }
     .serviceSection .row{
         margin-top: 0px;
+    }
+    .homeNewsSection .card .card-body{
+        flex-wrap: wrap;
+    }
+    .homeNewsSection .col-md-2{
+        padding-left: 4rem;
+        box-sizing: border-box;
+    }
+    .homeNewsSection .first-new-item{
+        width: 80%;  
+    }
+    .first-new-item .bottom-container{
+        font-size: 12px;
+    }
+    .homeNewsSection .card{
+        width: 80%;
+        margin: 1rem 0px;
+    }
+    .ea2020Section .row{
+        flex-direction: column-reverse;
+    }
+    .ea2020Section .row .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ea2020Section .row .col-6 .sideImg4{
+        width: 100%;
+    }
+    .ea2020Section .row .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 2rem;
+    }
+    .ea2020overlay .right{
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 2rem;
+    }
+    .ea2020overlay .right .col-3{
+        flex: 0 0 40%;
+        max-width: 40%;
+        margin-bottom: 40px;
+    }
+    .ea2020overlay .right>div{
+        padding: 0px;
+    }
+    .ea2020overlay .right .col-3 .whitetextshadow{
+        line-height: 1.2;
+    }
+     .ea2020overlay .right .col-3 h3{
+         font-size: 16px;
+     }
+     .ea2020Section.py-3 .col-6{
+        flex-direction: initial;
+     }
+     .ea2020Section.py-3 .col-6 .sideImg2{
+         width: 80%;
+         padding: 0px;
+         flex: 0;
+     }
+     .ea2020textSection{
+         padding: 0px;
+     }
+     .ea2020textSection .py-2{
+         display: block;
+     }
+     .ea2020textSection .py-2 .col{
+         padding: 0px 40px;
+         margin: 0 !important;
+     }
+    .ea2020textSection .row .col-9{
+        margin: 0px !important;
+        padding: 0px 40px;
+        width: 100%;
+        flex: 1;
+        max-width: 100%;
+        text-align: left;
+    }
+     .ea2020textSection .pt-5 .lightWhite{
+         text-align: left;
+         margin: 0px;
+         padding: 0px 40px;
+     }
+    .ea2020textSection .py-2 .col .lightWhite{
+        text-align: left;
+    }
+    .ea2020textSection .title{
+        padding: 0px !important;
+    }
+    .cropped-ea2020 img{
+        width: 90%;
+        height: auto;
+    }
+    .system {
+        padding: 2rem 0px !important;
+    }
+    .system .row{
+        flex-direction: column;
+    }
+    .system .row .col-5 .py-4{
+        padding: 0px !important;
+    }
+    .system .row .col-5 .my-3 {
+        margin-bottom: 0px !important;
+    }
+    .ea2020Section h2{
+        padding-bottom: 0px;
+    }
+    .system .row .col-sm-7 .sideImg3 {
+        width: 80%;
+        padding: 0px;
+    }
+    .package .pt-5{
+        padding-top: 0px !important;
+    }
+    .package .pt-5 .col-5{
+        text-align: center;
+    }
+    .package .pt-5 .sideImg{
+        width: 80%;
+        padding: 0px;
+    }
+    .versions {
+        padding:2rem 0px !important;
+    }
+    .versions .table-responsive{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .versions .table-responsive th,
+    .versions .table-responsive td{
+        font-size: 12px;
+    }
+    .versions .table-responsive td img{
+        width: 12px;
+    }
+    .versions .container .sixbox{
+        display: block;
+    }
+    .versions .container .sixbox .col{
+        text-align: left;
+    }
+    .spraySystemTextSection .row{
+        display: block;
+        padding: 0px 20px;
+    }
+    .spraySystemTextSection .row .col{
+        margin: 0px !important;
+    }
+    .spraySystemVideoSection {
+        padding: 0px;
+    }
+    .spraySystemVideoSection .spraySystemTextSection{
+        padding: 0px;
+    }
+    .spraySystemVideoSection .spraySystemTextSection .col-9{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px 40px !important;
+    }
+    .sprayLeafBackground {
+        height: 380px;
+    }
+    .sprayLeafBackground .row.pt-5{
+        padding-top: 1rem !important;
+    }
+    .sprayLeafBackground .row .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .bgDroneSpray {
+        height: 400px;
+    }
+    .spraySystemTextSection .col-9{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .bgLightGrey .row .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #agvehicleBanner .container-fluid h1{
+        line-height: 1.5;
+    }
+    .agvehicleSection {
+        padding: 2rem 0px;
+    }
+    .agvehicleSection .row{
+        display: block;
+    }
+    .agvehicleSection .row #agvehicle-cartoon{
+        width: 100%;
+    }
+    #cropCoverageBackground{
+        height: 500px;
+    }
+    #cropCoverageBackground .row{
+        padding: 10px 20px !important;
+    }
+    .agvehicleTextSection{
+        padding: 2rem 0px;
+    }
+    .agvehicleTextSection .row{
+        display: block;
+    }
+    .agvehicleTextSection .row .iconSections{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    #agvehicleFieldBackground .row .col-9{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px !important;
+    }
+    .bgLightGrey .row h2{
+        text-align: center;
+    }
+    .bgLightGrey .row .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .bgLightGrey .row .col-5 #agvehicle-sideview{
+        width: 100%;
+    }
+    .bgLightGrey .row .col-4{
+        padding: 0px 40px;
     }
 }

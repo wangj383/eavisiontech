@@ -10,7 +10,15 @@
         height: 10px;
     }
     #homeBanner .w-100 {
-        height: 450px;
+        height: 600px;
+        width: auto !important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #carouselExampleIndicators .carousel-control-prev,
+    #carouselExampleIndicators .carousel-control-next{
+        display: none;
     }
     .homeTextSection{
         padding: 1rem 2rem;
@@ -24,8 +32,8 @@
         padding-bottom: 0px !important;
     }
     .homeTextSection .py-5 .col{
-        margin-left: 0px !important;
-        margin-right: 0px !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
         flex-basis:inherit !important;
     }
     .homeTextSection .py-5 .col h3{
@@ -33,14 +41,15 @@
     }
     #homeEA2020bgBlack{
         width: 60vw;
-        height: auto;
+        height:30vw;
+        margin-bottom:1rem;
     }
     p.lightWhite{
         margin-bottom: 2rem;
         line-height: 1.2;
     }
     .homeCardSection{
-        padding: 0px 1rem;
+        padding: 0px 2rem !important;
     }
     .homeCardSection .row{
         margin: 0px;
@@ -59,7 +68,7 @@
     .homeCardSection .row .col .card-body{
         padding: 20px;
     }
-    .homeCardSection .row .col .card-body .card-title{
+    .homeCardSection .row .card-body .card-title{
         min-height: 50px;
         font-size: 16px;
     }
@@ -85,17 +94,17 @@
     .homeCardSection.pb-5 .row .card img{
         width: 80% !important;
         height: auto !important;
-        margin: 0px !important;
+        margin: 0px!important;
     }
 
     #homePartners .row {
-        padding: 0px;
+        padding: 0rem 2rem;
     }
     #homePartners .img-box{
         display: flex;
         flex-wrap: wrap;
-        
         justify-content: space-around;
+        margin-top: 1rem;
     }
     #homePartners .img-box .partner_logo{
         margin: 0px;
@@ -104,13 +113,34 @@
         padding: 0px;
         padding-bottom: 20px;
     }
+
+    .homeNewsSection .card{
+        /* width: 60vw !important; */
+    }
+
+    .homeNewsSection .card .card-title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .homeNewsSection .card .card-subtitle {
+        text-overflow:ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
     .homeNewsSection .card .card-body{
         max-height: auto !important;
         flex-wrap: wrap;
 
     }
     .homeNewsSection .card .card-body .news-img-left{
-        width: 100%;
+        width: 100% !important;
         height: auto !important;
     }
     .homeNewsSection .card .card-body .card-content{
@@ -140,7 +170,7 @@
         padding: 0px;
     }
     .bgLightGrey{
-        padding:2rem 0px !important;
+        padding:2rem 0px;
     }
     .bgLightGrey .col-9 h3 {
         text-align: center;
@@ -151,7 +181,8 @@
     }
     .bgLightGrey .col-9{
         flex: auto;
-        max-width: 90%;
+        max-width: 100%;
+        padding: 0px;
     }
     #aboutContact{
         padding: 0px !important;
@@ -161,6 +192,22 @@
     }
     .serviceSection .row{
         margin-top: 0px;
+        padding: 1rem;
+    }
+    .serviceSection .row .my-3{
+        padding: 0px;
+    }
+    .serviceSection .card h2{
+        font-size:20px;
+        margin:1rem 2rem !important;
+    }
+
+    #contactSubtitles .row{
+        padding: 0 0.3rem;
+    }
+
+    #contact_form .pb-2{
+        padding-bottom: 0 !important;
     }
     .homeNewsSection .card .card-body{
         flex-wrap: wrap;
@@ -235,11 +282,14 @@
      }
     .ea2020textSection .row .col-9{
         margin: 0px !important;
-        padding: 0px 40px;
+        padding: 0px 20px !important;
         width: 100%;
         flex: 1;
         max-width: 100%;
         text-align: left;
+    }
+    .ea2020textSection .row .py-4{
+        padding: 0px 40px !important;
     }
      .ea2020textSection .pt-5 .lightWhite{
          text-align: left;
@@ -324,7 +374,7 @@
         padding: 0px 40px !important;
     }
     .sprayLeafBackground {
-        height: 380px;
+        height: auto;
     }
     .sprayLeafBackground .row.pt-5{
         padding-top: 1rem !important;
@@ -367,6 +417,7 @@
     }
     .agvehicleTextSection .row{
         display: block;
+        padding: 1rem 20px;
     }
     .agvehicleTextSection .row .iconSections{
         padding: 0px !important;
@@ -379,6 +430,7 @@
     }
     .bgLightGrey .row h2{
         text-align: center;
+        padding: 0px 1rem;
     }
     .bgLightGrey .row .col-5{
         flex: 0 0 100%;
@@ -389,6 +441,75 @@
         width: 100%;
     }
     .bgLightGrey .row .col-4{
-        padding: 0px 40px;
+        padding: 0px 20px;
+    }
+    #serviceDescription .stepsContainer{
+        margin: 0px;
+    }
+    .stepsContainer .serviceStep {
+        min-width: 350px;
+    }
+
+    #serviceDescription .slideshow-container{
+        min-width: 100%;
+    }
+    #carouselArea{
+        padding-bottom: 0px;
+    }
+    #serviceDescription .slideshowText{
+        min-width: 100%;
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    #serviceDescription .citation{
+        margin: 0px;
+    }
+    #serviceDescription .citation p{
+        position: relative !important;
+        bottom: 0px !important;
+        margin-top: 20px;
+    }
+    #serviceDescription h1{
+        right: 0px;
+    }
+    .serviceSection .row .col-6{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    #techImg{
+        width: 100%;
+        height: auto;
+    }
+    .serviceSection .row .col-4{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .newsDetailContent{
+        margin: 80px auto !important;
+    }
+    .newsDetailContent h1{
+        margin-right: 0px !important;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .newsDetailContent .newDetail .news-main{
+        margin: 0px !important;
+    }
+    .newsDetailContent .newDetail .news-main img{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .newsDetailContent .content{
+        flex-wrap: wrap;
+    }
+    .newsDetailContent .right-content {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .newsDetailContent .right-content .news-list .news-item {
+        width: 100% !important;
+    }
+    .newsDetailContent .right-content .news-list .news-item img{
+        height: auto !important;
     }
 }

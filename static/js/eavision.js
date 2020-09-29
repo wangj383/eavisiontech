@@ -143,7 +143,7 @@ function submitForm() {
                     '<p> We appreciate you contacting us about ' +
                     subject.value +
                     '. One of our colleagues will get back to you shortly.' +
-                    '<br/> Have a great day!</p>'
+                    'Have a great day!</p>'
 
                 get_id('name').value = ''
                 get_id('email').value = ''

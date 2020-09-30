@@ -616,12 +616,15 @@ a span:hover {
 #homeBanner {
     background: rgba(162, 199, 224, 0.185);
     color: #ffffff;
-    margin-top: 48px;
+    margin-top: 52px;
 }
 
 #homeBanner .w-100 {
     width: 100% !important;
     height: 720px;
+}
+.carousel-item{
+    overflow: hidden;
 }
 
 /* #homeVideo {
@@ -1810,7 +1813,7 @@ ul.thumbnails-carousel li {
 
     /* General Styles */
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     h1 {
@@ -1849,6 +1852,9 @@ ul.thumbnails-carousel li {
 
     .navbar-nav {
         background-color: white;
+    }
+    .navbar-nav .link{
+        display: none;
     }
 
     .nav-products li {

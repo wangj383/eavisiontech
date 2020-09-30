@@ -11,6 +11,16 @@ $(function () {
     $('.navbar-toggler').on('click', function () {
         $('.bodyOverlay').toggleClass('menu-open')
     })
+    $(document).mouseup(function (e) {
+        var _con = $('#navbarToggler');
+        if (!_con.is(e.target) && _con.has(e.target).length === 0) {
+            var className = $('.navbar-collapse').attr('class');
+            if (className.indexOf('show') != -1) {
+                $('.navbar-toggler').click()
+            }
+            
+        }
+    })
     if ($('#serviceContact')) {
         $.get('../../contact.html', function (val) {
             var from = $('#frompage').val()
@@ -112,6 +122,24 @@ $(function () {
 
             return this
         }
+
+
+        var $carousels = $('.carousel');
+        var startX, endX;
+        var offset = 50;
+        $carousels.on('touchstart', function (e) {
+            startX = e.originalEvent.touches[0].clientX;
+
+        });
+        $carousels.on('touchmove', function (e) {
+            endX = e.originalEvent.touches[0].clientX;
+        });
+        $carousels.on('touchend', function (e) {
+            var distance = Math.abs(startX - endX);
+            if (distance > offset) {
+                $(this).carousel(startX > endX ? 'next' : 'prev');
+            }
+        })
     })(window, jQuery)
 
 $('.thumbnails-carousel').thumbnailsCarousel()

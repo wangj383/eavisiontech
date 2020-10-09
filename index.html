@@ -147,7 +147,7 @@
                     <a href="spraysystem.html">
                         <div class="card-body">
                             <h2 class="card-title">Mist Spray System</h2>
-                            <img id="homeSprayimg" src="/static/img/homePage/mistspray.png">
+                            <img id="homeSprayimg" src="/static/img/homePage/mistSpray.png">
                         </div>
                     </a>
                 </div>
@@ -261,7 +261,7 @@
             methods: {
                 getNews() {
                     var vu = this;
-                    $.post('http://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
+                    $.post('https://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
                         vu.news = ret.result;
                         $.each(vu.news, function (i, v) {
                             v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,

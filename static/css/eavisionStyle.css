@@ -298,6 +298,7 @@ nav {
 .navigation .container {
     height: 52px;
     position: relative;
+    padding: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -348,34 +349,42 @@ a span:hover {
 }
 
 #logoimg {
-    vertical-align: bottom;
-    width: 120px;
     height: 42px;
     position: relative;
-    margin-left: 2px;
-    margin-right: 12px;
+    margin-top: -10px;
 }
 
 .nav-item {
+    box-sizing: border-box;
     border-bottom: transparent 2px solid;
-    cursor: pointer;
+}
+
+.navbar-nav .nav-item.mx-auto>.nav-link {
+    height: 52px;
+    display: inline-block;
+    line-height: 52px;
 }
 
 .nav-item .dropdown {
     list-style: none;
     position: absolute;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-        0 2px 6px 2px rgba(60, 64, 67, 0.15);
     z-index: 20;
     margin-top: 2px;
     max-height: 0;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .nav-item:hover .dropdown {
     max-height: 200px;
     transition: max-height 0.3s ease-in;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+}
+.nav-item .dropdown .nav-link{
+    padding: 0px;
+    height: 46px;
 }
 
 .nav-product-list {
@@ -400,7 +409,7 @@ a span:hover {
     position: relative;
     width: 33%;
     margin-bottom: 0;
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
 
 /* 
@@ -574,6 +583,10 @@ a span:hover {
 
 .footer a {
     color: #f1f1f1c0;
+    font-size: 13px;
+}
+.footer p{
+    margin-bottom: 5px;
 }
 
 .footer a:hover {
@@ -619,9 +632,12 @@ a span:hover {
     margin-top: 52px;
 }
 
-#homeBanner .w-100 {
-    width: 100% !important;
+#homeBanner .d-block {
+    width: 100%;
     height: 720px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .carousel-item{
     overflow: hidden;
@@ -645,6 +661,7 @@ a span:hover {
 #homeBanner .carousel-caption h1,
 #homeBanner .carousel-caption h3 {
     color: black;
+    margin-bottom: 0px;
 }
 
 .carousel-caption a {
@@ -679,12 +696,17 @@ a span:hover {
 }
 
 .homeTextSection {
-    padding: 1rem 4rem;
+    padding: 3rem 4rem;
+}
+.homeTextSection p.lightWhite{
+    margin: 0px;
+}
+.homeTextSection .col-lg-3{
+    margin-top: 1rem;
 }
 
 .homeTextSection h2 {
     margin: 0 auto;
-    padding: 1rem 1rem;
 }
 
 .homeSection .row {
@@ -694,15 +716,15 @@ a span:hover {
 }
 
 .homeCardSection {
-    padding: 0rem 5rem;
+    padding: 0rem 4rem;
 }
 
 .homeCardSection>.row>h2 {
-    margin: 4rem 2rem 1rem 2rem;
+    margin: 3rem 0rem 1rem 0rem;
 }
 
 .homeCardSection .card {
-    margin: 2rem 2rem;
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -740,10 +762,6 @@ a span:hover {
     padding: 3rem 4rem;
 }
 
-.homeNewsSection h2 {
-    margin: 2rem 2rem;
-}
-
 .homeNewsSection .first-new-item {
     position: relative;
     width: 60vw;
@@ -775,6 +793,7 @@ a span:hover {
     padding: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 60vw;
+    transition: all .3s;
 }
 
 .homeNewsSection .card .card-body {
@@ -785,46 +804,52 @@ a span:hover {
 
 
 .homeNewsSection .card-content {
-    margin: 20px 20px;
-    padding: 10px 10px;
+    padding: 20px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeNewsSection .card-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .homeNewsSection .card-subtitle {
     color: #606060;
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-
-.partner_logo {
-    margin: 1rem 2rem;
+.homeNewsSection .card:hover{
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
-#basf {
-    width: 150px;
-    padding-top: 10px;
+.homeNewsSection .card:hover .card-title{
+    text-decoration: underline;
 }
-
-#fmc {
-    width: 180px;
+.news-date {
+    margin-top: auto;
 }
-
-#longping {
-    width: 160px;
+.img-box a{
+    text-align: center;
 }
-
-#syngenta {
-    width: 180px;
-    padding-bottom: 10px;
+.img-box a img{
+    width: 70%;
 }
 
 #homeEA2020bgBlack {
-    width: 50vw;
-    height: 25vw;
-    margin: 0 auto 10px auto;
+    width: 400px;
+    margin: auto;
+    margin-top: 2rem;
 }
 
 #homeEa2020img {
-    width: 250px;
+    width: 100%;
     margin: 2rem auto;
 }
 
@@ -839,24 +864,25 @@ a span:hover {
 }
 
 #homeSprayimg {
-    width: 250px;
+     width: 100%;
     margin: 2rem auto;
 }
 
 #homeAgVehicleimg {
-    width: 230px;
+   width: 100%;
 }
 
 #homecornfieldimg {
     object-fit: cover;
     width: 43vw;
     height: 11vw;
-    margin-top: 1rem;
 }
 
 .news-img-left {
-    width: 300px;
-    /* height: 100%; */
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Solutions */
@@ -1141,10 +1167,17 @@ a span:hover {
 }
 
 .spraySystemTextSection {
-    padding: 3rem 6rem;
+    padding: 3rem 2rem;
     margin: 0 auto;
 }
+.spraySystemTextSection .row .col-12{
+    margin-bottom: 0px;
+    padding-bottom: 0px !important;
+}
 
+.spraySystemTextSection .font-weight-bold{
+    font-size: 20px;
+}
 .spraySystemTextSection .row {
     padding: 1rem 0;
 }
@@ -1257,7 +1290,7 @@ a span:hover {
 }
 
 .agvehicleSection {
-    padding: 3rem 6rem;
+    padding: 3rem 4rem;
 }
 
 .agvehicleSection .row {
@@ -1269,9 +1302,12 @@ a span:hover {
 .agvehicleSection h2 {
     padding: 1rem 0;
 }
+.agvehicleTextSection .font-weight-bold{
+    font-size: 20px;
+}
 
 .agvehicleTextSection {
-    padding: 3rem 6rem;
+    padding: 3rem 4rem;
     margin: 0 auto;
 }
 
@@ -1315,10 +1351,14 @@ a span:hover {
 }
 
 #cropCoverageBackground {
-    background-image: url('../img/agvehicle/tree.png');
+    background-image: url('../img/agvehicle/tree.jpeg');
     background-position: top;
     background-size: cover;
     height: 700px;
+}
+#cropCoverageBackground h2,
+#cropCoverageBackground p {
+    color: #FFF;
 }
 
 #agvehicle-cartoon {
@@ -1345,7 +1385,7 @@ a span:hover {
 }
 
 #agvehicle-sideview {
-    width: 40vw;
+    width: 100%;
 }
 
 .agvehicleIcon {
@@ -1408,15 +1448,8 @@ a span:hover {
     padding-bottom: 30px;
 }
 
-#serviceDescription h1 {
-    position: relative;
-    right: 10px;
-    /* color:#289CEB; */
-}
-
 #serviceDescription h2 {
-    margin-top: 40px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 #serviceDescription h3 {
@@ -1435,12 +1468,7 @@ a span:hover {
 }
 
 #serviceDescription .serviceStep {
-    padding: 0px 10px;
-    margin: 0 0px;
-    /* background-color:white; */
-    border-radius: 10px 10px 10px 10px;
-    min-width: 350px;
-    margin-bottom: 20px;
+    /* min-width: 350px; */
 }
 
 #serviceDescription .serviceStep .card {
@@ -1476,7 +1504,10 @@ a span:hover {
     text-align: center;
     font-size: 32px;
 }
-
+.carousel-control-next,
+.carousel-control-prev{
+    height: 268px;
+}
 #serviceDescription .col-1 {
     padding: 5px;
 }
@@ -1485,14 +1516,17 @@ a span:hover {
     position: relative;
     width: auto;
     height: 270px;
-    /* margin: 0 auto;
-	margin-top: 35px;
-	margin-bottom: 45px; */
+    object-fit: cover;
+    object-position: center;
 }
 
 #serviceDescription .serviceStep p {
     font-size: 92%;
     color: rgb(125, 126, 126);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 #serviceDescription .col-1 .arrowicon {
@@ -1516,11 +1550,6 @@ a span:hover {
 
 #serviceDescription .slideshowText {
     text-align: left;
-}
-
-#serviceDescription .slideshowText .citation p {
-    position: absolute;
-    bottom: 3rem;
 }
 
 #serviceDescription .w-100 {
@@ -1550,27 +1579,28 @@ a span:hover {
 
 #serviceIcon1 {
     margin-bottom: 20px;
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
 
 #serviceIcon2 {
-    margin-bottom: 5px;
-    width: 110px;
-    height: auto;
+    margin-bottom: 20px;
+    width: auto;
+    height: 100px;
 }
 
 #serviceIcon3 {
-    margin-bottom: 5px;
-    width: 140px;
-    height: auto;
+    margin-bottom: 20px;
+    width: auto;
+    height: 100px;
 }
 
 #serviceDescription .citation {
     justify-content: flex-end;
     color: grey;
-    font-size: 10px;
-    margin: auto 4.5rem;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-right: 15px;
 }
 
 
@@ -1647,12 +1677,15 @@ ul.thumbnails-carousel li {
 }
 
 .carousel-caption h3 {
-    padding: 20px 25px 10px 25px;
+    padding: 20px 0px 10px 0px;
     color: #353535;
 }
 
+.carousel-caption h1{
+    line-height: 40px;
+}
 #carouselArea {
-    padding-bottom: 64px;
+    padding-bottom: 3rem;
 }
 
 /* Recent News */
@@ -1672,6 +1705,7 @@ ul.thumbnails-carousel li {
 .pressCardArea .card-img-top {
     height: 216px;
     width: auto;
+    
 }
 
 .recentNews .card-body,
@@ -1741,7 +1775,7 @@ ul.thumbnails-carousel li {
 }
 
 #aboutBanner h3 {
-    margin-top: 17vw;
+    margin-top: 200px;
     margin-bottom: 15px;
 }
 
@@ -1749,7 +1783,12 @@ ul.thumbnails-carousel li {
     margin-top: 0px;
     margin-bottom: 48px;
 }
-
+.abouttextSection .row p{
+    margin-bottom: 0px;
+}
+.positions {
+    background-color: #FFF;
+}
 .aboutSection .row {
     justify-content: center;
     align-items: center;
@@ -1780,6 +1819,10 @@ ul.thumbnails-carousel li {
     font-weight: 600;
     color: #289ceb;
     text-decoration: none;
+}
+.leaders img{
+    width: 15px;
+    margin-left: 4px;
 }
 
 .leaders:hover {
@@ -1872,7 +1915,6 @@ ul.thumbnails-carousel li {
         padding-top: 32px;
         color: white;
     }
-
     .footer .col-2 {
         padding-right: 40px;
     }
@@ -2096,17 +2138,8 @@ ul.thumbnails-carousel li {
         margin-bottom: 32px;
     }
 
-    #aboutMap {
-        position: relative;
-        padding-bottom: 75%;
-        height: 0;
-        overflow: hidden;
-    }
 
     #aboutMap iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100% !important;
         height: 100% !important;
     }
@@ -2137,6 +2170,9 @@ ul.thumbnails-carousel li {
     }
     #mobile-navbar .dropdown-menu li:last-child a {
         padding-bottom: 0px;
+    }
+    #mobile-navbar .dropdown-menu li:first-child a {
+        padding-top: 0px;
     }
     .navigation .navbar-collapse{
         position: fixed;

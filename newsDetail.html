@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #FFFFFF !important;">
     <!-- navbar -->
     <nav id="navbar" class="navbar navigation navbar-expand-md d-none d-md-block fixed-top">
 
@@ -33,13 +33,41 @@
 
     <div class="newsDetailContent" style="margin-left:6rem;">
         <h1 style="margin-right:3rem;"></h1>
+        
         <div class="content">
             <div class="newDetail">
                 <!-- <span class="publish-time"></span> -->
+                <div class="publish-time mr-lg-5 mr-md-5 mr-sm-0">
+                    <div class="time">Published December</div>
+                    <div class="share-box">
+                        SHARE
+                        <a class="share share1" href="">
+                            <img src="/static/img/icons/fackbook.png" alt="">
+                        </a>
+                        <a class="share share2" href="">
+                            <img src="/static/img/icons/twitter.png" alt="">
+                        </a>
+                        <a class="share share3" href="">
+                            <img src="/static/img/icons/email.png" alt="">
+                        </a>
+                    </div>
+                </div>
                 <div class="news-main mt-4 mr-5">
                 </div>
+                <div class="share-box pb-5">
+                    SHARE
+                    <a class="share share1" href="">
+                        <img src="/static/img/icons/fackbook.png" alt="">
+                    </a>
+                    <a class="share share2" href="">
+                        <img src="/static/img/icons/twitter.png" alt="">
+                    </a>
+                    <a class="share share3" href="">
+                        <img src="/static/img/icons/email.png" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="right-content col-md-2">
+            <div class="right-content ml-lg-5 ml-md-5 ml-sm-0">
                 <div>
                     <h3 style="margin:20px 0 !important; font-size: 22px;">CATEGORIES</h3>
                     <div id="companyNews" style="cursor: pointer">Company News (3)</div>
@@ -87,6 +115,16 @@
             var id = search.split('=')[1];
             getNewDetail(id)
 
+            $('.share1').click(function(){
+                window.open('https://www.facebook.com/sharer/sharer.php?u='+ encodeURIComponent(document.location.href))
+            })
+
+            $('.share2').click(function () {
+                window.open('http://twitter.com/home?status=' + encodeURIComponent(document.location.href))
+            })
+
+            
+
             $.post('https://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (res) {
 
 
@@ -102,6 +140,7 @@
                             </div>`
                     })
                     $('.news-list').append(html);
+                    
                 }
             })
 
@@ -111,8 +150,14 @@
                     if (res.code == '000000') {
                         var result = res.result || {}
                         $('.newsDetailContent h1').html(result.title)
-                        $('.publish-time').html(result.updateAt)
+                        $('.publish-time .time').html(result.updateAt)
                         $('.news-main').html(result.content)
+
+                        $('.share3').click(function () {
+                            parent.location.href = 'mailto:' + '' + '?subject=' + result.title + '&body=' + document.location.href;
+                            
+                        })
+
                     }
                 })
             }

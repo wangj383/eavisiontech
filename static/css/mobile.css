@@ -1,3 +1,14 @@
+
+@media (max-width: 1400px){
+    #homeBanner .d-block {
+        width: auto;
+    }
+}
+@media (min-width: 768px){
+    h2 {
+        font-size: 24px;
+    }
+}
 @media (max-width: 767px){
     html{
         overflow-x: hidden;
@@ -10,7 +21,7 @@
         margin-left: 2rem;
     }
     .nav-item:hover{
-        border-width: 0px;
+        border-color: transparent;
     }
     .navigation a{
         text-decoration: none;
@@ -39,12 +50,8 @@
         width: 10px;
         height: 10px;
     }
-    #homeBanner .w-100 {
+    #homeBanner .d-block {
         height: calc(100vh - 52px);
-        width: auto !important;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
     }
     #carouselExampleIndicators .carousel-control-prev,
     #carouselExampleIndicators .carousel-control-next{
@@ -63,70 +70,10 @@
         right: 10%;
         top: 0px;
     }
-    .homeTextSection{
-        padding: 1rem 2rem;
+    #homeEA2020bgBlack {
+        width: 50vw;
     }
-    .homeTextSection .pt-5 {
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-    }
-    .homeTextSection .py-5{
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-    }
-    .homeTextSection .py-5 .col{
-        margin-left: 0rem !important;
-        margin-right: 0rem !important;
-        flex-basis:inherit !important;
-    }
-    .homeTextSection .py-5 .col h3{
-        margin-bottom: 0px;
-    }
-    #homeEA2020bgBlack{
-        width: 60vw;
-        height:30vw;
-        margin-bottom:1rem;
-    }
-    p.lightWhite{
-        margin-bottom: 2rem;
-        line-height: 1.2;
-    }
-    .homeCardSection{
-        padding: 0px 2rem !important;
-    }
-    .homeCardSection .row{
-        margin: 0px;
-        justify-content: space-between;
-    }
-
-    .homeCardSection .row .col{
-        width: 100%;
-        flex-grow: inherit;
-        margin: 20px 0px;
-        min-width:auto;
-        flex-basis:inherit;
-        padding: 0px;
-    }
-
-    .homeCardSection .row .col .card-body{
-        padding: 20px;
-    }
-    .homeCardSection .row .card-body .card-title{
-        min-height: 20px;
-        font-size: 16px;
-    }
-    .homeCardSection .row .col .card-body img{
-        width: 100% !important;
-        margin: 0px auto !important;
-    }
-
-    .homeCardSection>.row>h2{
-        margin: 0px;
-        margin-top: 2rem;
-    }
-
     .homeCardSection.pb-5 .row .card{
-        margin: 20px 0px;
         width: 100%;
     }
 
@@ -138,29 +85,6 @@
         width: 100% !important;
         height: auto !important;
         margin: 0px!important;
-    }
-
-    #homePartners .row {
-        padding: 0rem 2rem;
-    }
-    #homePartners .img-box{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 1rem;
-    }
-    #homePartners .img-box .partner_logo{
-        margin: 0px;
-        width: 140px;
-        margin-bottom: 20px;
-    }
-    .homeNewsSection{
-        padding: 0px;
-        padding-bottom: 20px;
-    }
-
-    .homeNewsSection .card{
-        /* width: 60vw !important; */
     }
 
     .homeNewsSection .card .card-title {
@@ -188,11 +112,6 @@
         width: 100% !important;
         height: auto !important;
     }
-    .homeNewsSection .card .card-body .card-content{
-        margin: 0px;
-        padding: 20px;
-        padding-bottom: 40px;
-    }
     .serviceSection{
         padding: 0px;
     }
@@ -214,9 +133,6 @@
         width: 100%;
         padding: 0px;
     }
-    .bgLightGrey{
-        padding:2rem 0px;
-    }
     .bgLightGrey .col-9 h3 {
         text-align: center;
         margin-top: 20px;
@@ -228,6 +144,9 @@
         flex: auto;
         max-width: 100%;
         padding: 0px;
+    }
+    #aboutBanner h3{
+        margin-top: 70px;
     }
     #aboutContact{
         padding: 0px !important;
@@ -250,6 +169,11 @@
         font-size:20px;
         margin:1rem 2rem !important;
     }
+    .increased .row{
+        padding: 0px;
+        margin-bottom: 0px;
+        padding-top: 1rem;
+    }
 
     #contactSubtitles .row{
         padding: 0 0.3rem;
@@ -266,7 +190,7 @@
         box-sizing: border-box;
     }
     .homeNewsSection .first-new-item{
-        width: 80%;  
+        width: 100%;  
     }
     .first-new-item .bottom-container{
         font-size: 12px;
@@ -297,7 +221,7 @@
         line-height: 1.4;
     }
     .homeNewsSection .card{
-        width: 80%;
+        width: 100%;
         margin: 1rem 0px;
     }
     .ea2020Section .row{
@@ -315,7 +239,7 @@
     .ea2020Section .row .col-5{
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 3rem 2rem;
+        padding: 2rem 3rem;
     }
     .ea2020Section .row .col-5 p{
         margin-bottom: 0px;
@@ -344,7 +268,8 @@
      }
      .ea2020Section.py-3 .col-6 .sideImg2{
          width: 80%;
-         padding: 0px;
+         height: 30%;
+         /* padding: 0px; */
          flex: 0;
      }
      .ea2020textSection{
@@ -354,7 +279,7 @@
          display: block;
      }
      .ea2020textSection .py-2 .col{
-         padding: 0px 40px;
+         padding: 0px 3rem;
          margin: 0 !important;
      }
     .ea2020textSection .row .col-9{
@@ -367,13 +292,13 @@
         text-align: left;
     }
     .ea2020textSection .row .py-4{
-        padding: 0px 40px !important;
+        padding: 0px 3rem !important;
         
     }
      .ea2020textSection .pt-5 .lightWhite{
          text-align: left;
          margin: 0px;
-         padding: 0px 40px;
+         padding: 0px 3rem;
          margin-bottom: 8px;
      }
     .ea2020textSection .py-2 .col .lightWhite{
@@ -384,7 +309,7 @@
     }
     .cropped-ea2020 img{
         width: 90%;
-        height: auto;
+        height: 30%;
     }
     .system {
         padding: 2rem 0px !important;
@@ -508,6 +433,9 @@
         max-width: 100%;
         padding: 0px !important;
     }
+    .agvehicleSection h2{
+        padding: 0px;
+    }
     .bgLightGrey .row h2{
         text-align: center;
         padding: 0px 0px;
@@ -564,6 +492,9 @@
         max-width: 100%;
         flex: 0 0 100%;
     }
+    #serviceDescription h2{
+        margin-top: 1rem;
+    }
     .newsDetailContent{
         margin: 80px auto !important;
     }
@@ -573,7 +504,7 @@
         line-height: 1.5;
     }
     .newsDetailContent .newDetail .news-main{
-        margin: 0px !important;
+        margin-right: 0px !important;
     }
     .newsDetailContent .newDetail .news-main img{
         max-width: 100% !important;

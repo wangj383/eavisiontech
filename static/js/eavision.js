@@ -21,6 +21,8 @@ $(function () {
             
         }
     })
+
+    
     if ($('#serviceContact')) {
         $.get('../../contact.html', function (val) {
             var from = $('#frompage').val()

@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/eavisionStyle.css">
     <!-- <link rel="icon" href="/static/img/site_icon.png"> -->
     <link rel="stylesheet" href="/static/css/mobile.css">
@@ -28,7 +28,7 @@
     <!-- mobile navbar -->
     <div class="bodyOverlay">
         <div id="homeBanner">
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -37,7 +37,7 @@
                 </ol>
                 <div class="carousel-inner h-100">
                     <div class="carousel-item active">
-                        <img class="d-block w-100 animate" src="./static/img/homePage/homeBanner_drone.png"
+                        <img class="d-block animate" src="./static/img/homePage/homeBanner_drone.png"
                             alt="First slide">
                         <div class="carousel-caption">
                             <a href="ea2020.html">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/static/img/homePage/homeBanner_Spray.png" alt="Second slide">
+                        <img class="d-block" src="/static/img/homePage/homeBanner_Spray.png" alt="Second slide">
                         <div class="carousel-caption">
                             <a href="spraysystem.html">
                                 <h1>Mist Spray System</h1>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/static/img/agvehicle/agvehicle-in-action.jpeg"
+                        <img class="d-block" src="/static/img/agvehicle/agvehicle-in-action.jpeg"
                             alt="Third slide">
                         <div class="carousel-caption">
                             <a href="agvehicle.html">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/static/img/homePage/homeBanner_tasselInspector.jpg"
+                        <img class="d-block" src="/static/img/homePage/homeBanner_tasselInspector.jpg"
                             alt="forth slide">
                         <div class="carousel-caption">
                             <a href="service.html">
@@ -98,44 +98,42 @@
             </div>
         </div>
         <div class="homeTextSection bgBlack center">
-            <div class="row pt-5 pb-3">
+            <div class="row">
                 <h2 class="lightWhite">We believe in pushing the boundary of what it means to be autonomous</h2>
             </div>
-            <div class="row">
-                <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png">
-            </div>
-            <div class="row py-5">
-                <div class="col mx-4">
+            <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png">
+            <div class="row pt-4">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <h3 class="lightWhite">Machine Vision</h3>
                     <p class="lightWhite">State-of-the-art computer vision algorithm provides precise understanding of
                         the 3-D
                         world.</p>
                 </div>
-                <div class="col mr-4">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <h3 class="lightWhite">Obstacle Avoidance</h3>
                     <p class="lightWhite">Fast response and situation awareness allow our UAVs to avoid obstacles in
                         their path.
                     </p>
                 </div>
-                <div class="col mr-4">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <h3 class="lightWhite">Terrain Following</h3>
                     <p class="lightWhite">Multi-sensory data detects and adapts to terrain height independently even at
                         lower
                         heights.</p>
                 </div>
-                <div class="col mr-4">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <h3 class="lightWhite">Safety and Reliability</h3>
                     <p class="lightWhite">Extensive fault detection and management protects all moving systems and
                         parts.</p>
                 </div>
             </div>
         </div>
-        <div class="homeCardSection bgLightGrey pt-3">
+        <div class="homeCardSection bgLightGrey">
             <div class="row">
                 <h2>Explore EAVision Products</h2>
             </div>
-            <div class="row">
-                <div class="col card round">
+            <div class="row justify-content-lg-between justify-content-md-between justify-content-center">
+                <div class="col-lg-3 col-md-5 col-sm-12 col-12 card round">
                     <a href="ea2020.html">
                         <div class="card-body">
                             <h2 class="card-title">E-A2020</h2>
@@ -143,7 +141,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col card round">
+                <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5 mt-lg-0 mt-md-0 card round">
                     <a href="spraysystem.html">
                         <div class="card-body">
                             <h2 class="card-title">Mist Spray System</h2>
@@ -151,7 +149,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col card round">
+                <div class="col-lg-3 col-md-5 col-sm-12 col-12 mt-5 mt-lg-0 card round">
                     <a href="agvehicle.html">
                         <div class="card-body">
                             <h2 class="card-title">Agricultural Crop Protection Vehicle</h2>
@@ -185,28 +183,26 @@
                 <div class="card round">
                     <a href="service.html">
                         <div class="card-body" style="padding:0;">
-                            <h2 class="card-title pt-5">Tassel Inspector</h2>
-                            <img id="homecornfieldimg" class="round" src="/static/img/homePage/cornfield.jpg">
+                            <h2 class="card-title pt-4">Tassel Inspector</h2>
+                            <img id="homecornfieldimg" src="/static/img/homePage/cornfield.jpg">
                         </div>
                     </a>
                 </div>
             </div>
         </div>
         <div id="homePartners" class="homeSection bgWhite py-5">
-            <div class="row">
-                <h2>Our Partners</h2>
-            </div>
-            <div class="row img-box">
-                <a href="https://www.basf.com/ca/en.html" target="_blank">
+            <h2 style="text-align: center;">Our Partners</h2>
+            <div class="row img-box align-items-center">
+                <a class="col-lg-3 col-md-6 col-sm-12" href="https://www.basf.com/ca/en.html" target="_blank">
                     <img id="basf" class="partner_logo" src="/static/img/partners/BASF_logo_bw.png">
                 </a>
-                <a href="http://www.fmc.com" target="_blank">
+                <a class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-lg-0 mt-md-0" href="http://www.fmc.com" target="_blank">
                     <img id="fmc" class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png">
                 </a>
-                <a href="http://en.lpht.com.cn" target="_blank">
+                <a class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-lg-0" href="http://en.lpht.com.cn" target="_blank">
                     <img id="longping" class="partner_logo" src="/static/img/partners/longping_logo.png">
                 </a>
-                <a href="https://www.syngenta.com" target="_blank">
+                <a class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-lg-0" href="https://www.syngenta.com" target="_blank">
                     <img id="syngenta" class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
                 </a>
             </div>
@@ -221,8 +217,8 @@
                         <img class="news-img-left round" :src="n.osskey">
                         <div class="card-content">
                             <h3 class="card-title">{{n.title}}</h3>
-                            <p class="card-text card-subtitle">{{n.des}}... (Read More)</p>
-                            <p class="card-text news-date" style="position:absolute; bottom:10px;">
+                            <p class="card-text card-subtitle">{{n.des}}</p>
+                            <p class="card-text news-date">
                                 {{n.solutionDate.split(" ")[0]}}</p>
                         </div>
                     </div>

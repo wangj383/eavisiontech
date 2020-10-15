@@ -349,9 +349,8 @@ a span:hover {
 }
 
 #logoimg {
-    height: 42px;
+    height: 44px;
     position: relative;
-    margin-top: -10px;
 }
 
 .nav-item {
@@ -655,7 +654,7 @@ a span:hover {
 #homeBanner .carousel-caption {
     background-color: transparent;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #homeBanner .carousel-caption h1,
@@ -672,11 +671,6 @@ a span:hover {
     color: white !important;
 }
 
-#homeBanner .carousel-control-next-icon,
-.carousel-control-prev-icon {
-    /* width: 35px;
-  height: 45px; */
-}
 
 #homeBanner .carousel-indicators {
     bottom: 40px;
@@ -1214,13 +1208,9 @@ a span:hover {
 
 #spraysystem-video {
     background-image: url('../img/mistSpraySystem/ccmsvideo-photo.png');
-    background-position-y: -20px;
     background-size: cover;
-    height: 500px;
     width: auto;
     padding-top: 2rem;
-    /* background-size: cover;
-	height:600px; */
 }
 
 .sprayLeafBackground {
@@ -1504,7 +1494,7 @@ a span:hover {
     text-align: center;
     font-size: 32px;
 }
-.carousel-control-next,
+#serviceCarousel .carousel-control-next, #serviceCarousel
 .carousel-control-prev{
     height: 268px;
 }

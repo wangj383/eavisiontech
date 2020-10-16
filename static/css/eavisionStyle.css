@@ -833,7 +833,7 @@ a span:hover {
     text-align: center;
 }
 .img-box a img{
-    width: 70%;
+    width: 60%;
 }
 
 #homeEA2020bgBlack {
@@ -1921,11 +1921,16 @@ ul.thumbnails-carousel li {
         color: white;
     }
     .footer .col-2 {
-        padding-right: 40px;
+        padding-right: 20px;
+    }
+
+    .footer .col-3 {
+        max-width:30%
     }
 
     .footerIcon {
         display: inline-block;
+
     }
 
     /* Homepage */
@@ -1946,6 +1951,9 @@ ul.thumbnails-carousel li {
         line-height: 30px;
         text-align: center;
     }
+    /* #homePartners .img-box a img{
+        width:45%;
+    } */
 
     #productContext {
         text-align: center;

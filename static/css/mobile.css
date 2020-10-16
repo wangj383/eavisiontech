@@ -87,6 +87,10 @@
         margin: 0px!important;
     }
 
+    #homePartners .img-box a img{
+        width:35%;
+    }
+
     .homeNewsSection .card .card-title {
         text-overflow: ellipsis;
         overflow: hidden;

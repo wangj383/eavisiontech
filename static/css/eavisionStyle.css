@@ -1166,7 +1166,7 @@ a span:hover {
 }
 .spraySystemTextSection .row .col-12{
     margin-bottom: 0px;
-    padding-bottom: 0px !important;
+    padding-bottom: 15px !important;
 }
 
 .spraySystemTextSection .font-weight-bold{
@@ -1209,7 +1209,7 @@ a span:hover {
 #spraysystem-video {
     background-image: url('../img/mistSpraySystem/ccmsvideo-photo.png');
     background-size: cover;
-    width: auto;
+    width: 100vw;
     padding-top: 2rem;
 }
 
@@ -1901,6 +1901,21 @@ ul.thumbnails-carousel li {
     }
 
     /* Footer */
+    .footer .container{
+        padding-right:30px;
+        padding-left:30px;
+    }
+
+    .footer .socialMedia{
+        display: flex;
+    }
+    
+    .footer .footerIcon{
+        margin-left:0px;
+        margin-right:10px;
+        margin-top:30px;
+    }
+
     .footer h3 {
         padding-top: 32px;
         color: white;
@@ -2158,6 +2173,7 @@ ul.thumbnails-carousel li {
     .pressCardArea .card {
         margin-bottom: 16px;
     }
+
     #mobile-navbar .dropdown-menu li:last-child a {
         padding-bottom: 0px;
     }

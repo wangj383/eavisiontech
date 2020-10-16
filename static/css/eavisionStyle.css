@@ -1936,7 +1936,7 @@ ul.thumbnails-carousel li {
     /* Homepage */
     #homeBanner {
         /* height: 250px; */
-        background-image: url('../img/homeHeader.jpg');
+        /* background-image: url('../img/homeHeader.jpg'); */
         background-color: #fafafa;
         /* background-color: #FAFAFA */
         background-size: cover;

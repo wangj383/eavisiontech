@@ -126,21 +126,29 @@ $(function () {
         }
 
 
-        var $carousels = $('.carousel');
-        var startX, endX;
-        var offset = 50;
-        $carousels.on('touchstart', function (e) {
-            startX = e.originalEvent.touches[0].clientX;
+        // var $carousels = $('.carousel');
+        // var startX, endX;
+        // var offset = 50;
+        // $carousels.on('touchstart', function (e) {
+        //     startX = e.originalEvent.touches[0].clientX;
 
-        });
-        $carousels.on('touchmove', function (e) {
-            endX = e.originalEvent.touches[0].clientX;
-        });
-        $carousels.on('touchend', function (e) {
-            var distance = Math.abs(startX - endX);
-            if (distance > offset) {
-                $(this).carousel(startX > endX ? 'next' : 'prev');
-            }
+        // });
+        // $carousels.on('touchmove', function (e) {
+        //     endX = e.originalEvent.touches[0].clientX;
+        // });
+        // $carousels.on('touchend', function (e) {
+        //     var distance = Math.abs(startX - endX);
+        //     if (distance > offset) {
+        //         $(this).carousel(startX > endX ? 'next' : 'prev');
+        //     }
+        // })
+        var myElement = document.getElementById('carouselExampleIndicators')
+        var hm = new Hammer(myElement);
+        hm.on("swipeleft", function () {
+            $('#carouselExampleIndicators').carousel('next')
+        })
+        hm.on("swiperight", function () {
+            $('#carouselExampleIndicators').carousel('prev')
         })
     })(window, jQuery)
 

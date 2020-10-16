@@ -13,6 +13,7 @@
     html{
         overflow-x: hidden;
     }
+    
     .navbar-light .navbar-nav .nav-link{
         padding: 5px 0px;
         outline: none;
@@ -88,9 +89,8 @@
     }
 
     #homePartners .img-box a img{
-        width:35%;
+        width:100% !important;
     }
-
     .homeNewsSection .card .card-title {
         text-overflow: ellipsis;
         overflow: hidden;

@@ -692,11 +692,12 @@ a span:hover {
 .homeTextSection {
     padding: 3rem 4rem;
 }
+
 .homeTextSection p.lightWhite{
     margin: 0px;
 }
 .homeTextSection .col-lg-3{
-    margin-top: 1rem;
+    margin-top: 1.7rem;
 }
 
 .homeTextSection h2 {
@@ -713,6 +714,11 @@ a span:hover {
     padding: 0rem 4rem;
 }
 
+.homeCardSection .row{
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
 .homeCardSection>.row>h2 {
     margin: 3rem 0rem 1rem 0rem;
 }
@@ -720,6 +726,10 @@ a span:hover {
 .homeCardSection .card {
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.homeCardSection .card-title{
+    font-size:24px;
 }
 
 .round {
@@ -748,9 +758,12 @@ a span:hover {
     padding: 2rem 1rem;
 }
 
+
 #homePartners .row {
     justify-content: space-evenly;
 }
+
+
 
 .homeNewsSection {
     padding: 3rem 4rem;
@@ -834,6 +847,10 @@ a span:hover {
 }
 .img-box a img{
     width: 60%;
+}
+
+#fmc{
+    width: 70%;
 }
 
 #homeEA2020bgBlack {
@@ -1341,14 +1358,14 @@ a span:hover {
 }
 
 #cropCoverageBackground {
-    background-image: url('../img/agvehicle/tree.jpeg');
+    background-image: url('../img/agvehicle/field_crop.jpeg');
     background-position: top;
     background-size: cover;
     height: 700px;
 }
 #cropCoverageBackground h2,
 #cropCoverageBackground p {
-    color: #FFF;
+    color: white;
 }
 
 #agvehicle-cartoon {

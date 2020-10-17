@@ -4,11 +4,32 @@
         width: auto;
     }
 }
-@media (min-width: 768px){
+@media (min-width:1024px){
+    h2 {
+        font-size: 28px;
+    }
+    .homeCardSection .card-title{
+        font-size:24px;
+    }
+}
+@media (max-width: 1023px){
     h2 {
         font-size: 24px;
     }
+    .homeCardSection .card-title{
+        font-size:22px;
+    }
 }
+@media (max-width: 992px){
+    #homePartners .img-box a img{
+        width:30%;
+    }
+
+    #homePartners #fmc,#homePartners #syngenta{
+        width:40%;
+    }
+}
+
 @media (max-width: 767px){
     html{
         overflow-x: hidden;
@@ -21,6 +42,16 @@
     .navbar-nav .nav-link{
         margin-left: 2rem;
     }
+
+    .navbar-nav .dropdown-menu{
+        border: none;
+        transition-duration: 4s;
+        padding-left:3rem;
+    }
+    .nav-item .btn span{
+        font-weight:800;
+    }
+
     .nav-item:hover{
         border-color: transparent;
     }
@@ -74,6 +105,7 @@
     #homeEA2020bgBlack {
         width: 50vw;
     }
+
     .homeCardSection.pb-5 .row .card{
         width: 100%;
     }
@@ -88,9 +120,17 @@
         margin: 0px!important;
     }
 
-    #homePartners .img-box a img{
-        width:100% !important;
+    #homePartners .row{
+        padding-top:1.7rem;
     }
+    #homePartners .img-box a img{
+        width:50%;
+    }
+
+    #homePartners #fmc,#homePartners #syngenta{
+        width:60%;
+    }
+    
     .homeNewsSection .card .card-title {
         text-overflow: ellipsis;
         overflow: hidden;
@@ -311,6 +351,7 @@
     .ea2020textSection .title{
         padding: 0px !important;
     }
+
     .cropped-ea2020 img{
         width: 90%;
         height: 30%;

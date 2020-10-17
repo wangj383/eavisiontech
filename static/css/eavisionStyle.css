@@ -697,7 +697,7 @@ a span:hover {
     margin: 0px;
 }
 .homeTextSection .col-lg-3{
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
 }
 
 .homeTextSection h2 {
@@ -1186,9 +1186,11 @@ a span:hover {
     padding-bottom: 15px !important;
 }
 
-.spraySystemTextSection .font-weight-bold{
-    font-size: 20px;
+.spraySystemTextSection h3.font-weight-bold{
+    font-size:18px;
+    margin-top:15px;
 }
+
 .spraySystemTextSection .row {
     padding: 1rem 0;
 }
@@ -1207,6 +1209,10 @@ a span:hover {
 
 .spraySystemTextSection li {
     list-style: none;
+}
+
+.spraySystemTextSection .module-title{
+    font-size:24px;
 }
 
 .spraySystemVideoSection {
@@ -1568,6 +1574,10 @@ a span:hover {
     width: 110px;
 }
 
+.slideshowSection .slideshow-largerText{
+    font-size:28px;
+}
+
 .serviceSection {
     padding: 15px 10%;
 }
@@ -1782,8 +1792,9 @@ ul.thumbnails-carousel li {
 }
 
 #aboutBanner h3 {
-    margin-top: 200px;
+    margin-top: 250px;
     margin-bottom: 15px;
+    font-size:22px;
 }
 
 #aboutBanner p {
@@ -2101,13 +2112,6 @@ ul.thumbnails-carousel li {
     }
     #aboutBanner .container-fluid{
         height: 450px;
-    }
-    #aboutBanner h1 {
-        line-height: 30px;
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     #aboutHiddenBlurb {

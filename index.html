@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <title>EAVision Technologies</title>
+    <title>
+        EAVision Technologies - Pioneering Technologies in Fully Autonomous Industrial Drones Visit website
+    </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
@@ -101,7 +103,7 @@
             <div class="row">
                 <h2 class="lightWhite">We believe in pushing the boundary of what it means to be autonomous</h2>
             </div>
-            <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png">
+            <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png" alt="Autonomous Agricultural Drone E-A2020">
             <div class="row pt-4">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <h3 class="lightWhite">Machine Vision</h3>
@@ -137,7 +139,7 @@
                     <a href="ea2020.html">
                         <div class="card-body">
                             <h2 class="card-title">E-A2020</h2>
-                            <img id="homeEa2020img" class="flip" src="/static/img/homePage/E-A2020.png">
+                            <img id="homeEa2020img" class="flip" src="/static/img/homePage/E-A2020.png" alt="Autonomous Agricultural Drone E-A2020">
                         </div>
                     </a>
                 </div>
@@ -145,7 +147,7 @@
                     <a href="spraysystem.html">
                         <div class="card-body">
                             <h2 class="card-title">Mist Spray System</h2>
-                            <img id="homeSprayimg" src="/static/img/homePage/mistSpray.png">
+                            <img id="homeSprayimg" src="/static/img/homePage/mistSpray.png" alt="Mist Spray System">
                         </div>
                     </a>
                 </div>
@@ -153,7 +155,7 @@
                     <a href="agvehicle.html">
                         <div class="card-body">
                             <h2 class="card-title">Agricultural Crop Protection Vehicle</h2>
-                            <img id="homeAgVehicleimg" src="/static/img/agvehicle/agvehicle.png">
+                            <img id="homeAgVehicleimg" src="/static/img/agvehicle/agvehicle.png" alt="Agricultural Crop Protection Vehicle">
                         </div>
                     </a>
                 </div>
@@ -168,7 +170,7 @@
                     <a href="service.html">
                         <div class="card-body" style="padding:0;">
                             <h2 class="card-title pt-4">Tassel Inspector</h2>
-                            <img id="homecornfieldimg" src="/static/img/homePage/cornfield.jpg">
+                            <img id="homecornfieldimg" src="/static/img/homePage/cornfield.jpg" alt="crop field">
                         </div>
                     </a>
                 </div>
@@ -178,16 +180,16 @@
             <h2 style="text-align: center;">Our Partners</h2>
             <div class="row img-box align-items-center">
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6" href="https://www.basf.com/ca/en.html" target="_blank">
-                    <img id="basf" class="partner_logo" width="100px" src="/static/img/partners/BASF_logo_bw.png">
+                    <img id="basf" class="partner_logo" width="100px" src="/static/img/partners/BASF_logo_bw.png" alt="BASF logo">
                 </a>
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6" href="http://www.fmc.com" target="_blank">
-                    <img id="fmc" class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png">
+                    <img id="fmc" class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png" alt="FMC logo">
                 </a>
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6 mt-4 mt-lg-0" href="http://en.lpht.com.cn" target="_blank">
-                    <img id="longping" class="partner_logo" src="/static/img/partners/longping_logo.png">
+                    <img id="longping" class="partner_logo" src="/static/img/partners/longping_logo.png" alt="Longping logo">
                 </a>
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6 mt-4 mt-lg-0" href="https://www.syngenta.com" target="_blank">
-                    <img id="syngenta" class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png">
+                    <img id="syngenta" class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png" alt="Syngenta logo">
                 </a>
             </div>
         </div>
@@ -198,7 +200,7 @@
             <div v-for="n in news" class="row center">
                 <div class="card round" style="width: 80vw;">
                     <div class="card-body" @click="onDetail(n)">
-                        <img class="news-img-left round" :src="n.osskey">
+                        <img class="news-img-left round" :src="n.osskey" alt="news image">
                         <div class="card-content">
                             <h3 class="card-title">{{n.title}}</h3>
                             <p class="card-text card-subtitle">{{n.des}}</p>
@@ -208,7 +210,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="center pt-4"><a href="news.html"><button class="btn blue-button">See All News
                         </button></a></div>

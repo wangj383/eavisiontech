@@ -30,6 +30,16 @@
     #homePartners #fmc,#homePartners #syngenta{
         width:40%;
     }
+    .news-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .first-new-item{
+        width: 100% !important;
+    }
+    .homeNewsSection .card{
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px){
@@ -187,7 +197,7 @@
         padding-bottom: 20px;
     }
     .aboutSection .row{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .aboutSection .row .col-6{
         flex: auto;
@@ -247,6 +257,7 @@
     #contact_form .pb-2{
         padding-bottom: 0 !important;
     }
+    
     .homeNewsSection .card .card-body{
         flex-wrap: wrap;
     }
@@ -291,21 +302,32 @@
     .ea2020Section .row{
         flex-direction: column-reverse;
     }
+    .ea2020Section .row .img-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     .ea2020Section .row .col-6 {
         flex: 0 0 100%;
         max-width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .ea2020Section .row .col-6 .sideImg4{
+    .ea2020Section .row .img-box .sideImg4 {
         width: 100%;
+    }
+    .ea2020Section .row .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 3rem;
     }
     .ea2020Section .row .col-5{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 2rem 3rem;
     }
-    .ea2020Section .row .col-5 p{
+    .ea2020Section .row .col p{
         margin-bottom: 0px;
     }
     .ea2020overlay .right{
@@ -534,6 +556,12 @@
     .bgLightGrey .row h2{
         text-align: center;
         padding: 0px 0px;
+    }
+    .bgLightGrey .row p{
+        text-align: center;
+    }
+    .bgLightGrey .row .col-lg-6 {
+        padding: 0px;
     }
     .bgLightGrey .row .col-5{
         flex: 0 0 100%;

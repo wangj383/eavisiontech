@@ -28,12 +28,12 @@
     <div class="bodyOverlay">
 
         <div class="homeNewsSection bgWhite" id="app">
-            <div class="row center py-5">
+            <div class="row center py-5 title-box">
                 <h2>EAVision News</h2>
             </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <div v-for="(n, index) in news" class="row center">
+            <div class="news-box">
+                <div class="news-left">
+                    <div v-for="(n, index) in news" class="row">
                         <div v-if="index == 0" class="first-new-item" @click="onDetail(n)">
                             <img :src="n.osskey" alt="bg" />
                             <div class="bottom-container">{{n.title}}</div>
@@ -41,7 +41,7 @@
 
                         <div v-else class="card round">
                             <div class="card-body" @click="onDetail(n)">
-                                <img class="news-img-left round" style="width:1000px" :src="n.osskey">
+                                <img class="news-img-left round" :src="n.osskey">
                                 <div class="card-content">
                                     <h3 class="card-title">{{n.title}}</h3>
                                     <p class="card-text card-subtitle">{{n.des}}... (Read More)</p>
@@ -51,11 +51,11 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="news.length < count" class="center pt-4"><button class="btn blue-border-button round"
+                    <div v-if="news.length < count" class="pt-4"><button class="btn blue-border-button round"
                             @click="more">More</button></div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="news-right">
                     <div>
                         <h3 style="margin:20px 0 !important; font-size: 22px;">CATEGORIES</h3>
                         <div>Company News ({{count}})</div>

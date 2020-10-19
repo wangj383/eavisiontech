@@ -368,7 +368,7 @@ a span:hover {
     list-style: none;
     position: absolute;
     z-index: 20;
-    margin-top: 2px;
+    margin-top: 1px;
     max-height: 0;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
@@ -595,6 +595,7 @@ a span:hover {
 
 .socialMedia {
     text-align: left;
+    flex: 0 0 150px;
 }
 
 .footerIcon {
@@ -762,22 +763,43 @@ a span:hover {
 #homePartners .row {
     justify-content: space-evenly;
 }
-
-
-
+.news-box{
+    display: flex;
+    justify-content: space-between;
+}
+.news-box .news-left{
+    flex: 1;
+}
+.news-box .news-right{
+    margin-left: 30px;
+}
+.news-left .row{
+    margin: 0px;
+}
+.homeNewsSection>.row{
+    margin: 0px;
+}
+.homeNewsSection .title-box {
+    background-color: #F5F5F5;
+    margin-left: -4rem !important;
+    margin-right: -4rem !important;
+    margin-bottom: 2rem;
+}
 .homeNewsSection {
     padding: 3rem 4rem;
 }
 
 .homeNewsSection .first-new-item {
     position: relative;
-    width: 60vw;
+    width: 90%;
     margin-bottom: 40px;
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
 }
-
+.ql-video{
+    width: 100%;
+}
 .first-new-item img {
     width: 100%;
 }
@@ -796,10 +818,10 @@ a span:hover {
 }
 
 .homeNewsSection .card {
-    margin: 1rem 2rem;
+    margin: 1rem 0rem;
     padding: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 60vw;
+    width: 90%;
     transition: all .3s;
 }
 
@@ -815,6 +837,7 @@ a span:hover {
     text-align: left;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .homeNewsSection .card-title {
@@ -822,6 +845,7 @@ a span:hover {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+    margin-bottom: 1.2rem;
 }
 
 .homeNewsSection .card-subtitle {
@@ -1240,6 +1264,12 @@ a span:hover {
     background-image: url('../img/mistSpraySystem/spray-leaf.png');
     background-size: cover;
     height: 50vw;
+}
+.sprayLeafBackground .align-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .sprayLeafBackground h2,
@@ -1807,6 +1837,10 @@ ul.thumbnails-carousel li {
 .positions {
     background-color: #FFF;
 }
+.positions {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 .aboutSection .row {
     justify-content: center;
     align-items: center;
@@ -1814,8 +1848,6 @@ ul.thumbnails-carousel li {
 
 .aboutSection .sideImg {
     width: 40vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .aboutSection h2 {
@@ -1906,9 +1938,48 @@ ul.thumbnails-carousel li {
     .navigation {
         height: 52px;
     }
+    
+    .navbar-toggler .control-icon{
+        display: block;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        transition: all .4s ease;
+    }
+
+    .navbar-toggler .control-icon::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 22px;
+        background-color: #303233;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        background-color: #7F7F7F;
+    }
+
+    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(1){
+        transform: translateY(8px);
+    }
+    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(2) {
+        opacity: 0;
+    }
+    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(3) {
+        transform: translateY(-8px);
+    }
+
+    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(1)::after {
+        transform: rotate(45deg);
+    }
+    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(2)::after {
+        
+    }
+    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(3)::after {
+        transform: rotate(-45deg);
+    }
 
     .navigation .navbar-toggler {
         border: none;
+        outline: none;
     }
 
     .navbar-nav {

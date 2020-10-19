@@ -144,6 +144,7 @@ $(function () {
         // })
         var myElement = document.getElementById('carouselExampleIndicators')
         var hm = new Hammer(myElement);
+        
         hm.on("swipeleft", function () {
             $('#carouselExampleIndicators').carousel('next')
         })
@@ -208,3 +209,4 @@ function submitForm() {
     }
     ajax.send(formdata)
 }
+

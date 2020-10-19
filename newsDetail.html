@@ -150,7 +150,7 @@
                     if (res.code == '000000') {
                         var result = res.result || {}
                         $('.newsDetailContent h1').html(result.title)
-                        $('.publish-time .time').html(result.updateAt)
+                        $('.publish-time .time').html(result.updateAt.substring(0, 10))
                         $('.news-main').html(result.content)
 
                         $('.share3').click(function () {

@@ -1938,43 +1938,52 @@ ul.thumbnails-carousel li {
     .navigation {
         height: 52px;
     }
-    
+    .navbar-toggler{
+        width: 30px;
+        height: 23px;
+        position: relative;
+        padding: 0px;
+    }
     .navbar-toggler .control-icon{
         display: block;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        transition: all .4s ease;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #7F7F7F;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    .navbar-toggler .control-icon:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
     }
 
-    .navbar-toggler .control-icon::after{
-        content: '';
-        display: block;
-        height: 2px;
-        width: 22px;
-        background-color: #303233;
-        border-top-right-radius: 2px;
-        border-bottom-left-radius: 2px;
-        background-color: #7F7F7F;
+    .navbar-toggler .control-icon:nth-child(2) {
+        top: 9px;
+        transform-origin: left center;
+    }
+
+    .navbar-toggler .control-icon:nth-child(3) {
+        top: 18px;
+        transform-origin: left center;
     }
 
     .navbar-toggler[aria-expanded=true] .control-icon:nth-child(1){
-        transform: translateY(8px);
+        transform: rotate(45deg);
+        top: -1px;
+        left: 4px;
     }
     .navbar-toggler[aria-expanded=true] .control-icon:nth-child(2) {
+        width: 0%;
         opacity: 0;
     }
     .navbar-toggler[aria-expanded=true] .control-icon:nth-child(3) {
-        transform: translateY(-8px);
-    }
-
-    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(1)::after {
-        transform: rotate(45deg);
-    }
-    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(2)::after {
-        
-    }
-    .navbar-toggler[aria-expanded=true] .control-icon:nth-child(3)::after {
         transform: rotate(-45deg);
+        top: 20px;
+        left: 4px;
     }
 
     .navigation .navbar-toggler {

@@ -46,7 +46,12 @@
     html{
         overflow-x: hidden;
     }
-    
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
     .navbar-light .navbar-nav .nav-link{
         padding: 5px 0px;
         outline: none;

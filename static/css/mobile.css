@@ -46,6 +46,30 @@
     html{
         overflow-x: hidden;
     }
+    .homeTextSection{
+        padding: 3rem 2rem;
+    }
+    .homeTextSection .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .homeTextSection .col-lg-3{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .homeCardSection{
+        padding: 0px 2rem;
+    }
+    .homeCardSection .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .homeSection .row{
+        padding: 0px;
+    }
+    .homeNewsSection{
+        padding: 3rem 2rem;
+    }
     .carousel-control-prev{
         display: none;
     }
@@ -199,22 +223,34 @@
     }
     
     .aboutSection{
-        padding-bottom: 20px;
+        padding: 3rem 2rem !important;
     }
     .aboutSection .row{
         flex-direction: column;
+        margin: 0px !important;
     }
     .aboutSection .row .col-6{
         flex: auto;
-        max-width: 90%;
-    }
-    .aboutSection .row .col-5{
-        flex: 0 0 70%;
-        max-width: 70%;
+        max-width: 100%;
+        padding: 0px !important;
     }
     .aboutSection .row .col-5 .sideImg{
         width: 100%;
         padding: 0px;
+    }
+    .abouttextSection {
+        padding: 3rem 2rem;
+    }
+    .abouttextSection .row{
+        margin: 0px;
+    }
+    .abouttextSection .row h2{
+        margin-bottom: 1rem;
+    }
+    .abouttextSection .row .col-9{
+        flex: auto;
+        max-width: 100%;
+        padding: 0px !important;
     }
     .bgLightGrey .col-9 h3 {
         text-align: center;
@@ -229,6 +265,9 @@
         padding: 0px;
     }
     #aboutContact{
+        padding: 3rem 2rem !important;
+    }
+    #aboutContact .container{
         padding: 0px !important;
     }
     #serviceContact{
@@ -462,16 +501,21 @@
 
     .spraySystemTextSection .row{
         display: block;
-        padding: 0px 20px;
+        padding: 0px !important;
+        margin: 0px;
     }
     .spraySystemTextSection .row .col{
         margin: 0px !important;
+        padding: 0px;
     }
     .spraySystemVideoSection {
         padding: 0px;
     }
+    .spraySystemTextSection .row .col-12{
+        padding: 0px !important;
+    }
     .spraySystemVideoSection .spraySystemTextSection{
-        padding: 0px;
+        padding: 3rem 2rem;
     }
     .spraySystemVideoSection .spraySystemTextSection .col-9{
         flex: 0 0 100%;
@@ -491,9 +535,14 @@
     .bgDroneSpray {
         height: 400px;
     }
+    .spraySystemTextSection .container{
+        padding: 0px;
+    }
     .spraySystemTextSection .col-9{
         flex: 0 0 100%;
         max-width: 100%;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 
     .spraySystemTextSection .bgLightGrey .row .col-4{
@@ -525,10 +574,15 @@
         line-height: 1.5;
     }
     .agvehicleSection {
-        padding: 2rem 0px;
+        padding: 3rem 2rem;
     }
     .agvehicleSection .row{
         display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+    .agvehicleSection .row .col{
+        padding: 0px;
     }
     .agvehicleSection .row #agvehicle-cartoon{
         width: 100%;
@@ -540,11 +594,17 @@
         padding: 10px 20px !important;
     }
     .agvehicleTextSection{
-        padding: 2rem 0px;
+        padding: 3rem 2rem;
     }
     .agvehicleTextSection .row{
         display: block;
-        padding: 1rem 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .agvehicleTextSection .row .col-10{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px;
     }
     .agvehicleTextSection .row .iconSections{
         padding: 0px !important;
@@ -555,15 +615,37 @@
         max-width: 100%;
         padding: 0px !important;
     }
-    .agvehicleSection h2{
+    #agvehicle-in-water{
+        width: 100%;
+        height: auto;
+    }
+    .agvehicleTextSection>.center{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .agvehicleTextSection>.row>.col-sm-8{
         padding: 0px;
+         margin-bottom: 0px;
+    }
+    .agvehicleTextSection>.center>h2{
+        margin-bottom: 1rem;
+    }
+    .agvehicleSection h2{
+        padding: 0px !important;
+        margin-bottom: 1rem;
+    }
+    .agvehicleSection .pt-2{
+        padding: 0px !important;
     }
     .bgLightGrey .row h2{
         text-align: center;
-        padding: 0px 0px;
+        padding: 0px 0px !important;
+        margin: 0px !important;
+        margin-bottom: 1rem !important;
     }
     .bgLightGrey .row p{
         text-align: center;
+        padding: 0px !important;
     }
     .bgLightGrey .row .col-lg-6 {
         padding: 0px;
@@ -572,12 +654,13 @@
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;
+        padding: 0px !important;
     }
     .bgLightGrey .row .col-5 #agvehicle-sideview{
         width: 80%;
     }
     .bgLightGrey .row .col-4{
-        padding: 0px 20px;
+        padding: 0px 0px;
     }
     #serviceDescription .stepsContainer{
         margin: 0px;

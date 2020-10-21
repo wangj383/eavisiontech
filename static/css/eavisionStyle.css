@@ -1296,13 +1296,11 @@ a span:hover {
 
 /* agvehicle */
 #agvehicleBanner {
-    background-image: url('../img/agvehicle/agvehicle.png');
-    background-position: top;
-    background-size: cover;
     background-color: white;
     text-align: center;
     height: 716px;
-    margin-top: 52px;
+    margin-top: 50px;
+    padding-top:20px;
 }
 
 #agvehicleBanner .container-fluid {
@@ -1323,15 +1321,20 @@ a span:hover {
 
 #agvehicleBanner p {
     margin-top: 0px;
-    margin-bottom: 48px;
+    margin-bottom: 2rem;
 }
 
 #agvehicleBanner .buttons {
     position: relative;
     /* bottom:40px; */
-    top: 300px;
     justify-content: center;
 }
+
+#agvehicleBanner .agvehicleBannerImg{
+    height:350px;
+    padding:1rem;
+}
+
 
 .agvehicleSection {
     padding: 3rem 4rem;
@@ -1390,8 +1393,10 @@ a span:hover {
 }
 
 #agvehicle-in-water {
-    width: 40vw;
-    height: 80%;
+    background-image: url('../img/agvehicle/agvehicle-in-action.jpeg');
+    background-position: top;
+    background-size: cover;
+    height: 600px;
 }
 
 #cropCoverageBackground {

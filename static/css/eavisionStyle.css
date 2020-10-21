@@ -1394,14 +1394,14 @@ a span:hover {
 }
 
 #cropCoverageBackground {
-    background-image: url('../img/agvehicle/field_crop.jpeg');
+    background-image: url('../img/agvehicle/field2.png');
     background-position: top;
     background-size: cover;
     height: 700px;
 }
 #cropCoverageBackground h2,
 #cropCoverageBackground p {
-    color: white;
+    /* color: white; */
 }
 
 #agvehicle-cartoon {

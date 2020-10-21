@@ -601,7 +601,7 @@
     }
 
     #cropCoverageBackground{
-        height: 500px;
+        height: 680px;
     }
 
     #cropCoverageBackground .row{
@@ -627,6 +627,10 @@
     .agvehicleTextSection .row .iconSections{
         padding: 0px !important;
         margin: 0px !important;
+    }
+
+    #agvehicleFieldBackground {
+        height: 650px;
     }
 
     #agvehicleFieldBackground .row .col-9{

@@ -1113,6 +1113,7 @@ a span:hover {
     background-image: url('../img/spray-videocut.png');
     background-size: cover;
     width: 100vw;
+    border:1px solid black;
 }
 
 .cropped-ea2020 img {
@@ -1295,10 +1296,10 @@ a span:hover {
 
 /* agvehicle */
 #agvehicleBanner {
-    background-image: url('../img/agvehicle/agvehicle-in-action.jpeg');
+    background-image: url('../img/agvehicle/agvehicle.png');
     background-position: top;
     background-size: cover;
-    background-color: #e5e5e5;
+    background-color: white;
     text-align: center;
     height: 716px;
     margin-top: 52px;
@@ -1836,6 +1837,16 @@ ul.thumbnails-carousel li {
 .abouttextSection .row p{
     margin-bottom: 0px;
 }
+
+.abouttextSection .collageImgs {
+    margin: 2rem 2rem 1.5rem 2rem;
+}
+
+.abouttextSection .row .sideImg{
+    width: 500px;
+    height: 300px;
+}
+
 .positions {
     background-color: #FFF;
 }

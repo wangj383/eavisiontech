@@ -115,6 +115,7 @@
         color: #289CEB;
         margin-left: 2rem;
         padding: 5px 0px;
+        font-weight:600;
     }
     #homeBanner .carousel-indicators{
         bottom: 0px;
@@ -570,73 +571,96 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     #agvehicleBanner .container-fluid h1{
         line-height: 1.5;
     }
+
     .agvehicleSection {
-        padding: 3rem 2rem;
+        padding: 2rem 2rem;
     }
+
     .agvehicleSection .row{
         display: block;
         padding: 0px;
         margin: 0px;
     }
+
     .agvehicleSection .row .col{
         padding: 0px;
     }
+
     .agvehicleSection .row #agvehicle-cartoon{
         width: 100%;
     }
+
     #cropCoverageBackground{
         height: 500px;
     }
+
     #cropCoverageBackground .row{
         padding: 10px 20px !important;
     }
+    
     .agvehicleTextSection{
         padding: 3rem 2rem;
     }
+
     .agvehicleTextSection .row{
         display: block;
         padding: 0px;
         margin: 0px;
     }
+
     .agvehicleTextSection .row .col-10{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0px;
     }
+
     .agvehicleTextSection .row .iconSections{
         padding: 0px !important;
         margin: 0px !important;
     }
+
     #agvehicleFieldBackground .row .col-9{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0px !important;
     }
+
     #agvehicle-in-water{
         width: 100%;
         height: auto;
     }
+
     .agvehicleTextSection>.center{
         padding: 0px !important;
         margin: 0px !important;
     }
+
     .agvehicleTextSection>.row>.col-sm-8{
         padding: 0px;
          margin-bottom: 0px;
     }
+
     .agvehicleTextSection>.center>h2{
         margin-bottom: 1rem;
     }
+
     .agvehicleSection h2{
         padding: 0px !important;
         margin-bottom: 1rem;
     }
+
     .agvehicleSection .pt-2{
         padding: 0px !important;
     }
+
+    #mobileControlImg {
+        width: 30vw;
+    }
+
     .bgLightGrey .row h2{
         text-align: center;
         padding: 0px 0px !important;

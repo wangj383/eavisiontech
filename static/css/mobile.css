@@ -23,6 +23,12 @@
     }
 }
 @media (max-width: 992px){
+    #logoimg-mobile {
+        padding-top:3px;
+        padding-bottom:3px;
+        height: 100%;
+    }
+
     #homePartners .img-box a img{
         width:30%;
     }

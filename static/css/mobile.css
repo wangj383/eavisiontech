@@ -295,6 +295,12 @@
     #aboutContact .container{
         padding: 0px !important;
     }
+    #aboutContact .row {
+        align-items: center;
+    }
+    #aboutMap {
+        padding:1rem 0;
+    }
     #serviceContact{
         padding: 0px !important;
     }

@@ -22,6 +22,15 @@
         font-size:22px;
     }
 }
+@media (max-width: 1140px) {
+    #serviceDescription .serviceStep {
+        min-width: 350px;
+    }
+    #serviceDescription .serviceStep:nth-child(3),
+    #serviceDescription .serviceStep:nth-child(4) {
+        margin-top: 1.5rem !important;
+    }
+}
 @media (max-width: 992px){
     #logoimg-mobile {
         padding-top:3px;

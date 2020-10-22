@@ -340,11 +340,13 @@ nav {
 	border-bottom: 1px solid #353535;
 } */
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:active {
     border-bottom: 2px solid rgb(95, 95, 95);
 }
 
-a span:hover {
+a span:hover,
+a span:active {
     color: rgb(128, 124, 124);
 }
 
@@ -581,7 +583,7 @@ a span:hover {
 }
 
 .footer a {
-    color: #f1f1f1c0;
+    color: #f1f1f1c0 !important;
     font-size: 13px;
 }
 .footer p{
@@ -589,7 +591,7 @@ a span:hover {
 }
 
 .footer a:hover {
-    color: white;
+    color: #FFFFFF !important;
     text-decoration: none;
 }
 
@@ -799,9 +801,13 @@ a span:hover {
 }
 .ql-video{
     width: 100%;
+    min-height: 500px;
 }
 .first-new-item img {
     width: 100%;
+}
+.newDetail{
+    flex: 1;
 }
 
 .first-new-item .bottom-container {
@@ -1501,6 +1507,7 @@ a span:hover {
 
 #serviceDescription h3 {
     font-weight: 400;
+    cursor: auto;
 }
 
 #serviceDescription .container-fluid {
@@ -1511,7 +1518,7 @@ a span:hover {
 #serviceDescription .stepsContainer {
     justify-content: center;
     position: relative;
-    margin: 25px 50px;
+    margin: 25px 25px;
 }
 
 #serviceDescription .serviceStep {
@@ -1519,12 +1526,14 @@ a span:hover {
 }
 
 #serviceDescription .serviceStep .card {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    /* padding: 16px; */
     text-align: center;
     background-color: #f1f1f1;
-    height: 420px;
-    margin: 0 10px;
+    height: 100%;
+}
+
+#serviceDescription .card-body{
+    cursor: auto;
+    padding: 1rem;
 }
 
 .stepsContainer .inner-triangle {
@@ -1568,12 +1577,9 @@ a span:hover {
 }
 
 #serviceDescription .serviceStep p {
-    font-size: 92%;
+    font-size: 14px;
     color: rgb(125, 126, 126);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
+    line-height: 1.3;
 }
 
 #serviceDescription .col-1 .arrowicon {

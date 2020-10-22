@@ -683,6 +683,10 @@
         width: 35vw;
     }
 
+    #agvehicle-sideview {
+        width: 100%;
+    }
+
     .bgLightGrey .row h2{
         text-align: center;
         padding: 0px 0px !important;

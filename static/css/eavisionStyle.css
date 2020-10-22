@@ -701,6 +701,7 @@ a span:active {
 }
 .homeTextSection .col-lg-3{
     margin-top: 1.5rem;
+    padding: 0 25px;
 }
 
 .homeTextSection h2 {
@@ -1302,7 +1303,8 @@ a span:active {
 
 /* agvehicle */
 #agvehicleBanner {
-    background-color: white;
+    background: -webkit-radial-gradient(50% 50%,white,#fdf9de);
+    background: radial-gradient(at 50% 50%,white,#fdf9de);
     text-align: center;
     height: 716px;
     margin-top: 50px;

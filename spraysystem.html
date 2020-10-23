@@ -202,5 +202,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="/static/js/eavision.js"></script>
 </body>
+<script>
+    let video = document.getElementById("spraysystem-video");
+    let videoPlay = video.play();
 
+    videoPlay.then(() => {
+        console.log('可以自动播放');
+    }).catch((err) => {
+        console.log(err);
+        console.log("不允许自动播放");
+        video.setAttribute('controls', true);
+    })
+</script>
 </html>

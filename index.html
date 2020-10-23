@@ -29,7 +29,7 @@
     </nav>
     <!-- mobile navbar -->
     <div class="bodyOverlay">
-        <div id="homeBanner" >
+        <div id="homeBanner" class="homeBanner pcHomeBanner">
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -51,18 +51,6 @@
                             <a href="ea2020.html"><button class="btn white-border-button round">Learn More
                                     ></button></a>
                         </div>
-                        <!-- <img class="d-block animate" style="padding-top:2rem;" src="./static/img/homePage/homeBanner_mobile.png"
-                        alt="First slide">
-                        <div class="carousel-caption" style="padding-top:1.5rem;" >
-                            <a href="ea2020.html">
-                                <h1>E-A2020</h1>
-                            </a>
-                            <h3>True intelligence.
-                                </br>
-                                True protection.</h3>
-                            <a href="ea2020.html"><button class="btn black-border-button round">Learn More
-                                    ></button></a>
-                        </div> -->
                     </div>
                     <div class="carousel-item">
                         <img class="d-block" src="/static/img/homePage/homeBanner_Spray.png" alt="Second slide">
@@ -111,11 +99,32 @@
                 </a>
             </div>
         </div>
+
+        <div class="mobileHomeBanner homeBanner" style="margin-top: 52px;">
+            <div class="carousel-inner h-100" style="background-color:white">
+                <div class="carousel-item active">
+                    <img class="d-block animate" style="padding-top:2rem;width: 100%;"
+                        src="./static/img/homePage/homeBanner_mobile.png" alt="First slide">
+                    <div class="carousel-caption" style="padding-top:1.5rem;">
+                        <a href="ea2020.html">
+                            <h1>E-A2020</h1>
+                        </a>
+                        <h3>True intelligence.
+                            </br>
+                            True protection.</h3>
+                        <a href="ea2020.html"><button class="btn black-border-button round">Learn More
+                                ></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="homeTextSection bgBlack center">
             <div class="row">
                 <h2 class="lightWhite">We believe in pushing the boundary of what it means to be autonomous</h2>
             </div>
-            <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png" alt="Autonomous Agricultural Drone E-A2020">
+            <img id="homeEA2020bgBlack" src="/static/img/homePage/E-A2020_bgBlack.png"
+                alt="Autonomous Agricultural Drone E-A2020">
             <div class="row pt-4 text-left">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <h3 class="lightWhite">Machine Vision</h3>
@@ -151,7 +160,8 @@
                     <a href="ea2020.html">
                         <div class="card-body">
                             <h2 class="card-title">E-A2020</h2>
-                            <img id="homeEa2020img" class="flip" src="/static/img/homePage/E-A2020.png" alt="Autonomous Agricultural Drone E-A2020">
+                            <img id="homeEa2020img" class="flip" src="/static/img/homePage/E-A2020.png"
+                                alt="Autonomous Agricultural Drone E-A2020">
                         </div>
                     </a>
                 </div>
@@ -167,7 +177,8 @@
                     <a href="agvehicle.html">
                         <div class="card-body">
                             <h2 class="card-title">Agricultural Crop Protection Vehicle</h2>
-                            <img id="homeAgVehicleimg" src="/static/img/agvehicle/agvehicle.png" alt="Agricultural Crop Protection Vehicle">
+                            <img id="homeAgVehicleimg" src="/static/img/agvehicle/agvehicle.png"
+                                alt="Agricultural Crop Protection Vehicle">
                         </div>
                     </a>
                 </div>
@@ -192,16 +203,21 @@
             <h2 style="text-align: center;">Our Partners</h2>
             <div class="row img-box align-items-center">
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6" href="https://www.basf.com/ca/en.html" target="_blank">
-                    <img id="basf" class="partner_logo" width="100px" src="/static/img/partners/BASF_logo_bw.png" alt="BASF logo">
+                    <img id="basf" class="partner_logo" width="100px" src="/static/img/partners/BASF_logo_bw.png"
+                        alt="BASF logo">
                 </a>
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6" href="http://www.fmc.com" target="_blank">
-                    <img id="fmc" class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png" alt="FMC logo">
+                    <img id="fmc" class="partner_logo" src="/static/img/partners/FMC_tagline_H_color.png"
+                        alt="FMC logo">
                 </a>
                 <a class="col-lg-3 col-md-6 col-sm-6 col-6 mt-4 mt-lg-0" href="http://en.lpht.com.cn" target="_blank">
-                    <img id="longping" class="partner_logo" src="/static/img/partners/longping_logo.png" alt="Longping logo">
+                    <img id="longping" class="partner_logo" src="/static/img/partners/longping_logo.png"
+                        alt="Longping logo">
                 </a>
-                <a class="col-lg-3 col-md-6 col-sm-6 col-6 mt-4 mt-lg-0" href="https://www.syngenta.com" target="_blank">
-                    <img id="syngenta" class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png" alt="Syngenta logo">
+                <a class="col-lg-3 col-md-6 col-sm-6 col-6 mt-4 mt-lg-0" href="https://www.syngenta.com"
+                    target="_blank">
+                    <img id="syngenta" class="partner_logo" src="/static/img/partners/Syngenta_Logo.svg_.png"
+                        alt="Syngenta logo">
                 </a>
             </div>
         </div>
@@ -224,7 +240,7 @@
             </div>
 
             <div class="center pt-4"><a href="news.html"><button class="btn blue-button">See All News
-                        </button></a></div>
+                    </button></a></div>
         </div>
         <div class="serviceSection bgWhite contact" id="serviceContact">
         </div>

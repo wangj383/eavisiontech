@@ -139,6 +139,8 @@ $(function () {
         //     })
         // }
         
+        // $('#carouselExampleIndicators').removeAttr('data-pause')
+        
     })(window, jQuery)
 
 $('.thumbnails-carousel').thumbnailsCarousel()

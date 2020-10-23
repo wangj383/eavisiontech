@@ -70,7 +70,7 @@
             <div class="right-content ml-lg-5 ml-md-5 ml-sm-0">
                 <div>
                     <h3 style="margin:20px 0 !important; font-size: 22px;">CATEGORIES</h3>
-                    <div id="companyNews" style="cursor: pointer">Company News (3)</div>
+                    <a href="/news.html" style="color: #353535" >Company News (3)</a>
                 </div>
 
                 <div style="display: flex; flex-direction: column; margin-top: 40px;">
@@ -162,9 +162,6 @@
                 })
             }
 
-            $("#companyNews").click(function () {
-                window.open('/news.html', '_self');
-            })
 
             $(document).on('click', '.news-item span', function (res) {
                 var id = res.target.dataset.id

@@ -1,4 +1,5 @@
 
+
 @media (max-width: 1400px){
     #homeBanner .d-block {
         width: auto;
@@ -31,6 +32,7 @@
         margin-top: 1.5rem !important;
     }
 }
+
 @media (max-width: 992px){
     #logoimg-mobile {
         padding-top:3px;
@@ -57,6 +59,10 @@
     }
     .abouttextSection .row .sideImg{
         padding-top:1.2rem;
+    }
+    #serviceDescription .slideshowText{
+        flex: 0 0 70%;
+        max-width: 70%;
     }
 }
 
@@ -105,7 +111,7 @@
     .navbar-nav .dropdown-menu{
         border: none;
         transition-duration: 4s;
-        padding-left:3rem;
+        padding-left:2rem;
     }
     .nav-item .btn span{
         font-weight:800;
@@ -135,14 +141,26 @@
         padding: 5px 0px;
         font-weight:600;
     }
-    #homeBanner .carousel-indicators{
+    .pcBanner {
+        display: none;
+    }
+    .mobileBanner {
+        display: block;
+    }
+    .pcHomeBanner{
+        display: none;
+    }
+    .mobileHomeBanner{
+        display: block;
+    }
+    .homeBanner .carousel-indicators{
         bottom: 0px;
     }
-    #homeBanner .carousel-indicators li {
+    .homeBanner .carousel-indicators li {
         width: 10px;
         height: 10px;
     }
-    #homeBanner .d-block {
+    .homeBanner .d-block {
         height: calc(100vh - 52px);
     }
     #carouselExampleIndicators .carousel-control-prev,
@@ -156,7 +174,7 @@
     .carousel-caption h3{
         padding: 15px 0px 15px 0px;
     }
-    #homeBanner .carousel-caption{
+    .homeBanner .carousel-caption{
         margin-top: 20px;
         left: 10%;
         right: 10%;
@@ -479,8 +497,11 @@
         height: 30%;
         margin-top:0;
     }
+    .sixbox h3{
+        text-align: center;
+    }
     .system {
-        padding: 2rem 0px !important;
+        padding: 0px !important;
     }
     .system .row{
         flex-direction: column;
@@ -532,7 +553,9 @@
         position: relative;
         top: 60px;
     }
-
+    .spraySystemTextSection .row h2{
+        margin-bottom: 1.5rem;
+    }
     .spraySystemTextSection .row{
         display: block;
         padding: 0px !important;
@@ -569,6 +592,12 @@
     .bgDroneSpray {
         height: 400px;
     }
+    #agvehicleBanner{
+        height: 650px;
+    }
+    #agvehicleBanner .container-fluid{
+        height: 650px;
+    }
     .spraySystemTextSection .container{
         padding: 0px;
     }
@@ -584,7 +613,8 @@
     }
 
     .spraySystemTextSection .row h2.module-title{
-        margin-top:20px;
+        margin-top:20px !important;
+        margin-bottom: 0px !important;
         font-size: 20px;
         text-align:left;
     }
@@ -597,7 +627,7 @@
     .spraySystemTextSection h3.font-weight-bold{
         font-size:16px;
         font-weight: 600 !important;
-        margin-top:15px;
+        margin-top:10px;
     }
 
     .bgLightGrey .row .col-4{
@@ -635,11 +665,16 @@
     #cropCoverageBackground{
         height: 680px;
     }
-
+    #serviceDescription .mt-5{
+        margin-top: 2rem !important;
+    }
     #cropCoverageBackground .row{
         padding: 10px 20px !important;
     }
-    
+    .agvehicleTextSection .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .agvehicleTextSection{
         padding: 3rem 2rem;
     }
@@ -712,6 +747,7 @@
         padding: 0px 0px !important;
         margin: 0px !important;
         margin-bottom: 1rem !important;
+        width: 100%;
     }
     .bgLightGrey .row p{
         text-align: center;
@@ -778,6 +814,7 @@
     }
     .newsDetailContent{
         margin: 80px auto !important;
+        padding: 0rem 2rem;
     }
     .newsDetailContent h1{
         margin-right: 0px !important;

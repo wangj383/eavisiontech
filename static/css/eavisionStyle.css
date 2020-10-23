@@ -67,13 +67,10 @@ p {
 
 .blue-button {
     color: #ffffff;
-    /* background-color: #289CEB; */
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px !important;
     background-image: linear-gradient(-180deg, #42b7ff, #1897f2);
-    transition-duration: 4s;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
 }
 
 .blue-button span:hover {
@@ -349,15 +346,23 @@ a span:hover,
 a span:active {
     color: rgb(128, 124, 124);
 }
-
+.mobileHomeBanner{
+    display: none;
+}
 #logoimg {
     height: 35px;
     position: relative;
 }
 
+#navbar .nav-item{
+    text-align: center;
+    position: relative;
+    max-width: 150px;
+}
 .nav-item {
     box-sizing: border-box;
     border-bottom: transparent 2px solid;
+    
 }
 
 .navbar-nav .nav-item.mx-auto>.nav-link {
@@ -506,9 +511,6 @@ a span:active {
     background: rgba(0, 0, 0, 0.8);
 }
 
-#navButton {
-    margin-left: 20px;
-}
 
 .logo{
     position: relative;
@@ -730,6 +732,7 @@ a span:active {
 .homeCardSection .card {
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all .3s;
 }
 
 .homeCardSection .card-title{
@@ -863,6 +866,15 @@ a span:active {
     -webkit-line-clamp: 3;
     overflow: hidden;
     margin-bottom: 20px;
+}
+.mobileBanner{
+    display: none;
+}
+.homeCardSection .card:hover {
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.homeCardSection .card:hover .card-title {
+    text-decoration: underline;
 }
 .homeNewsSection .card:hover{
     box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);

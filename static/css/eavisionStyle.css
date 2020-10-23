@@ -18,7 +18,7 @@ a {
 h1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-size: 40px;
+    font-size: 54px;
     letter-spacing: 0;
     line-height: 64px;
     color: #353535;
@@ -27,7 +27,7 @@ h1 {
 h2 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-size: 30px;
+    font-size: 36px;
     letter-spacing: 0;
     color: #353535;
 }
@@ -35,7 +35,7 @@ h2 {
 h3 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 0;
     color: #353535;
 }
@@ -44,6 +44,14 @@ h4 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-size: 18px;
+    letter-spacing: 0;
+    color: #353535;
+}
+
+h5{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 40px;
     letter-spacing: 0;
     color: #353535;
 }
@@ -569,9 +577,10 @@ a span:active {
 
 .footer h3 {
     /* text-transform: uppercase; */
-    padding-top: 48px;
+    padding-top: 29px;
     line-height: 30px;
     color: #ffffff;
+    font-size:16px;
 }
 
 .footer p {
@@ -611,7 +620,7 @@ a span:active {
 }
 
 .row .copyright {
-    font-size: 12px;
+    font-size: 13px;
     padding-bottom: 24px !important;
     margin-left: 0px;
 }
@@ -642,6 +651,11 @@ a span:active {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#homeBanner .vehicleBannerImg{
+    background-color: #f8feff;
+    padding-top: 60px;
 }
 .carousel-item{
     overflow: hidden;
@@ -692,6 +706,9 @@ a span:active {
 
 #homeBanner .carousel-indicators .active {
     background-color: #64beff;
+}
+#homeBanner .carousel-caption h1.vehicleBannerTitle{
+    font-size:45px;
 }
 
 .homeTextSection {
@@ -1750,7 +1767,7 @@ ul.thumbnails-carousel li {
 }
 
 .carousel-caption h3 {
-    padding: 15px 0px;
+    padding: 25px 0px;
     color: #353535;
 }
 
@@ -2072,7 +2089,7 @@ ul.thumbnails-carousel li {
     }
 
     .footer h3 {
-        padding-top: 32px;
+        padding-top: 29px;
         color: white;
     }
     .footer .col-2 {

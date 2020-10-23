@@ -299,7 +299,7 @@
         align-items: center;
     }
     #aboutMap {
-        padding:1rem 0;
+        padding:1rem 0 1.5rem 0;
     }
     #serviceContact{
         padding: 0px !important;
@@ -607,6 +607,11 @@
 
     #agvehicleBanner .container-fluid h1{
         line-height: 1.5;
+    }
+    #agvehicleBanner .agvehicleBannerImg{
+        height:60vw;
+        max-height: 350px;
+        padding:1rem;
     }
 
     .agvehicleSection {

@@ -1094,6 +1094,11 @@ a span:active {
     padding-bottom: 10px;
 }
 
+.ea2020Section .col{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 .ea2020Section .sideImg {
     width: 45vw;
     height: auto;
@@ -1102,6 +1107,8 @@ a span:active {
 }
 
 .ea2020Section .sideImg2 {
+    min-height: 220px;
+    min-width:270px;
     width: 25vw;
     height: auto;
     padding-top: 30px;
@@ -1189,6 +1196,7 @@ a span:active {
 
 .sixbox h3 {
     font-size: 18px;
+    padding-top: 5px;
 }
 
 .sixbox p {

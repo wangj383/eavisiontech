@@ -70,7 +70,7 @@
             <div class="right-content ml-lg-5 ml-md-5 ml-sm-0">
                 <div>
                     <h3 style="margin:20px 0 !important; ">CATEGORIES</h3>
-                    <a href="/news.html" style="color: #353535" >Company News (3)</a>
+                    <a href="/news.html" style="color: #353535" >Company News (<span class="num"></span>)</a>
                 </div>
 
                 <div style="display: flex; flex-direction: column; margin-top: 40px;">
@@ -140,13 +140,13 @@
                             </div>`
                     })
                     $('.news-list').append(html);
-                    
+                    $('.num').html(result.length);
                 }
             })
 
 
             function getNewDetail(id) {
-                $.post('http://www.eav.top/front/getSolution?id=' + id, function (res) {
+                $.post('https://www.eav.top/front/getSolution?id=' + id, function (res) {
                     if (res.code == '000000') {
                         var result = res.result || {}
                         $('.newsDetailContent h1').html(result.title)

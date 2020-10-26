@@ -832,4 +832,7 @@
     .newsDetailContent .right-content .news-list .news-item img{
         height: auto !important;
     }
+    .newsDetailsContent .right-content h3{
+        font-size:20px;
+    }
 }

@@ -57,3 +57,8 @@ html, body {
 .content .right-content {
     padding: 30px 0;
 }
+
+.newDetail .news-main img {
+    max-width: 100% !important;
+    height: auto !important;
+}

@@ -12,7 +12,7 @@
 }
 @media (max-width: 1023px){
     h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
     .homeCardSection .card-title{
         font-size:22px;
@@ -21,10 +21,7 @@
 @media (max-width: 1140px) {
     #serviceDescription .serviceStep {
         min-width: 350px;
-    }
-    #serviceDescription .serviceStep:nth-child(3),
-    #serviceDescription .serviceStep:nth-child(4) {
-        margin-top: 1.5rem !important;
+        max-width: 400px;
     }
 }
 
@@ -58,6 +55,47 @@
     #serviceDescription .slideshowText{
         flex: 0 0 70%;
         max-width: 70%;
+    }
+    
+}
+
+@media (max-width: 870px) {
+    .ea2020Section .row {
+        flex-direction: column-reverse;
+    }
+
+    .ea2020Section .row .img-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ea2020Section .row .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ea2020Section .row .img-box .sideImg4 {
+        width: 100%;
+    }
+
+    .ea2020Section .row .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    .ea2020Section .row .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    .ea2020Section .row .col p {
+        margin-bottom: 0px;
     }
 }
 
@@ -387,37 +425,7 @@
         width: 100%;
         margin: 1rem 0px;
     }
-    .ea2020Section .row{
-        flex-direction: column-reverse;
-    }
-    .ea2020Section .row .img-box {
-        flex: 0 0 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .ea2020Section .row .col-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .ea2020Section .row .img-box .sideImg4 {
-        width: 100%;
-    }
-    .ea2020Section .row .col {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 2rem 3rem;
-    }
-    .ea2020Section .row .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 2rem 3rem;
-    }
-    .ea2020Section .row .col p{
-        margin-bottom: 0px;
-    }
+    
     .ea2020overlay .right{
         flex-direction: column;
         align-items: flex-end;
@@ -809,16 +817,13 @@
     }
     .newsDetailContent h1{
         margin-right: 0px !important;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 1.5;
     }
     .newsDetailContent .newDetail .news-main{
         margin-right: 0px !important;
     }
-    .newsDetailContent .newDetail .news-main img{
-        max-width: 100% !important;
-        height: auto !important;
-    }
+    
     .newsDetailContent .content{
         flex-wrap: wrap;
     }

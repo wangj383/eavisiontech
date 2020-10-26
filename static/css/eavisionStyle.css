@@ -951,7 +951,7 @@ a span:active {
 
 .news-img-left {
     width: 320px;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -1562,6 +1562,8 @@ a span:active {
 
 #serviceDescription .serviceStep {
     /* min-width: 350px; */
+    
+    margin-bottom: 1.5rem;
 }
 
 #serviceDescription .serviceStep .card {

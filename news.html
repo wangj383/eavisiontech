@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/eavisionStyle.css">
     <link rel="icon" href="/static/img/site_icon.png">
     <link rel="stylesheet" href="/static/css/mobile.css">
@@ -25,11 +25,11 @@
     <nav id="mobile-navbar" class="navbar navbar-expand-sm navbar-light navigation d-block d-md-none fixed-top">
     </nav>
     <!-- mobile navbar -->
-    <div class="bodyOverlay">
+    <div class="bodyOverlay homeNewsPage">
 
         <div class="homeNewsSection bgWhite" id="app">
-            <div class="row center py-5 title-box">
-                <h2>EAVision News</h2>
+            <div class="row center title-box">
+                <h1>EAVision News</h1>
             </div>
             <div class="news-box">
                 <div class="news-left">
@@ -41,7 +41,7 @@
 
                         <div v-else class="card round">
                             <div class="card-body" @click="onDetail(n)">
-                                <img class="news-img-left round" :src="n.osskey">
+                                <img class="news-img-left news_round" :src="n.osskey">
                                 <div class="card-content">
                                     <h3 class="card-title">{{n.title}}</h3>
                                     <p class="card-text card-subtitle">{{n.des}}... (Read More)</p>
@@ -51,8 +51,10 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="news.length < count" class="pt-4"><button class="btn blue-border-button round"
-                            @click="more">More</button></div>
+                    <!-- <div v-if="news.length < count" class="pt-4"><button class="btn blue-border-button round"
+                            @click="more">More</button></div> -->
+                    <div class="center pt-4"><a href="news.html"><button class="btn blue-button">See All News
+                    </button></a></div>
                 </div>
 
                 <div class="news-right">

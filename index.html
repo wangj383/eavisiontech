@@ -223,12 +223,12 @@
         </div>
         <div class="homeNewsSection bgLightGrey" id="app">
             <div class="row center">
-                <h2>EAVision News</h2>
+                <h2 class="homeNewsTitle">EAVision News</h2>
             </div>
             <div v-for="n in news" class="row center">
                 <div class="card round" style="width: 80vw;">
                     <div class="card-body" @click="onDetail(n)">
-                        <img class="news-img-left round" :src="n.osskey" alt="news image">
+                        <img class="news-img-left news_round" :src="n.osskey" alt="news image">
                         <div class="card-content">
                             <h3 class="card-title">{{n.title}}</h3>
                             <p class="card-text card-subtitle">{{n.des}}</p>

@@ -171,6 +171,16 @@
     h5{
         font-size: 36px;
     }
+    #ea2020Banner .container-fluid{
+        background-image: url(../img/ea2020_banner_mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #ea2020Banner{
+        background-image:none;
+        padding-top: 200px;
+        background-color:#FFF;
+    }
     .ea2020Section.py-3 .row .col {
         padding: 0px !important;
     }
@@ -339,7 +349,7 @@
     }
     .homeNewsSection .card .card-body .news-img-left{
         width: 100% !important;
-        height: auto !important;
+        height: 200px !important;
     }
     .serviceSection{
         padding: 0px;
@@ -472,23 +482,24 @@
         font-size: 12px;
     }
     #ea2020Banner{
-        height: 768px;
+        height: auto;
     }
     #ea2020Banner .container-fluid{
-        height: 768px;
+        height: 590px;
     }
 
     #ea2020Banner h1{
-        margin-top: 90px;
+        margin-top: -130px;
         margin-bottom: 0px;
     }
     #ea2020Banner h3{
-        margin-top: 5px;
+        margin-top: -60px;
     }
     #ea2020Banner p{
         line-height: 1.4;
         padding-right:20px;
         padding-left:20px;
+        margin-top: -30px;
     }
     #ea2020Banner .buttons{
         position: relative;
@@ -496,7 +507,7 @@
     }
 
     .homeNewsSection .card{
-        width: 100%;
+        max-width: 400px;
         margin: 1rem 0px;
     }
     

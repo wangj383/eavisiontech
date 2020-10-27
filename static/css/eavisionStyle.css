@@ -860,11 +860,11 @@ a span:active {
 
 
 .homeNewsSection .card-content {
-    padding: 20px;
+    padding: 10px 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    height: 100%;
 }
 
 .homeNewsSection .card-title {
@@ -872,7 +872,6 @@ a span:active {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    margin-bottom: 1.2rem;
 }
 
 .homeNewsSection .card-subtitle {
@@ -882,7 +881,6 @@ a span:active {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 .mobileBanner{
     display: none;
@@ -908,7 +906,10 @@ a span:active {
 .img-box a img{
     width: 60%;
 }
-
+.system{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 #fmc{
     width: 70%;
 }

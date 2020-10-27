@@ -86,8 +86,8 @@
     }
 
     .ea2020Section .row .col-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 80%;
+        max-width: 80%;
         display: flex;
         flex-direction: column;
     }
@@ -97,8 +97,8 @@
     }
 
     .ea2020Section .row .col {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 70%;
+        max-width: 70%;
         padding: 2rem 3rem;
     }
 
@@ -111,6 +111,53 @@
     .ea2020Section .row .col p {
         margin-bottom: 0px;
     }
+
+    .ea2020Section.py-3 .col-6 {
+        flex-direction: initial;
+    }
+
+    .ea2020Section .sideImg2 {
+        width: 65vw !important;
+        height: 100% !important;
+        flex: 0;
+    }
+
+    .system .row {
+        flex-direction: column;
+    }
+
+    .system .row .col-5 .py-4 {
+        padding: 0px !important;
+    }
+
+    .system .row .col-5 .my-3 {
+        margin-bottom: 0px !important;
+    }
+
+    .ea2020Section h2 {
+        padding-bottom: 0px;
+    }
+
+    .system .row .col-sm-7 .sideImg3 {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .package .pt-5 .sideImg {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .bgLightGrey .row .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .bgLightGrey .row .col-5 #agvehicle-sideview {
+        width: 80%;
+    }
 }
 
 @media (max-width: 767px){
@@ -119,6 +166,12 @@
     }
     h5{
         font-size: 36px;
+    }
+    .ea2020Section .row .col {
+        padding: 0px !important;
+    }
+    .ea2020Section.py-3{
+        padding-bottom: 3rem !important;
     }
     .homeTextSection{
         padding: 3rem 2rem;
@@ -464,15 +517,7 @@
      .ea2020overlay .right .col-3 h3{
          font-size: 16px;
      }
-     .ea2020Section.py-3 .col-6{
-        flex-direction: initial;
-     }
-     .ea2020Section .sideImg2{
-         width: 65vw !important;
-         height: 100% !important;
-         /* padding: 0px; */
-         flex: 0;
-     }
+     
      .ea2020textSection{
          padding: 0 0 1rem 0;
      }
@@ -523,32 +568,14 @@
     .system {
         padding: 0px !important;
     }
-    .system .row{
-        flex-direction: column;
-    }
-    .system .row .col-5 .py-4{
-        padding: 0px !important;
-    }
-    .system .row .col-5 .my-3 {
-        margin-bottom: 0px !important;
-    }
-    .ea2020Section h2{
-        padding-bottom: 0px;
-    }
-    .system .row .col-sm-7 .sideImg3 {
-        width: 80%;
-        padding: 0px;
-    }
+    
     .package .pt-5{
         padding-top: 0px !important;
     }
     .package .pt-5 .col-5{
         text-align: center;
     }
-    .package .pt-5 .sideImg{
-        width: 80%;
-        padding: 0px;
-    }
+    
     .versions {
         padding:2rem 0px !important;
     }
@@ -772,15 +799,7 @@
     .bgLightGrey .row .col-lg-6 {
         padding: 0px;
     }
-    .bgLightGrey .row .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        text-align: center;
-        padding: 0px !important;
-    }
-    .bgLightGrey .row .col-5 #agvehicle-sideview{
-        width: 80%;
-    }
+    
     .bgLightGrey .row .col-4{
         padding: 0px 0px;
     }

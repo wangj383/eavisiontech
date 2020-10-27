@@ -73,7 +73,11 @@
     #homeBanner .vehicleBannerImg{
         padding-top: 130px;
     }
-
+    .text-box{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 0px;
+    }
     .ea2020Section .row {
         flex-direction: column-reverse;
     }
@@ -96,7 +100,7 @@
         width: 100%;
     }
 
-    .ea2020Section .row .col {
+    .ea2020Section.py-3 .row .col {
         flex: 0 0 70%;
         max-width: 70%;
         padding: 2rem 3rem;
@@ -167,7 +171,7 @@
     h5{
         font-size: 36px;
     }
-    .ea2020Section .row .col {
+    .ea2020Section.py-3 .row .col {
         padding: 0px !important;
     }
     .ea2020Section.py-3{

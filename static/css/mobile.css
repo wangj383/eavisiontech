@@ -340,6 +340,8 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        margin-bottom: 0.75rem;
+        margin-top: 0.25rem;
     }
 
     .homeNewsSection .card .card-body{
@@ -351,6 +353,17 @@
         width: 100% !important;
         height: 200px !important;
     }
+
+    .homeNewsSection .card .card-body .card-content{
+        text-align:left;
+        padding: 20px;
+    }
+
+    .homeNewsSection .card-content p.card-subtitle, 
+    .homeNewsSection .card-content p.news-date {
+        text-align: left;
+    }
+
     .serviceSection{
         padding: 0px;
     }

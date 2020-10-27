@@ -358,7 +358,7 @@ a span:active {
     display: none;
 }
 #logoimg {
-    height: 35px;
+    height: 34px;
     position: relative;
 }
 
@@ -861,11 +861,11 @@ a span:active {
 
 
 .homeNewsSection .card-content {
-    padding: 10px 20px;
+    padding: 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .homeNewsSection .card-title {

@@ -11,8 +11,18 @@
 
 }
 @media (max-width: 1023px){
+    h1{
+        font-size:40px;
+    }
+
+    #homeBanner .carousel-caption h1.vehicleBannerTitle{
+        font-size:40px;
+    }
     h2 {
-        font-size: 20px;
+        font-size: 24px;
+    }
+    h3{
+        font-size:20px;
     }
     .homeCardSection .card-title{
         font-size:22px;
@@ -60,6 +70,10 @@
 }
 
 @media (max-width: 870px) {
+    #homeBanner .vehicleBannerImg{
+        padding-top: 130px;
+    }
+
     .ea2020Section .row {
         flex-direction: column-reverse;
     }
@@ -102,6 +116,9 @@
 @media (max-width: 767px){
     html{
         overflow-x: hidden;
+    }
+    h5{
+        font-size: 36px;
     }
     .homeTextSection{
         padding: 3rem 2rem;
@@ -433,8 +450,8 @@
         text-align:right;
     }
     .ea2020overlay .right .col-3{
-        flex: 0 0 40%;
-        max-width: 40%;
+        flex: 0 0 43%;
+        max-width: 43%;
         margin-bottom: 40px;
     }
     .ea2020overlay .right>div{
@@ -442,7 +459,7 @@
     }
     .ea2020overlay .right .col-3 .whitetextshadow{
         line-height: 1.2;
-        width:80%
+        width:85%
     }
      .ea2020overlay .right .col-3 h3{
          font-size: 16px;

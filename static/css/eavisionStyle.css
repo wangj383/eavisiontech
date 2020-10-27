@@ -799,6 +799,9 @@ a span:active {
 .news-left .row{
     margin: 0px;
 }
+.homeNewsSection h2{
+    margin-bottom:1.5rem;
+}
 .homeNewsSection>.row{
     margin: 0px;
 }
@@ -865,6 +868,7 @@ a span:active {
     text-align: left;
     display: flex;
     flex-direction: column;
+    flex: 1;
     /* height: 100%; */
 }
 
@@ -951,7 +955,7 @@ a span:active {
     height: 11vw;
 }
 
-.news-img-left {
+.homeNewsSection .card-body img.news-img-left {
     width: 320px;
     height: 200px;
     object-fit: cover;

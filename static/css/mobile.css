@@ -326,6 +326,10 @@
         width:65%;
     }
     
+    .homeNewsSection h2{
+        margin-bottom:1.5rem;
+    }
+    
     .homeNewsSection .card .card-title {
         text-overflow: ellipsis;
         overflow: hidden;

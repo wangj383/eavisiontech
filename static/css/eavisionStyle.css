@@ -1393,7 +1393,7 @@ a span:active {
     background: -webkit-radial-gradient(50% 50%,white,#fdf9de);
     background: radial-gradient(at 50% 50%,white,#fdf9de);
     text-align: center;
-    height: 716px;
+    height: 728px;
     margin-top: 50px;
     padding-top:20px;
 }
@@ -1402,7 +1402,7 @@ a span:active {
     justify-content: center;
     align-content: bottom;
     width: auto;
-    height: 716px;
+    height: 728px;
 }
 
 #agvehicleBanner h1 {
@@ -1426,7 +1426,7 @@ a span:active {
 }
 
 #agvehicleBanner .agvehicleBannerImg{
-    height:450px;
+    height:440px;
     padding:1.5rem 1.5rem 2rem 1.5rem;
 }
 
@@ -1585,13 +1585,9 @@ a span:active {
     background-color: #f5f5f5;
 }
 
-#serviceDescription .container-fluid {
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
 #serviceDescription h2 {
     margin-bottom: 30px;
+    padding-top:1rem;
 }
 
 #serviceDescription h3 {
@@ -1601,13 +1597,14 @@ a span:active {
 
 #serviceDescription .container-fluid {
     justify-content: center;
-    padding-bottom: 55px;
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
 }
 
 #serviceDescription .stepsContainer {
     justify-content: center;
     position: relative;
-    margin: 25px 25px;
+    margin: 25px 25px 5px 25px;
 }
 
 #serviceDescription .serviceStep {
@@ -1678,10 +1675,14 @@ a span:active {
     top: 70%;
     width: 40%;
 }
+.increased h2{
+    margin-top:1rem;
+}
 
 /* Slideshow */
 #serviceDescription .slideshowSection {
-    padding-top: 35px;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 #serviceDescription .slideshow-container {
@@ -1709,6 +1710,7 @@ a span:active {
     font-size:28px;
 }
 
+
 .serviceSection {
     padding: 15px 10%;
 }
@@ -1716,7 +1718,7 @@ a span:active {
 .serviceSection .row {
     justify-content: center;
     align-items: center;
-    margin: 15px auto;
+    padding: 1rem;
 }
 
 #techImg {
@@ -1835,7 +1837,7 @@ ul.thumbnails-carousel li {
     line-height: 40px;
 }
 #carouselArea {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 /* Recent News */

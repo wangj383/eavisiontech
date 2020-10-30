@@ -429,6 +429,10 @@
         height: 220px;
     }
 
+    .abouttextSection .row .sideImg:last-child{
+        padding: 2rem 3rem 3rem 3rem;
+    }
+
     .bgLightGrey .col-9 h3 {
         text-align: center;
         margin-top: 20px;
@@ -456,9 +460,10 @@
     #serviceContact{
         padding: 0px !important;
     }
+
     .serviceSection .row{
         margin-top: 0px;
-        padding: 1rem;
+        padding:2rem;
     }
     .serviceSection .row .my-3{
         padding: 0px;
@@ -477,8 +482,12 @@
         padding-top: 1rem;
     }
 
+    .increased .citation{
+        padding-bottom:1.5rem;
+    }
+
     #contactSubtitles .row{
-        padding: 0 0.3rem;
+        padding: 0 1rem;
     }
 
     #contact_form .pb-2{
@@ -667,12 +676,7 @@
     .bgDroneSpray {
         height: 400px;
     }
-    #agvehicleBanner{
-        height: 650px;
-    }
-    #agvehicleBanner .container-fluid{
-        height: 650px;
-    }
+
     .spraySystemTextSection .container{
         padding: 0px;
     }
@@ -710,13 +714,20 @@
         max-width: 100%;
     }
 
+    #agvehicleBanner{
+        height: 798px;
+    }
+    #agvehicleBanner .container-fluid{
+        height: 798px;
+    }
+
     #agvehicleBanner .container-fluid h1{
-        line-height: 1.5;
+        line-height: 1.2;
     }
     #agvehicleBanner .agvehicleBannerImg{
         height:60vw;
         max-height: 350px;
-        padding:1rem;
+        padding:2rem 0;
     }
 
     .agvehicleSection {
@@ -880,9 +891,9 @@
         max-width: 100%;
         flex: 0 0 100%;
     }
-    #serviceDescription h2{
+    /* #serviceDescription h2{
         margin-top: 1rem;
-    }
+    } */
     .newsDetailContent{
         margin: 80px auto !important;
         padding: 0rem 2rem;

@@ -331,11 +331,8 @@
     }
 
     .homeNewsSection .card .card-title {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        display: block;
+        overflow: auto;
     }
 
     .homeNewsSection .card .card-subtitle {
@@ -361,6 +358,10 @@
     .homeNewsSection .card .card-body .card-content{
         text-align:left;
         padding: 20px;
+    }
+
+    .homeNewsSection .card-content p.card-subtitle{
+        display: none;
     }
 
     .homeNewsSection .card-content p.card-subtitle, 

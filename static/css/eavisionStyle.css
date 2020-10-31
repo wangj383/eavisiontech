@@ -1106,7 +1106,7 @@ a span:active {
 }
 
 #ea2020Banner .container-fluid {
-    background-color: rgba(177, 206, 236, 0.2);
+    /* background-color: rgba(177, 206, 236, 0.2); */
     justify-content: center;
     align-content: bottom;
     width: auto;
@@ -1945,7 +1945,7 @@ ul.thumbnails-carousel li {
 }
 
 .abouttextSection .row .sideImg{
-    width: 33.33vw;
+    width: 33.33%;
     height: 20vw;
 }
 #overseeImgSection{

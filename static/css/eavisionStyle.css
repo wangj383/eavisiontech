@@ -1665,7 +1665,7 @@ a span:active {
 }
 
 #serviceDescription .serviceStep p {
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(125, 126, 126);
     line-height: 1.3;
 }
@@ -1748,7 +1748,7 @@ a span:active {
 #serviceDescription .citation {
     justify-content: flex-end;
     color: grey;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 50px;
     margin-right: 15px;
     padding-right: 20px;
@@ -1929,7 +1929,6 @@ ul.thumbnails-carousel li {
 #aboutBanner h3 {
     margin-top: 250px;
     margin-bottom: 15px;
-    font-size:22px;
 }
 
 #aboutBanner p {
@@ -1986,7 +1985,6 @@ ul.thumbnails-carousel li {
 }
 
 .leaders {
-    font-size: 18px;
     font-weight: 600;
     color: #289ceb;
     text-decoration: none;

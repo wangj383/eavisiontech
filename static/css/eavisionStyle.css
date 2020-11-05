@@ -683,7 +683,7 @@ a span:active {
 
 /* Homepage */
 #homeBanner {
-    background: rgba(162, 199, 224, 0.185);
+    background-color: #f8feff;
     color: #ffffff;
     margin-top: 52px;
 }
@@ -698,7 +698,7 @@ a span:active {
 
 #homeBanner .vehicleBannerImg{
     background-color: #f8feff;
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 .carousel-item{
     overflow: hidden;

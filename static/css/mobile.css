@@ -71,7 +71,7 @@
 
 @media (max-width: 870px) {
     #homeBanner .vehicleBannerImg{
-        padding-top: 130px;
+        padding-top: 80px;
     }
     .text-box{
         flex: 0 0 100%;

@@ -186,7 +186,6 @@ function submitForm() {
     formdata.append('phone', get_id('phone').value)
     formdata.append('topic', get_id('topic').value)
     formdata.append('service', get_id('service').value)
-    formdata.append('subject', get_id('subject').value)
     formdata.append('message', get_id('message').value)
     formdata.append('from', from)
     var ajax = new XMLHttpRequest()
@@ -198,7 +197,7 @@ function submitForm() {
                 get_id('status').innerHTML =
                     '<h3>Thank you for getting in touch!</h3>' +
                     '<p> We appreciate you contacting us about ' +
-                    subject.value +
+                    topic.value +
                     '. One of our colleagues will get back to you shortly.' +
                     ' Have a great day!</p>'
 
@@ -207,7 +206,6 @@ function submitForm() {
                 get_id('phone').value = ''
                 get_id('topic').value = ''
                 get_id('service').value = ''
-                get_id('subject').value = ''
                 get_id('message').value = ''
                 get_id('submit').value = 'Send'
                 get_id('submit').disabled = false
@@ -215,16 +213,6 @@ function submitForm() {
                 get_id('status').innerHTML = ajax.responseText
                 get_id('submit').disabled = false
             }
-            //   if (ajax.responseText == 'success') {
-            //     get_id('contact_form').innerHTML =
-            //       '<h2>Thanks ' +
-            //       get_id('name').value +
-            //       ', your message has been sent.</h2>'
-            //   } else {
-            //     get_id('status').innerHTML = ajax.responseText
-            //     get_id('submit').disabled = false
-            //     get_id('submit').value = 'Send'
-            //   }
         }
     }
     ajax.send(formdata)

@@ -1,6 +1,6 @@
 // initiate aos
 AOS.init()
-
+new WOW({ mobile: false, offset: 100 }).init();
 //bodyOverlay
 $(function () {
     var height = $(window).height() - 52
@@ -47,6 +47,28 @@ $(function () {
                 //   'card-header text-white'
                 // )
             }
+
+            var name = '';
+            var email = '';
+            $("#name").blur(function () {
+                name = $(this).val();
+                if (name && email) {
+                    $('#submit').attr("disabled", false);
+                } else {
+                    $('#submit').attr("disabled", true);
+                }
+            })
+            $("#email").blur(function () {
+                email = $(this).val();
+                if (name && email) {
+                    $('#submit').attr("disabled", false);
+                } else {
+                    $('#submit').attr("disabled", true);
+                }
+            });
+            
+            $('.select').selectpicker();
+
         })
     }
     if ($('#navbar')) {
@@ -61,7 +83,7 @@ $(function () {
     }
     if ($('#footer')) {
         $.get('../../footer.html', function (val) {
-            $('#footer').html(val)
+            $('#footer').html(val);
         })
     }
 })
@@ -150,7 +172,11 @@ $('.thumbnails-carousel').thumbnailsCarousel()
 get_id = function (id) {
     return document.getElementById(id)
 }
+
+
+
 function submitForm() {
+    
     get_id('submit').disabled = true
     get_id('submit').value = 'Sending...'
     var from = $('#frompage').val()
@@ -158,6 +184,8 @@ function submitForm() {
     formdata.append('name', get_id('name').value)
     formdata.append('email', get_id('email').value)
     formdata.append('phone', get_id('phone').value)
+    formdata.append('topic', get_id('topic').value)
+    formdata.append('service', get_id('service').value)
     formdata.append('subject', get_id('subject').value)
     formdata.append('message', get_id('message').value)
     formdata.append('from', from)
@@ -177,6 +205,8 @@ function submitForm() {
                 get_id('name').value = ''
                 get_id('email').value = ''
                 get_id('phone').value = ''
+                get_id('topic').value = ''
+                get_id('service').value = ''
                 get_id('subject').value = ''
                 get_id('message').value = ''
                 get_id('submit').value = 'Send'

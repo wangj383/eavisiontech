@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/eavisionStyle.css">
     <link rel="icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" href="/static/css/mobile.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
 </head>
 
 <body>
@@ -28,12 +29,12 @@
     <div class="bodyOverlay homeNewsPage">
 
         <div class="homeNewsSection bgWhite" id="app">
-            <div class="row center title-box">
+            <div class="row center title-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
                 <h1>EAVision News</h1>
             </div>
             <div class="news-box">
                 <div class="news-left">
-                    <div v-for="(n, index) in news" class="row">
+                    <div v-for="(n, index) in news" class="row wow fadeInUp" :data-wow-delay="0.1 * (index + 1) + 's'">
                         <div v-if="index == 0" class="first-new-item" @click="onDetail(n)">
                             <img :src="n.osskey" alt="bg" />
                             <div class="bottom-container">{{n.title}}</div>
@@ -88,6 +89,7 @@
     <div class="footer" id="footer">
     </div>
     <!-- Footer End -->
+    <script src="/static/js/wow.min.js"></script>
     <script src="/static/js/jquery.min.js">
     </script>
     <script type="text/javascript" src="/static/js/popper.min.js"></script>

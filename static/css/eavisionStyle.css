@@ -80,6 +80,20 @@ p {
     color: #353535;
 }
 
+
+.bootstrap-select>.dropdown-toggle{
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057 !important;
+    background-color: #fff !important;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+    outline: none !important;
+}
 /* Buttons */
 .button {
     font-family: 'Lato', sans-serif;
@@ -92,7 +106,9 @@ p {
     letter-spacing: 0;
     /* text-transform: uppercase; */
 }
-
+.card-body.px-6{
+    cursor: auto;
+}
 .blue-button {
     color: #ffffff;
     border-radius: 4px;
@@ -107,11 +123,16 @@ p {
 
 .blue-button:hover {
     background-image: linear-gradient(-180deg, #6dd1ff, #4ac2f1);
-    /* other color choice (less bright): #6dc5ff,#4ab4f1 */
 }
 
 .blue-button:active {
     background-image: linear-gradient(-180deg, #18a2f2, #42baff) !important;
+}
+.btn.disabled,
+.btn:disabled {
+    color: #212529;
+    background-image:none;
+    background-color: rgba(239, 239, 239, 1);
 }
 
 .blue-border-button {

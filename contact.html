@@ -48,6 +48,23 @@
               <input type="email" name="email" id="email" class="form-control" placeholder="Email*" required>
             </div>
             <div class="form-group">
+                <!-- <label for="Topic">Topic</label> -->
+                <select name="topic" id="Topic" class="form-control select" placeholder="Topic" title="Topic">
+                    <option value="E-A2020 Drone">E-A2020 Drone</option>
+                    <option value="Mist Spray System">Mist Spray System</option>
+                    <option value="Autonomous Crop Protection Vehicle">Autonomous Crop Protection Vehicle</option>
+                    <option value="Tassel Inspector">Tassel Inspector</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- <label for="service">What can we do for you?</label> -->
+                <select name="service" id="service" class="form-control select" placeholder="What can we do for you?" title="What can we do for you?">
+                    <option value="Free Consultation/Trial">Free Consultation/Trial</option>
+                    <option value="Customer Support">Customer Support</option>
+                </select>
+            </div>
+            <div class="form-group">
               <!-- <label for="subject">Subject</label> -->
               <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
             </div>
@@ -57,7 +74,7 @@
               <p class="note">*Required</p>
             </div>
             <div class="form-group">
-              <input type="submit" id="submit" name="submit" value="Send" class="btn blue-button btn-block">
+              <input type="submit" id="submit" name="submit" disabled value="Send" class="btn blue-button btn-block">
             </div>
           </form>
         </div>

@@ -526,6 +526,7 @@
         background-image: url(../img/ea2020_banner_mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
     }
     #ea2020Banner{
         background-image:none;
@@ -540,7 +541,7 @@
     }
 
     #ea2020Banner h1{
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 0px;
     }
     /* #ea2020Banner h3{

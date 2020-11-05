@@ -589,6 +589,8 @@ a span:active {
     color: #6c6c6c;
 }
 
+
+
 /* Footer */
 .footer {
     background-color: #353535;
@@ -1770,6 +1772,9 @@ a span:active {
     padding-left: 20px;
 }
 
+#serviceContact h2{
+    padding-top:0.5rem;
+}
 
 /* Vision */
 #visionBanner {

@@ -101,8 +101,8 @@
     }
 
     .ea2020Section.py-3 .row .col {
-        flex: 0 0 70%;
-        max-width: 70%;
+        flex: 0 0 60%;
+        max-width: 60%;
         padding: 2rem 3rem;
     }
 
@@ -149,7 +149,7 @@
 
     .package .pt-5 .sideImg {
         width: 80%;
-        padding: 0px;
+        padding: 2rem 0 0 0;
     }
 
     .bgLightGrey .row .col-5 {
@@ -555,7 +555,7 @@
     }
     #ea2020Banner .buttons{
         position: relative;
-        top: 230px;
+        top: 150px;
     }
     
     .ea2020overlay .right{

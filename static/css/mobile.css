@@ -535,7 +535,7 @@
     }
     #ea2020Banner{
         background-image:none;
-        padding-top: 60px;
+        padding-top: 80px;
         background-color:#FFF;
     }
     .ea2020Section.py-3 .row .col {
@@ -546,7 +546,7 @@
     }
 
     #ea2020Banner h1{
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 0px;
     }
     /* #ea2020Banner h3{
@@ -568,11 +568,12 @@
         align-items: flex-end;
         margin-right: 0.3rem;
         text-align:right;
+        padding-top: 1rem;
     }
     .ea2020overlay .right .col-3{
         flex: 0 0 43%;
         max-width: 43%;
-        margin-bottom: 40px;
+        margin-bottom: 0.75rem;
     }
     .ea2020overlay .right>div{
         padding: 0px;
@@ -630,7 +631,7 @@
         margin-top:0;
     }
     .system {
-        padding: 0px !important;
+        padding: 0 0 3rem 0!important;
     }
     
     .package .pt-5{

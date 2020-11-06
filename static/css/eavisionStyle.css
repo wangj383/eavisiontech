@@ -735,7 +735,7 @@ a span:active {
 
 
 #homeBanner .carousel-indicators {
-    bottom: 57px;
+    bottom: 63px;
 }
 
 #homeBanner .carousel-indicators li {
@@ -1018,7 +1018,7 @@ a span:active {
 
 #homecornfieldimg {
     object-fit: cover;
-    width: 43vw;
+    width: 100%;
     height: 11vw;
 }
 
@@ -1175,6 +1175,7 @@ a span:active {
 .ea2020Section .sideImg {
     width: 45vw;
     height: auto;
+    min-width: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -1385,7 +1386,6 @@ a span:active {
     background-image: url('../img/mistSpraySystem/ccmsvideo-photo.png');
     background-size: cover;
     width: 100vw;
-    padding-top: 2rem;
 }
 
 .sprayLeafBackground {

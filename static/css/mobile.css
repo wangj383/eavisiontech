@@ -299,7 +299,12 @@
         height: auto !important;
         margin: 0px!important;
     }
-
+    #homeEa2020img {
+        margin: 1rem auto;
+    }
+    #homeSprayimg {
+        margin: 0.5rem auto 0rem auto;
+    }
     #homePartners .row{
         padding-top:1.7rem;
     }

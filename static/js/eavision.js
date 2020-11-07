@@ -204,6 +204,8 @@ function submitForm() {
                 get_id('phone').value = ''
                 get_id('topic').value = ''
                 get_id('service').value = ''
+                $("#topic").selectpicker('refresh');
+                $("#service").selectpicker('refresh');
                 get_id('message').value = ''
                 get_id('submit').value = 'Send'
                 get_id('submit').disabled = false

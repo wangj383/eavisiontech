@@ -6,7 +6,7 @@
           <h2 class="mt-4 mb-3">Get in Touch</h2>
         </div>
         <div class="card-body px-6">
-          <form id="contact_form" method="POST" onsubmit="submitForm(); return false;">
+          <form id="contact_form">
             <div class="form-group pb-2" >
               <div id="contactSubtitles">
                 <div class="row">
@@ -49,7 +49,7 @@
             </div>
             <div class="form-group">
                 <!-- <label for="Topic">Topic</label> -->
-                <select name="topic" id="Topic" class="form-control select" placeholder="Topic" title="Topic">
+                <select name="topic" id="topic" class="form-control select" placeholder="Topic" title="Topic">
                     <option value="E-A2020 Drone">E-A2020 Drone</option>
                     <option value="Mist Spray System">Mist Spray System</option>
                     <option value="Autonomous Crop Protection Vehicle">Autonomous Crop Protection Vehicle</option>
@@ -70,7 +70,7 @@
               <p class="note">*Required</p>
             </div>
             <div class="form-group">
-              <input type="submit" id="submit" name="submit" disabled value="Send" class="btn blue-button btn-block">
+              <input onclick="submitForm()" id="submit" name="submit" disabled value="Send" class="btn blue-button btn-block">
             </div>
           </form>
         </div>

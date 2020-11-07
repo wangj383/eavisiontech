@@ -66,8 +66,7 @@ $(function () {
                     $('#submit').attr("disabled", true);
                 }
             });
-            
-            $('.select').selectpicker();
+            $('.select').selectpicker && $('.select').selectpicker();
 
         })
     }
@@ -176,7 +175,6 @@ get_id = function (id) {
 
 
 function submitForm() {
-    
     get_id('submit').disabled = true
     get_id('submit').value = 'Sending...'
     var from = $('#frompage').val()

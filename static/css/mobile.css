@@ -101,8 +101,8 @@
     }
 
     .ea2020Section.py-3 .row .col {
-        flex: 0 0 70%;
-        max-width: 70%;
+        flex: 0 0 60%;
+        max-width: 60%;
         padding: 2rem 3rem;
     }
 
@@ -149,7 +149,7 @@
 
     .package .pt-5 .sideImg {
         width: 80%;
-        padding: 0px;
+        padding: 2rem 0 0 0;
     }
 
     .bgLightGrey .row .col-5 {
@@ -299,7 +299,12 @@
         height: auto !important;
         margin: 0px!important;
     }
-
+    #homeEa2020img {
+        margin: 1rem auto;
+    }
+    #homeSprayimg {
+        margin: 0.5rem auto 0rem auto;
+    }
     #homePartners .row{
         padding-top:1.7rem;
     }
@@ -530,7 +535,7 @@
     }
     #ea2020Banner{
         background-image:none;
-        padding-top: 60px;
+        padding-top: 80px;
         background-color:#FFF;
     }
     .ea2020Section.py-3 .row .col {
@@ -541,7 +546,7 @@
     }
 
     #ea2020Banner h1{
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 0px;
     }
     /* #ea2020Banner h3{
@@ -555,7 +560,7 @@
     }
     #ea2020Banner .buttons{
         position: relative;
-        top: 230px;
+        top: 150px;
     }
     
     .ea2020overlay .right{
@@ -563,11 +568,12 @@
         align-items: flex-end;
         margin-right: 0.3rem;
         text-align:right;
+        padding-top: 1rem;
     }
     .ea2020overlay .right .col-3{
         flex: 0 0 43%;
         max-width: 43%;
-        margin-bottom: 40px;
+        margin-bottom: 0.75rem;
     }
     .ea2020overlay .right>div{
         padding: 0px;
@@ -625,7 +631,7 @@
         margin-top:0;
     }
     .system {
-        padding: 0px !important;
+        padding: 0 0 3rem 0!important;
     }
     
     .package .pt-5{
@@ -737,7 +743,7 @@
     }
 
     #agvehicleBanner{
-        height: 798px;
+        height: 720px;
     }
     #agvehicleBanner .container-fluid{
         height: 798px;

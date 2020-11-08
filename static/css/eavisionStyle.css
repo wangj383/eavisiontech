@@ -95,7 +95,7 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 200px;
+    width: 215px;
 }
 
 .bootstrap-select>.dropdown-toggle{
@@ -840,8 +840,6 @@ a span:active {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-
 
 .homeCardSection a:hover {
     text-decoration: none;
@@ -2083,8 +2081,12 @@ ul.thumbnails-carousel li {
     margin-top:2.5rem;
 }
 
+/* News Page */
 .newsDetailsContent .right-content h3{
     font-size:22px;
+}
+.newspageButton{
+    width:90%;
 }
 
 /*Responsive Settings*/

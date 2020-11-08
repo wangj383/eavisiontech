@@ -59,6 +59,9 @@
     .homeNewsSection .card{
         width: 100%;
     }
+    .newspageButton{
+        width:100%;
+    }
     .abouttextSection .row .sideImg{
         padding-top:1.2rem;
     }
@@ -421,6 +424,9 @@
     .abouttextSection .row{
         margin: 0px;
     }
+    .abouttextSection .row:last-child{
+        padding-bottom: 3rem;
+    }
     .abouttextSection .row h2{
         margin-bottom: 1rem;
     }
@@ -433,10 +439,6 @@
         padding: 2rem 3rem 0 3rem;
         width: 410px;
         height: 220px;
-    }
-
-    .abouttextSection .row .sideImg:last-child{
-        padding: 2rem 3rem 3rem 3rem;
     }
 
     .bgLightGrey .col-9 h3 {

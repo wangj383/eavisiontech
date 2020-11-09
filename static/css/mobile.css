@@ -7,7 +7,6 @@
     .homeCardSection .card-title{
         font-size:24px;
     }
-    
 
 }
 @media (max-width: 1023px){
@@ -128,6 +127,9 @@
         height: 100% !important;
         flex: 0;
     }
+    .package .pt-5{
+        padding-top:1rem !important;
+    }
 
     .system .row {
         flex-direction: column;
@@ -148,11 +150,13 @@
     .system .row .col-sm-7 .sideImg3 {
         width: 80%;
         padding: 0px;
+        min-width: 180px;
     }
 
     .package .pt-5 .sideImg {
         width: 80%;
         padding: 2rem 0 0 0;
+        min-width: 180px;
     }
 
     .bgLightGrey .row .col-5 {
@@ -666,8 +670,17 @@
         position: relative;
         top: 60px;
     }
+    .spraySystemTextSection{
+        text-align:left;
+    }
+    .spraySystemTextSection .mr-auto{
+        margin-left:0px;
+    }
     .spraySystemTextSection .row h2{
         margin-bottom: 1.5rem;
+    }
+    .spraySystemTextSection .row h2.bgBlackfontWhite{
+        padding: 0 2rem;
     }
     .spraySystemTextSection .row{
         display: block;
@@ -702,9 +715,6 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .bgDroneSpray {
-        height: 400px;
-    }
 
     .spraySystemTextSection .container{
         padding: 0px;
@@ -714,6 +724,7 @@
         max-width: 100%;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+        padding-bottom: 1.5rem;
     }
 
     .spraySystemTextSection .bgLightGrey .row .col-4{
@@ -736,6 +747,9 @@
         font-size:16px;
         font-weight: 600 !important;
         margin-top:10px;
+    }
+    #iconSection{
+        text-align:center;
     }
 
     .bgLightGrey .row .col-4{

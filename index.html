@@ -260,9 +260,7 @@
         </div>
     </div>
 
-    <div class="loading-box">
-        <img src="./static/img/loading.gif" alt="">
-    </div>
+    
     <!-- Footer -->
     <div class="footer" id="footer">
     </div>
@@ -296,9 +294,6 @@
                             v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
                                 "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_300,limit_0'
                         });
-
-                        $('.loading-box').fadeOut();
-                        
                     })
                 },
                 onDetail(data) {

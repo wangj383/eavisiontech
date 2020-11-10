@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/quill.bubble.css">
     <link rel="stylesheet" type="text/css" href="/static/css/quill.core.css">
     <link rel="stylesheet" type="text/css" href="/static/css/quill.snow.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
     <!-- <link rel="icon" href="/static/img/favicon.ico"> -->
     <link rel="stylesheet" href="/static/css/mobile.css">
 </head>
@@ -104,11 +105,14 @@
             </div>
         </div>
     </div>
+    <div class="loading-box">
+        <img src="./static/img/loading.gif" alt="">
+    </div>
 
     <!-- Footer -->
     <div style="width: 100%;" class="footer" id="footer"></div>
     <!-- Footer End -->
-
+    <script src="/static/js/wow.min.js"></script>
     <script src="/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/popper.min.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
@@ -159,10 +163,10 @@
                         $('.newsDetailContent h1').html(result.title)
                         $('.publish-time .time').html(result.solutionDate.substring(0, 10))
                         $('.news-main').html(result.content)
+                        $('.loading-box').fadeOut();
 
                         $('.share3').click(function () {
                             parent.location.href = 'mailto:' + '' + '?subject=' + result.title + '&body=' + document.location.href;
-                            
                         })
 
                     }

@@ -187,8 +187,8 @@ function submitForm() {
     formdata.append('message', get_id('message').value)
     formdata.append('from', from)
     var ajax = new XMLHttpRequest()
-    ajax.open('POST', 'http://39.105.110.190:8686/contact/add')
-    //ajax.open('POST', 'http://127.0.0.1:8686/contact/add')
+    // ajax.open('POST', 'http://39.105.110.190:8686/contact/add')
+    ajax.open('POST', 'https://unicom.eavchina.com:8868/contact/add')
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4 && ajax.status == 200) {
             if (ajax.responseText == 'ok') {

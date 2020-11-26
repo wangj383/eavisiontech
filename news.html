@@ -131,8 +131,8 @@
                         vu.news = ret.result;
                         vu.count = ret.resultNum;
                         $.each(vu.news, function (i, v) {
-                            v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                                "whjm-test.oss-accelerate.aliyuncs.com") + `?x-oss-process=image/resize,${i == 0 ? 'w_1114' : 'w_300'},limit_0`
+                            v.osskey = v.osskey.replace(/http:\/\/whjm-test.oss-cn-beijing.aliyuncs.com/g,
+                                "https://whjm-test.oss-accelerate.aliyuncs.com") + `?x-oss-process=image/resize,${i == 0 ? 'w_1114' : 'w_300'},limit_0`
                         });
                         $('.loading-box').fadeOut();
                     })
@@ -146,8 +146,8 @@
                         vu.count = ret.resultNum;
                         $.each(vu.news, function (i, v) {
                             console.log(v)
-                            v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
+                            v.osskey = v.osskey.replace(/http:\/\/whjm-test.oss-cn-beijing.aliyuncs.com/g,
+                                "https://whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
                         });
                     })
                 },

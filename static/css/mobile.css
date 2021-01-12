@@ -7,7 +7,6 @@
     .homeCardSection .card-title{
         font-size:24px;
     }
-    
 
 }
 @media (max-width: 1023px){
@@ -19,10 +18,10 @@
         font-size:40px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 27px;
     }
     h3{
-        font-size:20px;
+        font-size:23px;
     }
     .homeCardSection .card-title{
         font-size:22px;
@@ -58,6 +57,9 @@
     }
     .homeNewsSection .card{
         width: 100%;
+    }
+    .newspageButton{
+        width:100%;
     }
     .abouttextSection .row .sideImg{
         padding-top:1.2rem;
@@ -125,6 +127,9 @@
         height: 100% !important;
         flex: 0;
     }
+    .package .pt-5{
+        padding-top:1rem !important;
+    }
 
     .system .row {
         flex-direction: column;
@@ -145,11 +150,13 @@
     .system .row .col-sm-7 .sideImg3 {
         width: 80%;
         padding: 0px;
+        min-width: 180px;
     }
 
     .package .pt-5 .sideImg {
         width: 80%;
         padding: 2rem 0 0 0;
+        min-width: 180px;
     }
 
     .bgLightGrey .row .col-5 {
@@ -421,6 +428,9 @@
     .abouttextSection .row{
         margin: 0px;
     }
+    .abouttextSection .row:last-child{
+        padding-bottom: 3rem;
+    }
     .abouttextSection .row h2{
         margin-bottom: 1rem;
     }
@@ -433,10 +443,6 @@
         padding: 2rem 3rem 0 3rem;
         width: 410px;
         height: 220px;
-    }
-
-    .abouttextSection .row .sideImg:last-child{
-        padding: 2rem 3rem 3rem 3rem;
     }
 
     .bgLightGrey .col-9 h3 {
@@ -479,7 +485,6 @@
         margin-right: -1rem;
     }
     #serviceContact .card h2{
-        font-size:20px;
         margin:1.25rem 2rem 1rem 2rem !important;
         padding:0px !important;
         width: auto !important;
@@ -495,7 +500,7 @@
     }
 
     #contactSubtitles .row{
-        padding: 0 1rem;
+        padding: 0 3rem;
     }
 
     #contact_form .pb-2{
@@ -665,8 +670,17 @@
         position: relative;
         top: 60px;
     }
+    .spraySystemTextSection{
+        text-align:left;
+    }
+    .spraySystemTextSection .mr-auto{
+        margin-left:0px;
+    }
     .spraySystemTextSection .row h2{
         margin-bottom: 1.5rem;
+    }
+    .spraySystemTextSection .row h2.bgBlackfontWhite{
+        padding: 0 2rem;
     }
     .spraySystemTextSection .row{
         display: block;
@@ -701,9 +715,6 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .bgDroneSpray {
-        height: 400px;
-    }
 
     .spraySystemTextSection .container{
         padding: 0px;
@@ -713,6 +724,7 @@
         max-width: 100%;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+        padding-bottom: 1.5rem;
     }
 
     .spraySystemTextSection .bgLightGrey .row .col-4{
@@ -735,6 +747,9 @@
         font-size:16px;
         font-weight: 600 !important;
         margin-top:10px;
+    }
+    #iconSection{
+        text-align:center;
     }
 
     .bgLightGrey .row .col-4{

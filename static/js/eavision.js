@@ -175,9 +175,19 @@ get_id = function (id) {
 
 
 function submitForm() {
+    if (!get_id('name').value) {
+        return false;
+    }
+    if (!get_id('email').value) {
+        return false;
+    }
+    // var reg = /^\w+((.\w+)|(-\w+))@[A-Za-z0-9]+((.|-)[A-Za-z0-9]+).[A-Za-z0-9]+$/;
+    // if (!reg.test(get_id('email').value)) {
+    //     return false;
+    // }
     get_id('submit').disabled = true
     get_id('submit').value = 'Sending...'
-    var from = $('#frompage').val()
+    var from = $('#contact_form').val()
     var formdata = new FormData()
     formdata.append('name', get_id('name').value)
     formdata.append('email', get_id('email').value)
@@ -187,8 +197,8 @@ function submitForm() {
     formdata.append('message', get_id('message').value)
     formdata.append('from', from)
     var ajax = new XMLHttpRequest()
-    ajax.open('POST', 'http://39.105.110.190:8686/contact/add')
-    //ajax.open('POST', 'http://127.0.0.1:8686/contact/add')
+    // ajax.open('POST', 'http://39.105.110.190:8686/contact/add')
+    ajax.open('POST', 'https://unicom.eavchina.com:8868/contact/add')
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4 && ajax.status == 200) {
             if (ajax.responseText == 'ok') {
@@ -198,6 +208,9 @@ function submitForm() {
                     topic.value +
                     '. One of our colleagues will get back to you shortly.' +
                     ' Have a great day!</p>'
+                $('#contactSubtitles').html(
+                    "<div></div>"
+                )
 
                 get_id('name').value = ''
                 get_id('email').value = ''
@@ -208,11 +221,11 @@ function submitForm() {
                 $("#service").selectpicker('refresh');
                 get_id('message').value = ''
                 get_id('submit').value = 'Send'
-                get_id('submit').disabled = false
             } else {
                 get_id('status').innerHTML = ajax.responseText
-                get_id('submit').disabled = false
             }
+        } else {
+            get_id('submit').value = 'Send'
         }
     }
     ajax.send(formdata)

@@ -6,10 +6,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180773911-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-180773911-1');
+    </script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/font.css">
     <link rel="stylesheet" type="text/css" href="/static/css/eavisionStyle.css">
     <link rel="icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" href="/static/css/mobile.css">
@@ -55,7 +63,7 @@
                     </div>
                     <!-- <div v-if="news.length < count" class="pt-4"><button class="btn blue-border-button round"
                             @click="more">More</button></div> -->
-                    <div class="center pt-4"><a href="news.html"><button class="btn blue-button">See All News
+                    <div class="newspageButton center pt-4"><a href="news.html"><button class="btn blue-button">See All News
                     </button></a></div>
                 </div>
 
@@ -123,8 +131,8 @@
                         vu.news = ret.result;
                         vu.count = ret.resultNum;
                         $.each(vu.news, function (i, v) {
-                            v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                                "whjm-test.oss-accelerate.aliyuncs.com") + `?x-oss-process=image/resize,${i == 0 ? 'w_1114' : 'w_300'},limit_0`
+                            v.osskey = v.osskey.replace(/http:\/\/whjm-test.oss-cn-beijing.aliyuncs.com/g,
+                                "https://whjm-test.oss-accelerate.aliyuncs.com") + `?x-oss-process=image/resize,${i == 0 ? 'w_1114' : 'w_300'},limit_0`
                         });
                         $('.loading-box').fadeOut();
                     })
@@ -138,8 +146,8 @@
                         vu.count = ret.resultNum;
                         $.each(vu.news, function (i, v) {
                             console.log(v)
-                            v.osskey = v.osskey.replace(/whjm-test.oss-cn-beijing.aliyuncs.com/g,
-                                "whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
+                            v.osskey = v.osskey.replace(/http:\/\/whjm-test.oss-cn-beijing.aliyuncs.com/g,
+                                "https://whjm-test.oss-accelerate.aliyuncs.com") + '?x-oss-process=image/resize,w_200,limit_0'
                         });
                     })
                 },

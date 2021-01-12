@@ -6,18 +6,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180773911-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-180773911-1');
+    </script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css?v=1">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/font.css">
     <link rel="stylesheet" type="text/css" href="/static/css/eavisionStyle.css">
     <link rel="stylesheet" type="text/css" href="/static/css/newsDetail.css?v=1.12">
     <link rel="stylesheet" type="text/css" href="/static/css/quill.bubble.css">
     <link rel="stylesheet" type="text/css" href="/static/css/quill.core.css">
     <link rel="stylesheet" type="text/css" href="/static/css/quill.snow.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
     <!-- <link rel="icon" href="/static/img/favicon.ico"> -->
     <link rel="stylesheet" href="/static/css/mobile.css">
-
 </head>
 
 <body style="background-color: #FFFFFF !important;">
@@ -97,11 +105,14 @@
             </div>
         </div>
     </div>
+    <div class="loading-box">
+        <img src="./static/img/loading.gif" alt="">
+    </div>
 
     <!-- Footer -->
     <div style="width: 100%;" class="footer" id="footer"></div>
     <!-- Footer End -->
-
+    <script src="/static/js/wow.min.js"></script>
     <script src="/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/popper.min.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
@@ -152,10 +163,10 @@
                         $('.newsDetailContent h1').html(result.title)
                         $('.publish-time .time').html(result.solutionDate.substring(0, 10))
                         $('.news-main').html(result.content)
+                        $('.loading-box').fadeOut();
 
                         $('.share3').click(function () {
                             parent.location.href = 'mailto:' + '' + '?subject=' + result.title + '&body=' + document.location.href;
-                            
                         })
 
                     }
@@ -170,7 +181,6 @@
 
         })
     </script>
-
 </body>
 
 </html>

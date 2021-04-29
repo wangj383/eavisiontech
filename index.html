@@ -288,7 +288,7 @@
             methods: {
                 getNews() {
                     var vu = this;
-                    $.post('https://www.eav.top/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
+                    $.post('https://front.eavchina.com/front/listSolution?pageNum=1&pageSize=3&stype=5', function (ret) {
                         vu.news = ret.result;
                         $.each(vu.news, function (i, v) {
                             v.osskey = v.osskey.replace(/http:\/\/whjm-test.oss-cn-beijing.aliyuncs.com/g,

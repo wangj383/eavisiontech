@@ -126,7 +126,7 @@
             methods: {
                 getNews() {
                     var vu = this;
-                    $.post('https://www.eav.top/front/listSolution?pageNum=' + this.index + '&pageSize=5&stype=5', function (
+                    $.post('https://front.eavchina.com/front/listSolution?pageNum=' + this.index + '&pageSize=5&stype=5', function (
                         ret) {
                         vu.news = ret.result;
                         vu.count = ret.resultNum;
@@ -140,7 +140,7 @@
                 more() {
                     var vu = this;
                     this.index++;
-                    $.post('https://www.eav.top/front/listSolution?pageNum=' + this.index + '&pageSize=5&stype=5', function (
+                    $.post('https://front.eavchina.com/front/listSolution?pageNum=' + this.index + '&pageSize=5&stype=5', function (
                         ret) {
                         vu.news.concat(ret.result);
                         vu.count = ret.resultNum;

@@ -157,7 +157,7 @@
 
 
             function getNewDetail(id) {
-                $.post('https://www.eav.top/front/getSolution?id=' + id, function (res) {
+                $.post('https://front.eavchina.com/front/getSolution?id=' + id, function (res) {
                     if (res.code == '000000') {
                         var result = res.result || {}
                         $('.newsDetailContent h1').html(result.title)
